@@ -1,0 +1,29 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Hermes → Muse asset request",
+  "type": "object",
+  "required": ["id", "character", "action", "asset_type", "status"],
+  "properties": {
+    "id": { "type": "string", "description": "ID duy nhất của yêu cầu, vd: jump-slash-001" },
+    "character": { "type": "string", "description": "Mã nhân vật. Hiện tại: general_forgot" },
+    "action": { "type": "string", "description": "Tên động tác dạng snake_case, vd: jump_overhead_slash" },
+    "action_vi": { "type": "string", "description": "Mô tả động tác bằng tiếng Việt cho người đọc" },
+    "asset_type": { "type": "string", "enum": ["sprite_sheet", "gif_preview", "reference_video"] },
+    "frames": { "type": "integer", "minimum": 1, "description": "Số frame, vd: 16" },
+    "grid": {
+      "type": "object",
+      "properties": { "cols": { "type": "integer" }, "rows": { "type": "integer" } },
+      "description": "Bố cục lưới cho sprite_sheet"
+    },
+    "cell_size": {
+      "type": "object",
+      "properties": { "width": { "type": "integer" }, "height": { "type": "integer" } },
+      "description": "Kích thước mỗi ô sprite (px)"
+    },
+    "duration_sec": { "type": "number", "description": "Cho reference_video: độ dài video, vd: 10" },
+    "transparent_background": { "type": "boolean", "default": true },
+    "identity_overrides": { "type": "object", "description": "Thay đổi tạm thời so với identity gốc (nếu không có thì dùng specs/character-general-forgot.md)" },
+    "notes": { "type": "string", "description": "Ghi chú thêm cho Muse" },
+    "status": { "type": "string", "enum": ["pending", "done", "failed"], "description": "Hermes đặt pending; Muse đổi thành done khi hoàn thành, failed khi thất bại" }
+  }
+}

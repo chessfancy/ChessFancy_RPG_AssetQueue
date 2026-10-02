@@ -1,0 +1,13 @@
+{
+  "id": "jump-slash-001",
+  "character": "general_forgot",
+  "action": "jump_overhead_slash",
+  "action_vi": "Nhân vật nhảy lên, chém bổ giáo từ trên xuống dưới",
+  "asset_type": "sprite_sheet",
+  "frames": 16,
+  "grid": { "cols": 4, "rows": 4 },
+  "cell_size": { "width": 712, "height": 584 },
+  "transparent_background": true,
+  "notes": "Mặt nhân vật hướng trái ở frame đầu và frame cuối. Các sprite không chồng lấn, nền trong suốt.",
+  "status": "pending"
+}
