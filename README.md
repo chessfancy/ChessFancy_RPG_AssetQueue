@@ -47,15 +47,8 @@ Muse write credentials must be provisioned through a secure channel outside chat
 
 ## First smoke test
 
-The first live job is Cụ Bản Tiện / `npc_ch02_planning_elder` walking animation.
-Reference: `references/ch02/npc_ch02_planning_elder/canonical.png`.
+The first live jobs will target Chapter 2 enemy asset creation and missing combat-attack animations.
 
-Runtime convention verified from `map_warrior_female_run` / `_stand`:
+Walking/running cycles are explicitly out of scope for Muse image-sheet smoke tests; locomotion will use the separate video-to-animation pipeline because direct image generation did not produce reliable complete walk/run cycles.
 
-- row 0: down
-- row 1: up
-- row 2: left
-- row 3: right
-- run sheet: 6 frames per row, 14 fps
-- stand sheet: 1 authored standing frame per direction
-- transparent PNG, full body, normalized apparent body scale and feet baseline
+Current Chapter 2 art direction to validate before each request: after Sơn Tinh, the party faces Mộc Linh, Gấu Rừng, Rễ Cuồng, then the Xương Cuồng / Mộc Tinh boss. Cối Xay is not the main boss; it observes wind and supports the route story.
