@@ -49,3 +49,13 @@ Muse write credentials must be provisioned through a secure channel outside chat
 
 The first live job is Cụ Bản Tiện / `npc_ch02_planning_elder` walking animation.
 Reference: `references/ch02/npc_ch02_planning_elder/canonical.png`.
+
+Runtime convention verified from `map_warrior_female_run` / `_stand`:
+
+- row 0: down
+- row 1: up
+- row 2: left
+- row 3: right
+- run sheet: 6 frames per row, 14 fps
+- stand sheet: 1 authored standing frame per direction
+- transparent PNG, full body, normalized apparent body scale and feet baseline
