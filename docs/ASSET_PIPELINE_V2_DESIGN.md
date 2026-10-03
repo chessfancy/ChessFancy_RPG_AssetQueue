@@ -24,8 +24,10 @@ A new regular-enemy identity may be created either by ChatGPT/Codex/Hermes or by
 ### Boss — manual
 Boss identities and boss-defining visual revisions require human approval before production promotion.
 
-### Guardian / summon / story-critical identity — manual
-Guardians, summons, and story-critical character identities require human approval before production promotion.
+### Guardian / summon — manual
+Guardian and summon identities require human approval before production promotion.
+
+Everything else follows automatic or batch-review policy defined for its asset class; do not silently expand manual approval beyond boss and guardian/summon assets.
 
 Tier choice controls promotion only; it does not change the requirement that every generated asset first lands as a candidate.
 
