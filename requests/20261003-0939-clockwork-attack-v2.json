@@ -21,10 +21,22 @@
   ],
   "facing": "right",
   "asset_type": "sprite_sheet",
-  "grid": { "cols": 8, "rows": 1 },
-  "cell_size": { "width": 128, "height": 128 },
-  "generation_layout": { "cols": 4, "rows": 2 },
-  "runtime_cell_size": { "width": 128, "height": 128 },
+  "grid": {
+    "cols": 8,
+    "rows": 1
+  },
+  "cell_size": {
+    "width": 128,
+    "height": 128
+  },
+  "generation_layout": {
+    "cols": 4,
+    "rows": 2
+  },
+  "runtime_cell_size": {
+    "width": 128,
+    "height": 128
+  },
   "reference_images": [
     "references/existing/enemy_clockwork_knight/canonical.png"
   ],
@@ -40,5 +52,5 @@
   },
   "transparent_background": true,
   "notes": "V2 PRODUCTION SMOKE. REFERENCE-FIRST. Generate ONE high-resolution 4x2 contact sheet, not an 8x1 creative sheet and not direct 128x128 frames. Use strict logical cells, wide gutters, no touching/overlap/crop, full body visible. Simple white background is acceptable if alpha is unreliable. Then key/remove background, detect/extract actual pose groups with connected components/component clusters (do not trust rigid equal-grid cutting), preserve detached semantic parts such as tail/key, remove neighboring-pose bleed, and repack with at least 15px working padding per side. If poses are missing/bad, preserve good poses and repair only missing/bad poses; maximum 2 repair passes. Deliver high-resolution RGBA master sheet, individual high-resolution frames, preview GIF and asset.json provenance/QC. Hermes will later build the 128x128 runtime row; do not creatively generate at runtime resolution. Preserve exact brass + walnut + teal-patina identity, clock-face chest, helmet, gears, wind-up key, horse head and proportions from canonical reference.",
-  "status": "pending"
+  "status": "done"
 }
