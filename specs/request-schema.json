@@ -17,6 +17,7 @@
     "facing": { "type": "string", "enum": ["left", "right", "up", "down", "front", "back"], "description": "Source-facing constraint where applicable." },
     "asset_type": { "type": "string", "enum": ["sprite_sheet", "gif_preview", "reference_video", "reference_image", "map_set", "prop_sheet"] },
     "frames": { "type": "integer", "minimum": 1, "description": "Requested frame count for animated assets." },
+    "fps": { "type": "number", "exclusiveMinimum": 0, "maximum": 60, "description": "Intended playback rate for animation and preview GIF; runtime timing remains authoritative in the game manifest." },
     "grid": {
       "type": "object",
       "properties": {
