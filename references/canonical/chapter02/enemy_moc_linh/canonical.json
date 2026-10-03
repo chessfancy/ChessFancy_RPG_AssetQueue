@@ -1,0 +1,10 @@
+{
+  "character": "enemy_moc_linh",
+  "status": "locked",
+  "approval_policy": "enemy_auto",
+  "source_job": "20261003-1046-moc-linh-reference",
+  "source_commit_sha": "a01c9c99fabc121ae15d73f883f8069a98e676c8",
+  "image_path": "assets/20261003-1046-moc-linh-reference/canonical_candidate.png",
+  "image_sha256": "0a35c14334407e65a0e87d59afe355a3e120b6005590a593c3c02f7e3ebfc6b3",
+  "review_path": "reviews/20261003-1046-moc-linh-reference.json"
+}
