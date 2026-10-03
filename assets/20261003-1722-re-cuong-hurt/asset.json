@@ -1,0 +1,59 @@
+{
+  "request_id": "20261003-1722-re-cuong-hurt",
+  "protocol_version": 2,
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "assets/20261003-1046-re-cuong-reference/canonical_candidate.png",
+  "request_blob_sha": "66dfc3438db10fe1e74653b2725dfac5d2204a07",
+  "request_commit_sha": "947b8babe542e449e85c79c420c1b6c913289050",
+  "generation_mode": "single_contact_sheet",
+  "requested_frames": 3,
+  "detected_initial_frames": 3,
+  "repaired_frames": [],
+  "repair_passes_used": 0,
+  "generation_layout": {
+    "cols": 3,
+    "rows": 1
+  },
+  "raw_generation": {
+    "width": 2736,
+    "height": 912,
+    "sha256": "7792d6f31b86e9e0a97c530ace84e08c819d3180aee9ea0b26338985192683e5",
+    "snapshot_id": "1e9ef2ac-490f-43c9-a849-3afd6e54d28d:rzk0rj",
+    "note": "kept in /tmp/re_cuong_hurt/ (uncommitted)"
+  },
+  "master": {
+    "sheet": "master_sheet_rgba.png",
+    "cell_width": 880,
+    "cell_height": 827,
+    "extra_padding_px": 15
+  },
+  "runtime_cell_size": {
+    "width": 128,
+    "height": 128
+  },
+  "background_cleanup": "white_key_if_needed",
+  "segmentation": "component_clusters",
+  "bleed_guard_px": 3,
+  "files": [
+    "master_sheet_rgba.png",
+    "preview.gif",
+    "asset.json",
+    "frames/frame_00.png",
+    "frames/frame_01.png",
+    "frames/frame_02.png"
+  ],
+  "qc": {
+    "frame_count": "pass",
+    "identity": "pass",
+    "choreography": "pass",
+    "facing": "pass",
+    "crop": "pass",
+    "bleed": "pass",
+    "background": "pass",
+    "master": "pass"
+  },
+  "created_at": "2026-10-03T17:37:42.989465+07:00",
+  "qc_note": "Frame-0 vine tendrils extend 5px past the logical cell boundary but are attributed to frame 0 by component-cluster association; neighbor pixels masked out of frame 1 (1px). Visually verified: no crop, no bleed."
+}
