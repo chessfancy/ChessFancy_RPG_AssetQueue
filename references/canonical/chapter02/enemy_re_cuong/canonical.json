@@ -1,0 +1,10 @@
+{
+  "character": "enemy_re_cuong",
+  "status": "locked",
+  "approval_policy": "enemy_auto",
+  "source_job": "20261003-1046-re-cuong-reference",
+  "source_commit_sha": "a01c9c99fabc121ae15d73f883f8069a98e676c8",
+  "image_path": "assets/20261003-1046-re-cuong-reference/canonical_candidate.png",
+  "image_sha256": "47d693f95dc51e0386f788a9265c08f5b4fd7143d91724ce3425b0b2168027a4",
+  "review_path": "reviews/20261003-1046-re-cuong-reference.json"
+}
