@@ -32,5 +32,5 @@
   "postprocess": {"background_mode": "white_key_if_needed", "extra_padding_px": 15, "max_repair_passes": 2, "segmentation": "component_clusters", "export_individual_frames": true, "export_preview_gif": true},
   "transparent_background": true,
   "notes": "Canonical lock: references/canonical/chapter02/enemy_moc_linh/canonical.json. IMPORTANT GAMEPLAY READ: this animation represents ONE-TIME HP DRAIN. Show exactly one clear siphon pulse at contact, then break/retract immediately. Do NOT make it look like a persistent tether or damage-over-time effect; that behavior belongs to Re Cuong. Preserve the warm living-wood-spirit identity and keep FX readable but below boss/guardian scale. Generate ONE high-resolution 4x2 contact sheet, then segment/de-bleed/repack. Preview GIF must match 12 fps. Hermes will build runtime cells after QC.",
-  "status": "pending"
+  "status": "done"
 }
