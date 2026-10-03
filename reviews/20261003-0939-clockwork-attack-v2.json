@@ -1,0 +1,35 @@
+{
+  "job_id": "20261003-0939-clockwork-attack-v2",
+  "result_commit_sha": "78b997b496c17f4ba4f5746bfdb7b454fdcaf16a",
+  "approval_policy": "enemy_auto",
+  "reviewed_by": "chatgpt",
+  "visual_qc": "pass",
+  "bundle_qc": "pass",
+  "runtime_integration_qc": "pending",
+  "promotion_state": "candidate_ready",
+  "measurements": {
+    "master_size": { "width": 2536, "height": 1242 },
+    "master_cell_size": { "width": 634, "height": 621 },
+    "frame_count": 8,
+    "individual_frame_size": { "width": 634, "height": 621 },
+    "minimum_detected_cell_margin_px": 31,
+    "foreground_pixels_within_outer_15px_cell_border": 0,
+    "preview_gif_frames": 8,
+    "preview_frame_duration_ms": 120
+  },
+  "checks": {
+    "canonical_identity": "pass",
+    "facing_right": "pass",
+    "choreography_readability": "pass",
+    "full_body_and_key_parts_present": "pass",
+    "crop": "pass",
+    "neighbor_bleed": "pass",
+    "rgba_background": "pass",
+    "master_to_individual_frames_exact_match": "pass",
+    "high_resolution_source_quality": "pass"
+  },
+  "minor_findings": [
+    "Preview GIF is 120 ms/frame (~8.33 fps), while the earlier Clockwork attack brief targeted 12 fps. This does not block the master asset because runtime timing is separate; protocol v2 now has an explicit fps field so future previews can match requested timing."
+  ],
+  "decision": "PASS for round-trip and candidate integration. Do not mark production until Hermes builds the runtime row and verifies it loads/animates correctly in game."
+}
