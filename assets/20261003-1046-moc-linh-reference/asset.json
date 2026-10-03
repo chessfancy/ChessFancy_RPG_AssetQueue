@@ -1,0 +1,63 @@
+{
+  "request_id": "20261003-1046-moc-linh-reference",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "media.generate_image",
+  "reference_mode": "muse_self_reference",
+  "canonical_reference": null,
+  "approval_policy": "enemy_auto",
+  "request_blob_sha": "9b34c2001e1f5303a86ebb8422abdedf222cabd0fe523caf43267e04a6fc1d0a",
+  "request_commit_sha": "ecee7ed18081c5942172a9281732df38103415fa",
+  "generation_mode": "single_candidate",
+  "action": "canonical_reference",
+  "character": "enemy_moc_linh",
+  "requested_frames": 1,
+  "detected_initial_frames": 1,
+  "detected_components": null,
+  "repaired_frames": 0,
+  "repair_passes_used": 0,
+  "generation_layout": null,
+  "raw_generation": {
+    "width": 1600,
+    "height": 1600,
+    "sha256": "1fa3e3d73ae5957549b9ea48baf60d2ca9fe3973f544e7054795f265f4a19747",
+    "snapshot_id": "ee944bc3-f967-4f24-9788-68fe7b6f522f:7rubrp",
+    "format": "webp"
+  },
+  "master": {
+    "file": "canonical_candidate.png",
+    "width": 1600,
+    "height": 1600,
+    "sha256": "0a35c14334407e65a0e87d59afe355a3e120b6005590a593c3c02f7e3ebfc6b3",
+    "format": "png_rgba"
+  },
+  "runtime_cell_size": null,
+  "background_cleanup": {
+    "mode": "white_key",
+    "alpha_feather_band_px": [
+      252,
+      235
+    ],
+    "edge_aa_preserved": true,
+    "padding_px": 15
+  },
+  "files": [
+    {
+      "path": "canonical_candidate.png",
+      "sha256": "0a35c14334407e65a0e87d59afe355a3e120b6005590a593c3c02f7e3ebfc6b3",
+      "width": 1600,
+      "height": 1600
+    }
+  ],
+  "qc": {
+    "identity_matches_brief": true,
+    "facing": "right",
+    "full_body_visible": true,
+    "no_crop": true,
+    "no_text_watermark": true,
+    "no_scenery_ground": true,
+    "background_transparent": true,
+    "margin_px": 15
+  },
+  "created_at": "2026-10-03T04:34:50.827382+00:00"
+}

@@ -1,0 +1,63 @@
+{
+  "request_id": "20261003-1046-gau-rung-reference",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "media.generate_image",
+  "reference_mode": "muse_self_reference",
+  "canonical_reference": null,
+  "approval_policy": "enemy_auto",
+  "request_blob_sha": "124266114947258a82d480c5eda7a882896ab96e34b3fbc6b79d9760e86db6ca",
+  "request_commit_sha": "1b8519cb558a34483a49c8f885924a2105021263",
+  "generation_mode": "single_candidate",
+  "action": "canonical_reference",
+  "character": "enemy_gau_rung",
+  "requested_frames": 1,
+  "detected_initial_frames": 1,
+  "detected_components": null,
+  "repaired_frames": 0,
+  "repair_passes_used": 0,
+  "generation_layout": null,
+  "raw_generation": {
+    "width": 1600,
+    "height": 1600,
+    "sha256": "b8dd0a5a93827feeaca7e7e20ef86beede9d9b1778a26cd9f37d824d91ff95ab",
+    "snapshot_id": "e398e779-09a2-44c4-8c27-8f95522f28d7:3zooif",
+    "format": "webp"
+  },
+  "master": {
+    "file": "canonical_candidate.png",
+    "width": 1600,
+    "height": 1600,
+    "sha256": "f10ad5211627478862098e2e8193982c034214215264dc89f6eed8f7bf2f7e3e",
+    "format": "png_rgba"
+  },
+  "runtime_cell_size": null,
+  "background_cleanup": {
+    "mode": "white_key",
+    "alpha_feather_band_px": [
+      252,
+      235
+    ],
+    "edge_aa_preserved": true,
+    "padding_px": 15
+  },
+  "files": [
+    {
+      "path": "canonical_candidate.png",
+      "sha256": "f10ad5211627478862098e2e8193982c034214215264dc89f6eed8f7bf2f7e3e",
+      "width": 1600,
+      "height": 1600
+    }
+  ],
+  "qc": {
+    "identity_matches_brief": true,
+    "facing": "right",
+    "full_body_visible": true,
+    "no_crop": true,
+    "no_text_watermark": true,
+    "no_scenery_ground": true,
+    "background_transparent": true,
+    "margin_px": 15
+  },
+  "created_at": "2026-10-03T04:34:49.646563+00:00"
+}

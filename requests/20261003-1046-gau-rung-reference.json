@@ -7,7 +7,7 @@
   "reference_mode": "muse_self_reference",
   "character": "enemy_gau_rung",
   "action": "canonical_reference",
-  "action_vi": "Tạo canonical battle reference cho Gấu Rừng, quái thường Chapter 2.",
+  "action_vi": "T\u1ea1o canonical battle reference cho G\u1ea5u R\u1eebng, qu\u00e1i th\u01b0\u1eddng Chapter 2.",
   "facing": "right",
   "asset_type": "reference_image",
   "reference_images": [
@@ -27,5 +27,5 @@
   },
   "transparent_background": true,
   "notes": "SELF-REFERENCE STAGE ONLY. Create one strong high-resolution isolated canonical candidate for this regular enemy; do not generate animation rows in this job. Use style images only for chapter/render language, never copy their identity. Full body visible, clear RIGHT-facing battle silhouette, generous safety margin, no ground/scenery/text/UI/watermark. White background is acceptable during generation if needed, but deliver RGBA transparent canonical_candidate.png plus asset.json. Under enemy_auto, Muse may mark identity QC pass if the result satisfies the brief; status=done means candidate bundle complete, not production promotion.",
-  "status": "pending"
+  "status": "done"
 }
