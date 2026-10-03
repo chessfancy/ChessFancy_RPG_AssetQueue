@@ -1,0 +1,55 @@
+{
+  "id": "20261003-1320-moc-linh-special-vfx-bundle",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "combat_animation",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "external_reference_first",
+  "character": "enemy_moc_linh",
+  "action": "special_vfx_bundle",
+  "action_vi": "VFX đồng bộ cho special Mộc Linh: aura tích lực trên caster + hit pack hút sinh lực MỘT LẦN ở target; tuyệt đối không có status loop kéo dài.",
+  "asset_type": "sprite_sheet",
+  "reference_images": [
+    "assets/20261003-1046-moc-linh-reference/canonical_candidate.png"
+  ],
+  "character_spec_path": "references/ch02/moc_linh/identity-brief.md",
+  "style_bible": "style-bibles/chapter02/README.md",
+  "depends_on_request": "20261003-1317-moc-linh-special",
+  "dependency_policy": "skip_until_done",
+  "deliverables": [
+    {
+      "key": "self_vfx",
+      "frames": 6,
+      "fps": 12,
+      "runtime_cell_size": {"width": 128, "height": 128},
+      "anchor": "caster_center",
+      "visual": "Ánh xanh lá ấm pha vàng hổ phách rất nhẹ xuất hiện quanh lõi gỗ/rễ, tăng dần trước hút, peak ngắn, rồi tắt nhanh. Không che silhouette, không aura boss."
+    },
+    {
+      "key": "hit_pack",
+      "frames": 8,
+      "fps": 12,
+      "runtime_cell_size": {"width": 192, "height": 192},
+      "anchor": "target_center",
+      "visual": "Một xung hút sinh lực rõ ràng tại mục tiêu: vòng/giọt năng lượng xanh-vàng co vào một điểm rồi chạy hướng về caster. Chỉ MỘT pulse, kết thúc sạch, không tether kéo dài."
+    }
+  ],
+  "timing_hints": {
+    "cast_start_frame": 1,
+    "peak_frame": 4,
+    "effect_spawn_frame": 4,
+    "recover_frame": 6,
+    "status_apply_frame": null
+  },
+  "generation_contract": {
+    "high_resolution_master": true,
+    "compact_grid_preferred": true,
+    "transparent_output": true,
+    "background_mode": "white_key_if_needed",
+    "extra_padding_px": 15,
+    "max_repair_passes": 2,
+    "segmentation": "component_clusters"
+  },
+  "notes": "IMPORTANT: first read requests/20261003-1317-moc-linh-special.json. If that dependency is not status=done, SKIP this job and leave status=pending. Once done, use its committed master_sheet_rgba.png and preview.gif as motion/color references in addition to the canonical reference. Produce separate transparent self_vfx and hit_pack outputs plus preview GIFs and asset.json. This is ONE-TIME HP DRAIN art only; no lingering/status-loop asset. Keep VFX below boss/guardian intensity.",
+  "status": "pending"
+}
