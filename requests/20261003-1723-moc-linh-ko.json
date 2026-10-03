@@ -31,5 +31,5 @@
   "postprocess": {"background_mode":"white_key_if_needed","extra_padding_px":15,"max_repair_passes":2,"segmentation":"component_clusters","export_individual_frames":true,"export_preview_gif":true},
   "transparent_background": true,
   "notes": "Non-loop defeat animation. Final frame is stable KO hold. No shattering, no detached branches/leaves, no gore, no disappearance. Preserve warm living-wood identity through defeat.",
-  "status": "pending"
+  "status": "done"
 }
