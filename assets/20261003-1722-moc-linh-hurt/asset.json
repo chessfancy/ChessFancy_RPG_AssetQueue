@@ -1,0 +1,65 @@
+{
+  "request_id": "20261003-1722-moc-linh-hurt",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "assets/20261003-1046-moc-linh-reference/canonical_candidate.png",
+  "request_blob_sha": "2797d3ca459e059227674c0ece144ab698f1f6a9",
+  "request_commit_sha": "afb8c63b8a655041a3685d6dd96edf3abd5a9e0f",
+  "generation_mode": "single_contact_sheet",
+  "requested_frames": 3,
+  "detected_initial_frames": 3,
+  "repaired_frames": [],
+  "repair_passes_used": 0,
+  "generation_layout": {
+    "cols": 3,
+    "rows": 1
+  },
+  "raw_generation": {
+    "width": 2736,
+    "height": 912,
+    "sha256": "b74aa563d830b0c0002ae52b0ace4abdb3853f0c7f37493ce42290cc9276f070",
+    "snapshot_id": "3bcd6ff8-6f9e-4cc6-8aa0-4f7ec2d5ae6f:8yrbas",
+    "note": "kept uncommitted in working dir (large)"
+  },
+  "master": {
+    "sheet": "master_sheet_rgba.png",
+    "cell_width": 706,
+    "cell_height": 829,
+    "extra_padding_px": 15
+  },
+  "runtime_cell_size": {
+    "width": 128,
+    "height": 128
+  },
+  "background_cleanup": "white_key_if_needed",
+  "segmentation": "component_clusters",
+  "bleed_removed_px": {
+    "method": "per_label_mask",
+    "foreign_pixels_zeroed": {
+      "frame_00": 9,
+      "frame_01": 2,
+      "frame_02": 9
+    }
+  },
+  "files": [
+    "master_sheet_rgba.png",
+    "preview.gif",
+    "asset.json",
+    "frames/frame_00.png",
+    "frames/frame_01.png",
+    "frames/frame_02.png"
+  ],
+  "qc": {
+    "frame_count": "pass",
+    "identity": "pass",
+    "choreography": "pass",
+    "facing": "pass",
+    "crop": "pass",
+    "bleed": "pass",
+    "background": "pass",
+    "master": "pass"
+  },
+  "created_at": "2026-10-03T17:39:29.434459+07:00"
+}
