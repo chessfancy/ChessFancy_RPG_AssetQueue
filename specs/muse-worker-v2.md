@@ -25,6 +25,8 @@ Create a canonical-reference candidate first. Ordinary enemies under `enemy_auto
 
 For animation work, read `frames_vi[]` in order. Treat the list as the requested movement beats, not optional prose.
 
+If `fps` is present, use it for the preview GIF timing and record it in result metadata. Runtime timing in the game manifest remains authoritative.
+
 Prefer one high-resolution contact-sheet generation pass for the sequence so identity, palette, scale and details remain coherent.
 
 Preferred layouts:
@@ -124,5 +126,6 @@ Muse checks at least:
 - no neighboring-frame bleed
 - background cleanup usable
 - high-resolution master exists
+- preview GIF frame count and timing match request when `fps` is specified
 
 `status: done` means the worker bundle is complete. It does **not** mean production promotion.
