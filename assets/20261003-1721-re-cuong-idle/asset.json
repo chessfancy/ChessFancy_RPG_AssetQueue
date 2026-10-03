@@ -1,0 +1,61 @@
+{
+  "request_id": "20261003-1721-re-cuong-idle",
+  "protocol_version": 2,
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "assets/20261003-1046-re-cuong-reference/canonical_candidate.png",
+  "request_blob_sha": "869b6c46ad9c16856b36ee62a5a6e2cba5f21a07",
+  "request_commit_sha": "ee72517cbf9072a6f18ddc80eea7ddddfd7ed722",
+  "generation_mode": "single_contact_sheet",
+  "requested_frames": 6,
+  "detected_initial_frames": 6,
+  "repaired_frames": [],
+  "repair_passes_used": 0,
+  "generation_layout": {
+    "cols": 3,
+    "rows": 2
+  },
+  "raw_generation": {
+    "width": 1920,
+    "height": 1280,
+    "sha256": "6fe78908f969b2b6affa910c6e7a3e83a1706e499ebea5ffe822626fd3be03d3",
+    "snapshot_id": "b79b488e-7a18-4493-8503-3e62bc04e1a7:n9h1nk",
+    "note": "kept in /tmp/re_cuong_idle/ (uncommitted)"
+  },
+  "master": {
+    "sheet": "master_sheet_rgba.png",
+    "cell_width": 617,
+    "cell_height": 610,
+    "extra_padding_px": 15
+  },
+  "runtime_cell_size": {
+    "width": 128,
+    "height": 128
+  },
+  "background_cleanup": "white_key_if_needed",
+  "segmentation": "component_clusters",
+  "bleed_guard_px": 3,
+  "files": [
+    "master_sheet_rgba.png",
+    "preview.gif",
+    "asset.json",
+    "frames/frame_00.png",
+    "frames/frame_01.png",
+    "frames/frame_02.png",
+    "frames/frame_03.png",
+    "frames/frame_04.png",
+    "frames/frame_05.png"
+  ],
+  "qc": {
+    "frame_count": "pass",
+    "identity": "pass",
+    "choreography": "pass",
+    "facing": "pass",
+    "crop": "pass",
+    "bleed": "pass",
+    "background": "pass",
+    "master": "pass"
+  },
+  "created_at": "2026-10-03T17:37:41.286092+07:00"
+}
