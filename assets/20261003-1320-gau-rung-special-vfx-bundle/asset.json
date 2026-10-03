@@ -1,0 +1,124 @@
+{
+  "request_id": "20261003-1320-gau-rung-special-vfx-bundle",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "assets/20261003-1046-gau-rung-reference/canonical_candidate.png",
+  "request_blob_sha": "c559e4850dccbff86ee657eccbb5cafbfa7edbf3a66f5e0618522b41b210bd8f",
+  "request_commit_sha": "30d5137bc15c7a0a36333b8440e9c584f7316590",
+  "generation_mode": "single_contact_sheet_per_deliverable",
+  "repaired_frames": [
+    "self_vfx: full contact sheet regenerated once (first pass was a heavy explosion, unsuitable for subtle caster-feet buildup); bad first sheet discarded",
+    "self_vfx: coordinator re-key from raw with noise-floor-gated white un-premultiply (removed dither-dot grid artifacts in background regions); 28px edge feather; previews rebuilt on mid-gray",
+    "hit_pack: coordinator re-key from raw with noise-floor-gated white un-premultiply (removed dither-dot grid artifacts in background regions); 28px edge feather; previews rebuilt on mid-gray"
+  ],
+  "repair_passes_used": 2,
+  "deliverables": [
+    {
+      "key": "self_vfx",
+      "requested_frames": 6,
+      "fps": 12,
+      "anchor": "caster_feet",
+      "generation_layout": {
+        "cols": 3,
+        "rows": 2
+      },
+      "raw_generation": {
+        "width": 1920,
+        "height": 1280,
+        "sha256": "56a6f40734be98af767197fb18f5f0b0cc5304c36f5c616ce375f8e0ced34754",
+        "snapshot_id": "fe265d30-36ba-4f05-b12e-56905b2eb982:eiknai",
+        "note": "regenerated v2 sheet used; first attempt discarded"
+      },
+      "master": {
+        "sheet": "self_vfx/master_sheet_rgba.png",
+        "sheet_width": 1536,
+        "sheet_height": 1024,
+        "cell_width": 512,
+        "cell_height": 512,
+        "extra_padding_px": 15
+      },
+      "runtime_cell_size": {
+        "width": 128,
+        "height": 128
+      },
+      "background_cleanup": "white_key_if_needed",
+      "files": [
+        "self_vfx/master_sheet_rgba.png",
+        "self_vfx/frames/frame_00.png",
+        "self_vfx/frames/frame_01.png",
+        "self_vfx/frames/frame_02.png",
+        "self_vfx/frames/frame_03.png",
+        "self_vfx/frames/frame_04.png",
+        "self_vfx/frames/frame_05.png",
+        "self_vfx/preview.gif"
+      ],
+      "qc": {
+        "frame_count": "pass",
+        "choreography": "pass (buildup->peak@frame4->settle)",
+        "crop": "pass",
+        "bleed": "pass",
+        "background": "pass - re-keyed 2026-10-03 repair #2: true zero-alpha background, no dither dots, soft edges preserved",
+        "identity": "n/a (effect sprites only, no character drawn)",
+        "bans": "pass (no glow/rune/aura/magic/fire/light)"
+      }
+    },
+    {
+      "key": "hit_pack",
+      "requested_frames": 8,
+      "fps": 12,
+      "anchor": "target_feet",
+      "generation_layout": {
+        "cols": 4,
+        "rows": 2
+      },
+      "raw_generation": {
+        "width": 2240,
+        "height": 1120,
+        "sha256": "bc226743902e8a895311450e95f74916d28ae38811e08fcc18938c9fa5221012",
+        "snapshot_id": "12a1c150-6a9f-4e8f-80a4-ac72c4d999cc:87bvhc"
+      },
+      "master": {
+        "sheet": "hit_pack/master_sheet_rgba.png",
+        "sheet_width": 2048,
+        "sheet_height": 1024,
+        "cell_width": 512,
+        "cell_height": 512,
+        "extra_padding_px": 15
+      },
+      "runtime_cell_size": {
+        "width": 192,
+        "height": 192
+      },
+      "background_cleanup": "white_key_if_needed",
+      "files": [
+        "hit_pack/master_sheet_rgba.png",
+        "hit_pack/frames/frame_00.png",
+        "hit_pack/frames/frame_01.png",
+        "hit_pack/frames/frame_02.png",
+        "hit_pack/frames/frame_03.png",
+        "hit_pack/frames/frame_04.png",
+        "hit_pack/frames/frame_05.png",
+        "hit_pack/frames/frame_06.png",
+        "hit_pack/frames/frame_07.png",
+        "hit_pack/preview.gif"
+      ],
+      "qc": {
+        "frame_count": "pass",
+        "choreography": "pass (buildup->peak@frame4 with ground-hugging shock ring->dissipate)",
+        "crop": "pass",
+        "bleed": "pass",
+        "background": "pass - re-keyed 2026-10-03 repair #2: true zero-alpha background, no dither dots, soft edges preserved",
+        "identity": "n/a (effect sprites only, no character drawn)",
+        "bans": "pass (no boulders, no elemental magic, no boss-scale FX)"
+      }
+    }
+  ],
+  "qc_notes": [
+    "Preview GIFs are composited over opaque mid-gray (128) rather than transparent: GIF 1-bit transparency dithers the soft dust edges into dotted-square artifacts. Master sheets and per-frame PNGs carry the true transparent RGBA.",
+    "GIF frame duration is 80ms (GIF time quantum rounds 83ms); nominal 12fps preserved.",
+    "Raw contact sheets are kept outside the repo at /tmp/vfx-self/ and /tmp/vfx-hit/; sha256 recorded above."
+  ],
+  "created_at": "2026-10-03T14:01:25+07:00"
+}

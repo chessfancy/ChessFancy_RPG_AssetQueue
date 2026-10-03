@@ -51,5 +51,5 @@
     "segmentation": "component_clusters"
   },
   "notes": "IMPORTANT: first read requests/20261003-1317-gau-rung-special.json. If that dependency is not status=done, SKIP this job and leave status=pending. Once done, use its committed master_sheet_rgba.png and preview.gif as motion/timing references. Produce separate transparent self_vfx and hit_pack outputs plus previews and asset.json. This enemy's visual language is physical mass and earth/dust only: NO life drain, NO magic aura, NO status loop. Keep the hit satisfying but clearly below boss/guardian spectacle.",
-  "status": "pending"
+  "status": "done"
 }
