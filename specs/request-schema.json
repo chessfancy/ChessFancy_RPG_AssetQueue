@@ -1,29 +1,81 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
-  "title": "Hermes → Muse asset request",
+  "title": "ChessFancy RPG asset request",
   "type": "object",
   "required": ["id", "character", "action", "asset_type", "status"],
   "properties": {
-    "id": { "type": "string", "description": "ID duy nhất của yêu cầu, vd: jump-slash-001" },
-    "character": { "type": "string", "description": "Mã nhân vật. Hiện tại: general_forgot" },
-    "action": { "type": "string", "description": "Tên động tác dạng snake_case, vd: jump_overhead_slash" },
-    "action_vi": { "type": "string", "description": "Mô tả động tác bằng tiếng Việt cho người đọc" },
-    "asset_type": { "type": "string", "enum": ["sprite_sheet", "gif_preview", "reference_video"] },
-    "frames": { "type": "integer", "minimum": 1, "description": "Số frame, vd: 16" },
+    "id": { "type": "string", "minLength": 1, "description": "Unique request id; usually matches the request filename stem." },
+    "protocol_version": { "type": "string", "enum": ["1", "2"], "description": "Absent means legacy v1; new multi-worker requests use 2." },
+    "worker": { "type": "string", "enum": ["muse", "chatgpt", "video", "hermes"], "description": "Target worker. Muse v2 consumes only worker=muse after poller migration." },
+    "task_type": { "type": "string", "enum": ["combat_animation", "canonical_reference", "connected_map_set", "prop_pack", "locomotion", "postprocess"], "description": "High-level work type used for routing and QC." },
+    "approval_policy": { "type": "string", "enum": ["enemy_auto", "boss_manual", "guardian_manual"], "description": "Promotion policy; done never implies approval." },
+    "reference_mode": { "type": "string", "enum": ["external_reference_first", "muse_self_reference"], "description": "Whether Muse receives an accepted external identity or creates a candidate identity first." },
+    "character": { "type": "string", "minLength": 1, "description": "Character or asset key, e.g. general_forgot or enemy_clockwork_knight." },
+    "action": { "type": "string", "minLength": 1, "description": "Action key in snake_case, e.g. attack or jump_overhead_slash." },
+    "action_vi": { "type": "string", "description": "Human-readable Vietnamese action summary." },
+    "frames_vi": { "type": "array", "minItems": 1, "items": { "type": "string", "minLength": 1 }, "description": "Ordered choreography beats; normally one intended pose/beat per requested frame." },
+    "facing": { "type": "string", "enum": ["left", "right", "up", "down", "front", "back"], "description": "Source-facing constraint where applicable." },
+    "asset_type": { "type": "string", "enum": ["sprite_sheet", "gif_preview", "reference_video", "reference_image", "map_set", "prop_sheet"] },
+    "frames": { "type": "integer", "minimum": 1, "description": "Requested frame count for animated assets." },
     "grid": {
       "type": "object",
-      "properties": { "cols": { "type": "integer" }, "rows": { "type": "integer" } },
-      "description": "Bố cục lưới cho sprite_sheet"
+      "properties": {
+        "cols": { "type": "integer", "minimum": 1 },
+        "rows": { "type": "integer", "minimum": 1 }
+      },
+      "required": ["cols", "rows"],
+      "description": "Legacy/runtime grid hint. V2 creative layout belongs in generation_layout."
     },
     "cell_size": {
       "type": "object",
-      "properties": { "width": { "type": "integer" }, "height": { "type": "integer" } },
-      "description": "Kích thước mỗi ô sprite (px)"
+      "properties": {
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 }
+      },
+      "required": ["width", "height"],
+      "description": "Legacy delivery cell size; v2 prefers runtime_cell_size."
     },
-    "duration_sec": { "type": "number", "description": "Cho reference_video: độ dài video, vd: 10" },
+    "generation_layout": {
+      "type": "object",
+      "properties": {
+        "cols": { "type": "integer", "minimum": 1 },
+        "rows": { "type": "integer", "minimum": 1 }
+      },
+      "required": ["cols", "rows"],
+      "description": "Compact high-resolution contact-sheet layout used during generation; not the runtime atlas layout."
+    },
+    "runtime_cell_size": {
+      "type": "object",
+      "properties": {
+        "width": { "type": "integer", "minimum": 1 },
+        "height": { "type": "integer", "minimum": 1 }
+      },
+      "required": ["width", "height"],
+      "description": "Final game delivery cell size after high-resolution master processing/downsample."
+    },
+    "reference_images": {
+      "type": "array",
+      "items": { "type": "string", "minLength": 1 },
+      "description": "Repository-relative canonical/style reference paths."
+    },
+    "character_spec_path": { "type": "string", "description": "Repository-relative identity/action brief path." },
+    "style_bible": { "type": "string", "description": "Repository-relative style-bible path when applicable." },
+    "postprocess": {
+      "type": "object",
+      "properties": {
+        "background_mode": { "type": "string", "enum": ["transparent_if_available", "white_key_if_needed", "solid_key_if_needed"] },
+        "extra_padding_px": { "type": "integer", "minimum": 0 },
+        "max_repair_passes": { "type": "integer", "minimum": 0, "maximum": 2 },
+        "segmentation": { "type": "string", "enum": ["connected_components", "component_clusters"] },
+        "export_individual_frames": { "type": "boolean" },
+        "export_preview_gif": { "type": "boolean" }
+      },
+      "description": "Muse/Hermes post-processing contract."
+    },
+    "duration_sec": { "type": "number", "exclusiveMinimum": 0, "description": "For reference_video." },
     "transparent_background": { "type": "boolean", "default": true },
-    "identity_overrides": { "type": "object", "description": "Thay đổi tạm thời so với identity gốc (nếu không có thì dùng specs/character-general-forgot.md)" },
-    "notes": { "type": "string", "description": "Ghi chú thêm cho Muse" },
-    "status": { "type": "string", "enum": ["pending", "done", "failed"], "description": "Hermes đặt pending; Muse đổi thành done khi hoàn thành, failed khi thất bại" }
+    "identity_overrides": { "type": "object", "description": "Explicit temporary identity changes; absence means preserve canonical identity." },
+    "notes": { "type": "string", "description": "Additional worker instructions." },
+    "status": { "type": "string", "enum": ["pending", "done", "failed"], "description": "Requester sets pending; worker changes only this field to done/failed when the work bundle is complete/failed." }
   }
 }
