@@ -1,0 +1,64 @@
+{
+  "id": "20261003-1320-re-cuong-special-vfx-bundle",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "combat_animation",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "external_reference_first",
+  "character": "enemy_re_cuong",
+  "action": "special_vfx_bundle",
+  "action_vi": "VFX đồng bộ cho special Rễ Cuồng: aura tích lực nhỏ trên caster + hit pack bám rễ ở target + status loop hút HP theo thời gian.",
+  "asset_type": "sprite_sheet",
+  "reference_images": [
+    "assets/20261003-1046-re-cuong-reference/canonical_candidate.png"
+  ],
+  "character_spec_path": "references/ch02/re_cuong/identity-brief.md",
+  "style_bible": "style-bibles/chapter02/README.md",
+  "depends_on_request": "20261003-1317-re-cuong-special",
+  "dependency_policy": "skip_until_done",
+  "deliverables": [
+    {
+      "key": "self_vfx",
+      "frames": 6,
+      "fps": 12,
+      "runtime_cell_size": {"width": 128, "height": 128},
+      "anchor": "caster_center",
+      "visual": "Pulse rễ nâu-rêu pha amber/xanh bệnh nhẹ chạy từ thân xuống các rễ trước khi phóng. Tối, hung hãn nhưng vẫn là regular enemy; không aura boss."
+    },
+    {
+      "key": "hit_pack",
+      "frames": 8,
+      "fps": 12,
+      "runtime_cell_size": {"width": 192, "height": 192},
+      "anchor": "target_center",
+      "visual": "2–3 rễ ký sinh chụp/bám quanh mục tiêu, knot/root-seed khóa lại ở peak rồi để lại residue nhỏ. Không gore. Đọc rõ là trạng thái vừa được áp, không phải một cú hút hết ngay."
+    },
+    {
+      "key": "status_loop",
+      "frames": 6,
+      "fps": 8,
+      "runtime_cell_size": {"width": 128, "height": 128},
+      "anchor": "target_center",
+      "visual": "Loop seamless rất nhỏ: tendrils/root-seed còn bám, co nhẹ rồi phát một pulse hút vào trong và trở về đúng pose đầu. Không che target, không tăng kích thước, không boss-scale FX."
+    }
+  ],
+  "timing_hints": {
+    "cast_start_frame": 1,
+    "peak_frame": 4,
+    "effect_spawn_frame": 4,
+    "status_apply_frame": 4,
+    "recover_frame": 6,
+    "status_loop_seamless": true
+  },
+  "generation_contract": {
+    "high_resolution_master": true,
+    "compact_grid_preferred": true,
+    "transparent_output": true,
+    "background_mode": "white_key_if_needed",
+    "extra_padding_px": 15,
+    "max_repair_passes": 2,
+    "segmentation": "component_clusters"
+  },
+  "notes": "IMPORTANT: first read requests/20261003-1317-re-cuong-special.json. If that dependency is not status=done, SKIP this job and leave status=pending. Once done, use its committed master_sheet_rgba.png and preview.gif as motion/color references. Produce separate transparent self_vfx, hit_pack, and seamless status_loop outputs plus previews and asset.json. Gameplay semantics: special APPLIES HP-DRAIN-OVER-TIME; code owns tick timing/damage, while this status_loop is purely visual. Keep palette visually distinct from Mộc Linh: darker moss/root/amber, more parasitic, less warm life-energy.",
+  "status": "pending"
+}
