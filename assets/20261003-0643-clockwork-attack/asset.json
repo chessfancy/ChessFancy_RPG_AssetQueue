@@ -1,0 +1,13 @@
+{
+  "request_id": "20261003-0643-clockwork-attack",
+  "character": "enemy_clockwork_knight",
+  "action": "attack",
+  "files": [
+    "enemy_clockwork_knight_attack.png",
+    "enemy_clockwork_knight_attack_preview.gif",
+    "asset.json"
+  ],
+  "created_at": "2026-10-03T07:38:00+07:00",
+  "request_blob_sha": "7c84562c1020b6db402282d56f1e2e174259b9ee",
+  "notes": "v2 (user review fix): 8 frames individually AI-generated from the canonical reference, each fully self-contained in its cell - no inter-frame bleed. White backgrounds removed via border flood-fill + halo feathering, RGB defringed to nearest solid pixel, speckle noise killed. One global scale factor for stable apparent scale; every sprite centered in its 128x128 cell with >=14px transparent gutters. Sheet: 1024x128 RGBA, 8x1 grid. Preview GIF: 8 frames @ ~8fps."
+}
