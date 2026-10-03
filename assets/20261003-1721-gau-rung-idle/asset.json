@@ -1,0 +1,68 @@
+{
+  "request_id": "20261003-1721-gau-rung-idle",
+  "protocol_version": 2,
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "assets/20261003-1046-gau-rung-reference/canonical_candidate.png",
+  "request_blob_sha": "7ac6956d006d24a49fa8998358e6b6e6583206c9f1f8d13904e4ead1821578f1",
+  "request_commit_sha": "766830bad1dcf6f5f2ff8bba1d5c7269edd5a086",
+  "generation_mode": "single_contact_sheet",
+  "requested_frames": 6,
+  "detected_initial_frames": 6,
+  "repaired_frames": [],
+  "repair_passes_used": 0,
+  "generation_layout": {
+    "cols": 3,
+    "rows": 2
+  },
+  "raw_generation": {
+    "width": 1920,
+    "height": 1280,
+    "sha256": "372358babd2dcf5201ad6fed683e83702b334fce8c0e3bb7cbc9af9c0d181c1c",
+    "snapshot_id": "8b8ed752-4bc0-4584-bf8d-da20f6e16e66:h5adnu",
+    "note": "kept uncommitted in ~/workspace/hermes/gau_rung_work/ only; master/frames are committed"
+  },
+  "master": {
+    "sheet": "master_sheet_rgba.png",
+    "cell_width": 604,
+    "cell_height": 612,
+    "extra_padding_px": 15
+  },
+  "runtime_cell_size": {
+    "width": 128,
+    "height": 128
+  },
+  "background_cleanup": "white_key_if_needed",
+  "segmentation": "component_clusters",
+  "bleed_check_px": {
+    "frame_00": 0,
+    "frame_01": 0,
+    "frame_02": 0,
+    "frame_03": 0,
+    "frame_04": 0,
+    "frame_05": 0
+  },
+  "files": [
+    "master_sheet_rgba.png",
+    "preview.gif",
+    "frames/frame_00.png",
+    "frames/frame_01.png",
+    "frames/frame_02.png",
+    "frames/frame_03.png",
+    "frames/frame_04.png",
+    "frames/frame_05.png",
+    "asset.json"
+  ],
+  "qc": {
+    "frame_count": "pass",
+    "identity": "pass",
+    "choreography": "pass",
+    "facing": "pass",
+    "crop": "pass",
+    "bleed": "pass",
+    "background": "pass",
+    "master": "pass"
+  },
+  "created_at": "2026-10-03T17:36:18.292053+07:00"
+}
