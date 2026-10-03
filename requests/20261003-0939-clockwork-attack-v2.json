@@ -1,0 +1,44 @@
+{
+  "id": "20261003-0939-clockwork-attack-v2",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "combat_animation",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "external_reference_first",
+  "character": "enemy_clockwork_knight",
+  "action": "attack_v2",
+  "action_vi": "Mã Đồng Hồ thực hiện đòn đánh thường bằng cơ cấu lên cót: nén lực, bật/lao ngắn về phía trước, tạo pose va chạm rõ ràng rồi hồi về tư thế chiến đấu.",
+  "frames": 8,
+  "frames_vi": [
+    "Frame 0 — ready: đứng chắc trên bốn chân, toàn thân nhìn sang phải, silhouette sạch, cùng identity canonical.",
+    "Frame 1 — wind-up: cơ cấu lên cót hoạt động, thân hạ nhẹ và dồn trọng tâm về sau, chân trước bắt đầu giảm tải.",
+    "Frame 2 — compression: các khớp/bánh răng nén lực rõ hơn, thân co lại chuẩn bị bật, đầu và giáp vẫn giữ đúng thiết kế.",
+    "Frame 3 — launch: bật/lao ngắn mạnh về phía trước bằng lực cơ khí, action khác rõ idle nhưng toàn thân và wind-up key vẫn trong frame.",
+    "Frame 4 — contact: pose đòn chính rõ nhất, chân/giáp trước hướng tới mục tiêu; đọc được khoảnh khắc impact nhưng không cần scenery/UI.",
+    "Frame 5 — follow-through: thân tiếp tục theo quán tính sau impact, giữ facing right và không morph chi tiết clockwork.",
+    "Frame 6 — recovery: thu chân, hạ thân về cân bằng và giảm chuyển động, chuẩn bị trở lại ready.",
+    "Frame 7 — return: gần trở về ready, scale/baseline/identity khớp frame 0 để loop/recover tự nhiên."
+  ],
+  "facing": "right",
+  "asset_type": "sprite_sheet",
+  "grid": { "cols": 8, "rows": 1 },
+  "cell_size": { "width": 128, "height": 128 },
+  "generation_layout": { "cols": 4, "rows": 2 },
+  "runtime_cell_size": { "width": 128, "height": 128 },
+  "reference_images": [
+    "references/existing/enemy_clockwork_knight/canonical.png"
+  ],
+  "character_spec_path": "references/existing/enemy_clockwork_knight/attack-brief.md",
+  "style_bible": "style-bibles/chapter02/README.md",
+  "postprocess": {
+    "background_mode": "white_key_if_needed",
+    "extra_padding_px": 15,
+    "max_repair_passes": 2,
+    "segmentation": "component_clusters",
+    "export_individual_frames": true,
+    "export_preview_gif": true
+  },
+  "transparent_background": true,
+  "notes": "V2 PRODUCTION SMOKE. REFERENCE-FIRST. Generate ONE high-resolution 4x2 contact sheet, not an 8x1 creative sheet and not direct 128x128 frames. Use strict logical cells, wide gutters, no touching/overlap/crop, full body visible. Simple white background is acceptable if alpha is unreliable. Then key/remove background, detect/extract actual pose groups with connected components/component clusters (do not trust rigid equal-grid cutting), preserve detached semantic parts such as tail/key, remove neighboring-pose bleed, and repack with at least 15px working padding per side. If poses are missing/bad, preserve good poses and repair only missing/bad poses; maximum 2 repair passes. Deliver high-resolution RGBA master sheet, individual high-resolution frames, preview GIF and asset.json provenance/QC. Hermes will later build the 128x128 runtime row; do not creatively generate at runtime resolution. Preserve exact brass + walnut + teal-patina identity, clock-face chest, helmet, gears, wind-up key, horse head and proportions from canonical reference.",
+  "status": "pending"
+}
