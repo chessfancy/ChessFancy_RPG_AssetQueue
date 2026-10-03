@@ -1,0 +1,25 @@
+{
+  "job_id": "20261003-1046-gau-rung-reference",
+  "result_commit_sha": "a01c9c99fabc121ae15d73f883f8069a98e676c8",
+  "approval_policy": "enemy_auto",
+  "reviewed_by": "chatgpt",
+  "visual_qc": "pass",
+  "bundle_qc": "pass",
+  "promotion_state": "canonical_ready",
+  "measurements": {
+    "image_size": {"width": 1600, "height": 1600},
+    "meaningful_subject_margin_px_at_alpha_128": {"left": 207, "top": 197, "right": 201, "bottom": 184}
+  },
+  "checks": {
+    "identity_matches_brief": "pass",
+    "right_facing_battle_silhouette": "pass",
+    "full_body_visible": "pass",
+    "chapter02_forest_language": "pass",
+    "distinct_from_other_enemy_identities": "pass",
+    "rgba_output": "pass"
+  },
+  "minor_findings": [
+    "White-key feathering leaves sparse low-alpha fringe/noise in the canvas; this is not visually significant and should be cleaned during canonical packaging/animation extraction rather than rejecting the identity."
+  ],
+  "decision": "PASS. Under enemy_auto this identity may be locked as the canonical source for animation production."
+}
