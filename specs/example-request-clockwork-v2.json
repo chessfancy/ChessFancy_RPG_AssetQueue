@@ -1,0 +1,43 @@
+{
+  "id": "clockwork-attack-v2-example",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "combat_animation",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "external_reference_first",
+  "character": "enemy_clockwork_knight",
+  "action": "attack",
+  "action_vi": "Mã Đồng Hồ lên cót, nén lực cơ khí, lao ngắn và tung đòn va chạm rõ ràng rồi hồi về tư thế chiến đấu.",
+  "frames": 8,
+  "frames_vi": [
+    "Tư thế sẵn sàng, bốn chân trụ chắc, nhìn sang phải.",
+    "Lên cót cơ khí; thân hơi hạ, trọng tâm dồn về sau.",
+    "Nén lực qua các bánh răng; chân trước chuẩn bị bật, silhouette co lại.",
+    "Bật/lao ngắn về phía trước bằng lực cơ khí, toàn thân rời tư thế idle.",
+    "Pose chạm đòn chính: chân trước/giáp trước hướng tới mục tiêu, impact đọc rõ.",
+    "Follow-through sau va chạm, thân tiếp tục tiến nhưng vẫn giữ identity và hướng phải.",
+    "Thu chân và hạ thân về trạng thái cân bằng, chuẩn bị hồi vị.",
+    "Trở về gần tư thế sẵn sàng, cùng baseline và scale với frame đầu."
+  ],
+  "facing": "right",
+  "asset_type": "sprite_sheet",
+  "grid": { "cols": 8, "rows": 1 },
+  "cell_size": { "width": 128, "height": 128 },
+  "generation_layout": { "cols": 4, "rows": 2 },
+  "runtime_cell_size": { "width": 128, "height": 128 },
+  "reference_images": [
+    "references/existing/enemy_clockwork_knight/canonical.png"
+  ],
+  "character_spec_path": "references/existing/enemy_clockwork_knight/attack-brief.md",
+  "postprocess": {
+    "background_mode": "white_key_if_needed",
+    "extra_padding_px": 15,
+    "max_repair_passes": 2,
+    "segmentation": "component_clusters",
+    "export_individual_frames": true,
+    "export_preview_gif": true
+  },
+  "transparent_background": true,
+  "notes": "Generate one high-resolution 4x2 contact sheet first. Use strict isolated cells with wide gutters; no touching, overlap or crop. Preserve the exact canonical Clockwork Knight identity. Do not generate directly at 128x128; keep a high-resolution master, extract/clean/repack poses, then let Hermes build the 128x128 runtime row.",
+  "status": "pending"
+}
