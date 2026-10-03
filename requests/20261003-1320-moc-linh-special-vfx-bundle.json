@@ -51,5 +51,5 @@
     "segmentation": "component_clusters"
   },
   "notes": "IMPORTANT: first read requests/20261003-1317-moc-linh-special.json. If that dependency is not status=done, SKIP this job and leave status=pending. Once done, use its committed master_sheet_rgba.png and preview.gif as motion/color references in addition to the canonical reference. Produce separate transparent self_vfx and hit_pack outputs plus preview GIFs and asset.json. This is ONE-TIME HP DRAIN art only; no lingering/status-loop asset. Keep VFX below boss/guardian intensity.",
-  "status": "pending"
+  "status": "done"
 }

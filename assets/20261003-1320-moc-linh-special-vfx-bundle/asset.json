@@ -1,0 +1,133 @@
+{
+  "request_id": "20261003-1320-moc-linh-special-vfx-bundle",
+  "protocol_version": 2,
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "assets/20261003-1046-moc-linh-reference/canonical_candidate.png",
+  "character": "enemy_moc_linh",
+  "action": "special_vfx_bundle",
+  "request_blob_sha": "deb426db05f66a3a9534a93dc557907e08b5c798bb44780795f9d0316d4a8c26",
+  "request_commit_sha": "30d5137bc15c7a0a36333b8440e9c584f7316590",
+  "dependency_request": "20261003-1317-moc-linh-special",
+  "dependency_status_at_start": "done",
+  "generation_mode": "single_contact_sheet_per_deliverable",
+  "repaired_frames": [
+    "self_vfx: full re-key from raw (74feb273) with noise-floor-gated white un-premultiply; removed uniform alpha haze (~10-50) across frame backgrounds",
+    "hit_pack: full re-key from raw (135f85b9); removed dither-dot artifacts baked by prior keying pass; frame_07 kept intentionally blank (clean end)"
+  ],
+  "repair_passes_used": 1,
+  "created_at": "2026-10-03T14:03:54+07:00",
+  "background_cleanup": "white_key_if_needed",
+  "deliverables": [
+    {
+      "key": "self_vfx",
+      "visual": "soft warm green-amber life aura rising, centered, airy/translucent, transparent margin rim (0.8 fit factor); modest regular-enemy intensity",
+      "requested_frames": 6,
+      "fps": 12,
+      "anchor": "caster_center",
+      "runtime_cell_size": {
+        "width": 128,
+        "height": 128
+      },
+      "generation_layout": {
+        "cols": 3,
+        "rows": 2
+      },
+      "raw_generation": {
+        "width": 1920,
+        "height": 1280,
+        "sha256": "74feb273c6d2d5ef88576c549c108c730a06274b697a2360ff12b78afb186da1",
+        "snapshot_id": "d8c99ada-1ffb-4857-a6aa-ba5825e1511d:lvh7ue",
+        "note": "kept uncommitted in /tmp only; master/frames are committed"
+      },
+      "master": {
+        "sheet": "self_vfx/master_sheet_rgba.png",
+        "sheet_width": 1536,
+        "sheet_height": 1024,
+        "cell_width": 512,
+        "cell_height": 512,
+        "extra_padding_px": 15
+      },
+      "scale_to_canvas": 0.6919,
+      "background_cleanup": "white_key_if_needed",
+      "keying_method": "alpha=255-min(r,g,b) (soft, no hard threshold); color lifted so brightest channel hits 255 (preserves light hue; classical un-premultiply turned warm glow pixels dark olive); white-hot cores (min>240) embedded in strong glow keep smooth box-blurred local alpha instead of keying to holes",
+      "files": [
+        "self_vfx/master_sheet_rgba.png",
+        "self_vfx/preview.gif",
+        "self_vfx/frames/frame_00.png",
+        "self_vfx/frames/frame_01.png",
+        "self_vfx/frames/frame_02.png",
+        "self_vfx/frames/frame_03.png",
+        "self_vfx/frames/frame_04.png",
+        "self_vfx/frames/frame_05.png"
+      ],
+      "qc": {
+        "frame_count": "pass - 6/6",
+        "choreography": "pass - faint wisp (f1) -> intensifying (f2-f3) -> peak (f4) -> fast fade (f5-f6)",
+        "crop": "pass - soft diffuse wash; no discrete shape cropped (wash reaches guard, noted)",
+        "bleed": "pass - nominal 3x2 grid, 24px bleed guard from cell boundaries",
+        "background": "pass - re-keyed 2026-10-03 repair: true zero-alpha background, no haze, no dither dots, soft edges preserved",
+        "master": "pass - 1536x1024 RGBA",
+        "timing": "pass - preview.gif 6 frames @ ~12fps (80ms/frame, GIF 10ms granularity)",
+        "preview": "rebuilt on opaque mid-gray (GIF 1-bit transparency dithers soft VFX edges)"
+      }
+    },
+    {
+      "key": "hit_pack",
+      "visual": "one-time HP-drain pulse: green-gold ring/droplets contract to a single point (peak f4), single light stream flows upper-right (f5-f7), nothing left (f8)",
+      "requested_frames": 8,
+      "fps": 12,
+      "anchor": "target_center",
+      "runtime_cell_size": {
+        "width": 192,
+        "height": 192
+      },
+      "generation_layout": {
+        "cols": 4,
+        "rows": 2
+      },
+      "raw_generation": {
+        "width": 2240,
+        "height": 1120,
+        "sha256": "135f85b97bce59cf8f00bdce46025ba951f362c1cd6740260471219e5c82d36e",
+        "snapshot_id": "5765e0c5-247d-44ca-8dd0-52008aa83c00:nzdcia",
+        "note": "kept uncommitted in /tmp only; master/frames are committed"
+      },
+      "master": {
+        "sheet": "hit_pack/master_sheet_rgba.png",
+        "sheet_width": 2048,
+        "sheet_height": 1024,
+        "cell_width": 512,
+        "cell_height": 512,
+        "extra_padding_px": 15
+      },
+      "scale_to_canvas": 0.8982,
+      "background_cleanup": "white_key_if_needed",
+      "keying_method": "alpha=255-min(r,g,b) (soft, no hard threshold); color lifted so brightest channel hits 255 (preserves light hue; classical un-premultiply turned warm glow pixels dark olive); white-hot cores (min>240) embedded in strong glow keep smooth box-blurred local alpha instead of keying to holes",
+      "files": [
+        "hit_pack/master_sheet_rgba.png",
+        "hit_pack/preview.gif",
+        "hit_pack/frames/frame_00.png",
+        "hit_pack/frames/frame_01.png",
+        "hit_pack/frames/frame_02.png",
+        "hit_pack/frames/frame_03.png",
+        "hit_pack/frames/frame_04.png",
+        "hit_pack/frames/frame_05.png",
+        "hit_pack/frames/frame_06.png",
+        "hit_pack/frames/frame_07.png"
+      ],
+      "qc": {
+        "frame_count": "pass - 8/8 (frame_07 intentionally blank = clean end)",
+        "choreography": "pass - ring+droplets contract (f1-f4, peak f4) -> single stream flows upper-right (f5-f7) -> clean empty end (f8); exactly one pulse, no tether",
+        "crop": "note - stream head exits the top-right cell corner in f5-f7 (intended directional flow; soft wisp, reads as flowing away, not a hard crop)",
+        "bleed": "pass - black grid borders detected and excluded; per-cell keying so borders never leak into alpha",
+        "background": "pass - re-keyed 2026-10-03 repair: true zero-alpha background, no haze, no dither dots, soft edges preserved",
+        "master": "pass - 2048x1024 RGBA",
+        "timing": "pass - preview.gif 8 frames @ ~12fps (80ms/frame, GIF 10ms granularity)",
+        "preview": "rebuilt on opaque mid-gray (GIF 1-bit transparency dithers soft VFX edges)"
+      }
+    }
+  ],
+  "processing_notes": "Keying iterated in post (no generation repair passes used): v1 classical un-premultiply produced dark-olive smudge artifacts on dark backgrounds and white-hot core holes; v2 binary-dilation core fill created opaque white rims and border-bleed frames; v3 (final) per-cell keying + hue-preserving lift + blur-based core fill verified clean on dark-bg composites. Normalization: tight bbox + 15px padding, one common scale per deliverable (0.8 fit factor => transparent margin rim), 512px square canvas, no stretch."
+}
