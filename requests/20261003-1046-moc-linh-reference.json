@@ -1,0 +1,31 @@
+{
+  "id": "20261003-1046-moc-linh-reference",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "canonical_reference",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "muse_self_reference",
+  "character": "enemy_moc_linh",
+  "action": "canonical_reference",
+  "action_vi": "Tạo canonical battle reference cho Mộc Linh, quái thường Chapter 2.",
+  "facing": "right",
+  "asset_type": "reference_image",
+  "reference_images": [
+    "references/style/ch02/enemy_pawn_wall_style.png",
+    "references/style/ch02/enemy_knight_wild_style.png",
+    "references/style/ch02/environment.png"
+  ],
+  "character_spec_path": "references/ch02/moc_linh/identity-brief.md",
+  "style_bible": "style-bibles/chapter02/README.md",
+  "postprocess": {
+    "background_mode": "white_key_if_needed",
+    "extra_padding_px": 15,
+    "max_repair_passes": 2,
+    "segmentation": "connected_components",
+    "export_individual_frames": false,
+    "export_preview_gif": false
+  },
+  "transparent_background": true,
+  "notes": "SELF-REFERENCE STAGE ONLY. Create one strong high-resolution isolated canonical candidate for this regular enemy; do not generate animation rows in this job. Use the style images only for chapter/render language, never copy their identity. Full body visible, clear RIGHT-facing battle silhouette, generous safety margin, no ground/scenery/text/UI/watermark. White background is acceptable during generation if needed, but deliver an RGBA transparent canonical_candidate.png plus asset.json. Under enemy_auto, Muse may mark identity QC pass if the result satisfies the brief, but status=done still means candidate bundle complete, not production promotion.",
+  "status": "pending"
+}
