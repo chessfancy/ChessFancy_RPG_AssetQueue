@@ -1,0 +1,10 @@
+{
+  "character": "enemy_gau_rung",
+  "status": "locked",
+  "approval_policy": "enemy_auto",
+  "source_job": "20261003-1046-gau-rung-reference",
+  "source_commit_sha": "a01c9c99fabc121ae15d73f883f8069a98e676c8",
+  "image_path": "assets/20261003-1046-gau-rung-reference/canonical_candidate.png",
+  "image_sha256": "f10ad5211627478862098e2e8193982c034214215264dc89f6eed8f7bf2f7e3e",
+  "review_path": "reviews/20261003-1046-gau-rung-reference.json"
+}
