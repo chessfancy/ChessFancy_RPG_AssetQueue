@@ -32,5 +32,5 @@
   "postprocess": {"background_mode": "white_key_if_needed", "extra_padding_px": 15, "max_repair_passes": 2, "segmentation": "component_clusters", "export_individual_frames": true, "export_preview_gif": true},
   "transparent_background": true,
   "notes": "Canonical lock: references/canonical/chapter02/enemy_moc_linh/canonical.json. Generate ONE high-resolution 4x2 contact sheet, preserve the approved warm living-wood-spirit identity exactly, then segment/de-bleed/repack at high resolution. Keep the attack compact and readable; do not morph it into Rễ Cuồng. Preview GIF should match 12 fps. Hermes will build final 128x128 runtime cells after QC.",
-  "status": "pending"
+  "status": "done"
 }
