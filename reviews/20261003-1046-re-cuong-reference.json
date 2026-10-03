@@ -1,0 +1,26 @@
+{
+  "job_id": "20261003-1046-re-cuong-reference",
+  "result_commit_sha": "a01c9c99fabc121ae15d73f883f8069a98e676c8",
+  "approval_policy": "enemy_auto",
+  "reviewed_by": "chatgpt",
+  "visual_qc": "pass",
+  "bundle_qc": "pass",
+  "promotion_state": "canonical_ready",
+  "measurements": {
+    "image_size": {"width": 1600, "height": 1600},
+    "meaningful_subject_margin_px_at_alpha_128": {"left": 101, "top": 93, "right": 80, "bottom": 81}
+  },
+  "checks": {
+    "identity_matches_brief": "pass",
+    "clear_attack_direction": "pass",
+    "full_root_mass_visible": "pass",
+    "more_aggressive_than_moc_linh": "pass",
+    "distinct_from_moc_linh": "pass",
+    "rgba_output": "pass"
+  },
+  "minor_findings": [
+    "This identity is deliberately more imposing and detailed than Mộc Linh; keep its runtime scale and later FX restrained so it continues to read as a regular enemy below Xương Cuồng / Mộc Tinh.",
+    "White-key feathering leaves sparse low-alpha fringe/noise in the canvas; clean it during canonical packaging/animation extraction without flattening anti-aliased edges."
+  ],
+  "decision": "PASS. Under enemy_auto this identity may be locked as the canonical source for animation production."
+}
