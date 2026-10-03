@@ -1,0 +1,214 @@
+{
+  "request_id": "20261003-1320-re-cuong-special-vfx-bundle",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "assets/20261003-1046-re-cuong-reference/canonical_candidate.png",
+  "dependency_reference": "assets/20261003-1317-re-cuong-special/master_sheet_rgba.png",
+  "request_blob_sha": "8b336d513f6202441653d430da662e374119fe4ca2e5630351c18af5acb4bc7b",
+  "request_commit_sha": "30d5137bc15c7a0a36333b8440e9c584f7316590",
+  "generation_mode": "single_contact_sheet_per_deliverable",
+  "requested_frames": 20,
+  "detected_initial_frames": 20,
+  "repaired_frames": [
+    "hit_pack: all 8 cells regenerated in repair pass 1 (v1 sheet had thick root branches cropped at the top image border in frames 1-3)",
+    "self_vfx: coordinator re-key from raw with noise-floor-gated white un-premultiply (removed dither-dot grid artifacts in background regions); 28px edge feather; previews rebuilt on mid-gray",
+    "hit_pack: coordinator re-key from raw with noise-floor-gated white un-premultiply (removed dither-dot grid artifacts in background regions); 28px edge feather; previews rebuilt on mid-gray",
+    "status_loop: coordinator re-key from raw with noise-floor-gated white un-premultiply (removed dither-dot grid artifacts in background regions); 28px edge feather; previews rebuilt on mid-gray"
+  ],
+  "repair_passes_used": 2,
+  "background_cleanup": "white_key_if_needed",
+  "deliverables": [
+    {
+      "key": "self_vfx",
+      "requested_frames": 6,
+      "fps": 12,
+      "anchor": "caster_center",
+      "runtime_cell_size": {
+        "width": 128,
+        "height": 128
+      },
+      "generation_layout": {
+        "cols": 3,
+        "rows": 2
+      },
+      "raw_generation": {
+        "width": 1920,
+        "height": 1280,
+        "sha256": "552b5298d368fbe863e06f11606f58730d720c1a602304d10526617b2b8cb089",
+        "snapshot_id": "0e98a1e0-f5cb-461b-91b6-09f8ce12f745:qygfjn"
+      },
+      "repair_pass_used": false,
+      "master": {
+        "sheet": "self_vfx/master_sheet_rgba.png",
+        "width": 1536,
+        "height": 1024,
+        "cell_size": 512,
+        "extra_padding_px": 15,
+        "global_scale": 0.7508
+      },
+      "background_cleanup": "white_key_if_needed",
+      "border_touching_raw_cells": [
+        2,
+        3
+      ],
+      "files": [
+        "self_vfx/master_sheet_rgba.png",
+        "self_vfx/preview.gif",
+        "self_vfx/frames/frame_00.png",
+        "self_vfx/frames/frame_01.png",
+        "self_vfx/frames/frame_02.png",
+        "self_vfx/frames/frame_03.png",
+        "self_vfx/frames/frame_04.png",
+        "self_vfx/frames/frame_05.png"
+      ],
+      "qc": {
+        "frame_count": "pass",
+        "choreography": "pass",
+        "crop": "pass_with_note",
+        "bleed": "pass",
+        "background": "pass - re-keyed 2026-10-03 repair #2: true zero-alpha background, no dither dots, soft edges preserved"
+      }
+    },
+    {
+      "key": "hit_pack",
+      "requested_frames": 8,
+      "fps": 12,
+      "anchor": "target_center",
+      "runtime_cell_size": {
+        "width": 192,
+        "height": 192
+      },
+      "generation_layout": {
+        "cols": 4,
+        "rows": 2
+      },
+      "raw_generation": {
+        "width": 2240,
+        "height": 1120,
+        "sha256": "ffcbf9fa35ec06fc5f819a25dfe95acacca82e52b93d3eb43bbb8c50b67042f5",
+        "snapshot_id": "0d9b7527-1144-49b2-98f4-1cbca92e5c85:dnwyzn"
+      },
+      "repair_pass_used": true,
+      "master": {
+        "sheet": "hit_pack/master_sheet_rgba.png",
+        "width": 2048,
+        "height": 1024,
+        "cell_size": 512,
+        "extra_padding_px": 15,
+        "global_scale": 0.9737
+      },
+      "background_cleanup": "white_key_if_needed",
+      "border_touching_raw_cells": [],
+      "files": [
+        "hit_pack/master_sheet_rgba.png",
+        "hit_pack/preview.gif",
+        "hit_pack/frames/frame_00.png",
+        "hit_pack/frames/frame_01.png",
+        "hit_pack/frames/frame_02.png",
+        "hit_pack/frames/frame_03.png",
+        "hit_pack/frames/frame_04.png",
+        "hit_pack/frames/frame_05.png",
+        "hit_pack/frames/frame_06.png",
+        "hit_pack/frames/frame_07.png"
+      ],
+      "qc": {
+        "frame_count": "pass",
+        "choreography": "pass",
+        "crop": "pass",
+        "bleed": "pass",
+        "background": "pass - re-keyed 2026-10-03 repair #2: true zero-alpha background, no dither dots, soft edges preserved"
+      }
+    },
+    {
+      "key": "status_loop",
+      "requested_frames": 6,
+      "fps": 8,
+      "anchor": "target_center",
+      "runtime_cell_size": {
+        "width": 128,
+        "height": 128
+      },
+      "generation_layout": {
+        "cols": 3,
+        "rows": 2
+      },
+      "raw_generation": {
+        "width": 1920,
+        "height": 1280,
+        "sha256": "539ae288585943ace1ae7eee4d8482179ffbd3d0b92f1818d57cbec3c8c6ab7a",
+        "snapshot_id": "19ad9c61-d72c-40a0-8d7a-48f1d4659ae8:vcsr7k"
+      },
+      "repair_pass_used": false,
+      "master": {
+        "sheet": "status_loop/master_sheet_rgba.png",
+        "width": 1536,
+        "height": 1024,
+        "cell_size": 512,
+        "extra_padding_px": 15,
+        "global_scale": 1.1727
+      },
+      "background_cleanup": "white_key_if_needed",
+      "border_touching_raw_cells": [],
+      "files": [
+        "status_loop/master_sheet_rgba.png",
+        "status_loop/preview.gif",
+        "status_loop/frames/frame_00.png",
+        "status_loop/frames/frame_01.png",
+        "status_loop/frames/frame_02.png",
+        "status_loop/frames/frame_03.png",
+        "status_loop/frames/frame_04.png",
+        "status_loop/frames/frame_05.png"
+      ],
+      "qc": {
+        "frame_count": "pass",
+        "choreography": "pass",
+        "crop": "pass",
+        "bleed": "pass",
+        "background": "pass - re-keyed 2026-10-03 repair #2: true zero-alpha background, no dither dots, soft edges preserved"
+      }
+    }
+  ],
+  "files": [
+    "asset.json",
+    "self_vfx/master_sheet_rgba.png",
+    "self_vfx/preview.gif",
+    "self_vfx/frames/frame_00.png",
+    "self_vfx/frames/frame_01.png",
+    "self_vfx/frames/frame_02.png",
+    "self_vfx/frames/frame_03.png",
+    "self_vfx/frames/frame_04.png",
+    "self_vfx/frames/frame_05.png",
+    "hit_pack/master_sheet_rgba.png",
+    "hit_pack/preview.gif",
+    "hit_pack/frames/frame_00.png",
+    "hit_pack/frames/frame_01.png",
+    "hit_pack/frames/frame_02.png",
+    "hit_pack/frames/frame_03.png",
+    "hit_pack/frames/frame_04.png",
+    "hit_pack/frames/frame_05.png",
+    "hit_pack/frames/frame_06.png",
+    "hit_pack/frames/frame_07.png",
+    "status_loop/master_sheet_rgba.png",
+    "status_loop/preview.gif",
+    "status_loop/frames/frame_00.png",
+    "status_loop/frames/frame_01.png",
+    "status_loop/frames/frame_02.png",
+    "status_loop/frames/frame_03.png",
+    "status_loop/frames/frame_04.png",
+    "status_loop/frames/frame_05.png"
+  ],
+  "qc": {
+    "frame_counts": "pass (6/8/6)",
+    "self_vfx_choreography": "pass (downward root pulse, intensify 1-3, peak 4, settle 5-6)",
+    "hit_pack_choreography": "pass (roots latch 1-3, knot locks 4, tighten 5-7, residue 8)",
+    "status_loop_seamless": "pass (frame_05 is an exact copy of frame_00)",
+    "palette_distinct_from_moc_linh": "pass (dark umber/moss/amber, parasitic, no warm life-energy greens)",
+    "no_true_effect_crop": "pass_with_note (self_vfx raw frames 3-4 have small glowing ember tips touching the raw sheet edge; tips are complete glowing ends, no semantic loss; all final sprites carry >=15px padding)",
+    "no_neighboring_bleed": "pass",
+    "transparent_background": "pass (white keyed via un-premultiply, antialiased edges preserved)",
+    "preview_timings": "pass (12fps self_vfx/hit_pack, 8fps status_loop; exact frame counts)"
+  },
+  "created_at": "2026-10-03T13:59:43+07:00"
+}

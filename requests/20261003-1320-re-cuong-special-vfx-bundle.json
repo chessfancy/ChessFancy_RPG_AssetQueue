@@ -60,5 +60,5 @@
     "segmentation": "component_clusters"
   },
   "notes": "IMPORTANT: first read requests/20261003-1317-re-cuong-special.json. If that dependency is not status=done, SKIP this job and leave status=pending. Once done, use its committed master_sheet_rgba.png and preview.gif as motion/color references. Produce separate transparent self_vfx, hit_pack, and seamless status_loop outputs plus previews and asset.json. Gameplay semantics: special APPLIES HP-DRAIN-OVER-TIME; code owns tick timing/damage, while this status_loop is purely visual. Keep palette visually distinct from Mộc Linh: darker moss/root/amber, more parasitic, less warm life-energy.",
-  "status": "pending"
+  "status": "done"
 }
