@@ -1,0 +1,13 @@
+{
+  "id": "20261003-0643-clockwork-attack",
+  "character": "enemy_clockwork_knight",
+  "action": "attack",
+  "action_vi": "Mã Đồng Hồ thực hiện đòn đánh thường: lên cót cơ khí, lao ngắn bằng lực bánh răng, tạo tư thế chạm đòn rõ ràng rồi hồi về tư thế chiến đấu",
+  "asset_type": "sprite_sheet",
+  "frames": 8,
+  "grid": { "cols": 8, "rows": 1 },
+  "cell_size": { "width": 128, "height": 128 },
+  "transparent_background": true,
+  "notes": "REFERENCE-FIRST. Canonical identity: references/existing/enemy_clockwork_knight/canonical.png. Action brief: references/existing/enemy_clockwork_knight/attack-brief.md. Preserve exact brass + walnut + teal-patina identity, clock-face chest, helmet, gears, wind-up key, horse head and proportions. Source faces RIGHT throughout. Full body and important moving parts must stay inside every frame; stable apparent scale and feet/root baseline. No redesign, text, UI, watermark or scenery.",
+  "status": "pending"
+}
