@@ -32,5 +32,5 @@
   "postprocess": {"background_mode": "white_key_if_needed", "extra_padding_px": 15, "max_repair_passes": 2, "segmentation": "component_clusters", "export_individual_frames": true, "export_preview_gif": true},
   "transparent_background": true,
   "notes": "Canonical lock: references/canonical/chapter02/enemy_gau_rung/canonical.json. This is a physical heavy slam/maul special for a regular enemy: weight and impact, no life drain, no elemental magic, no boss-scale FX. Preserve sturdy forest-bear proportions and full silhouette. Generate ONE high-resolution 4x2 contact sheet, then segment/de-bleed/repack. Preview GIF must match 12 fps. Hermes will build runtime cells after QC.",
-  "status": "pending"
+  "status": "done"
 }
