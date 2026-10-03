@@ -1,0 +1,71 @@
+{
+  "request_id": "20261003-1721-moc-linh-idle",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "assets/20261003-1046-moc-linh-reference/canonical_candidate.png",
+  "request_blob_sha": "117ac4272742679fd9880ae6d5ce77ee84e80901",
+  "request_commit_sha": "04a7d32ca41c5b35e615ff9e9876aa91918181b6",
+  "generation_mode": "single_contact_sheet",
+  "requested_frames": 6,
+  "detected_initial_frames": 6,
+  "repaired_frames": [],
+  "repair_passes_used": 0,
+  "generation_layout": {
+    "cols": 6,
+    "rows": 1
+  },
+  "raw_generation": {
+    "width": 3840,
+    "height": 640,
+    "sha256": "75552f05b2eb3f609f571a6631ed0c0381ef0ee44c614656c8444ab18cf316d5",
+    "snapshot_id": "64c0b676-22ca-4e2e-9e1c-6b28b09156de:w7s32y",
+    "note": "kept uncommitted in working dir (large)"
+  },
+  "master": {
+    "sheet": "master_sheet_rgba.png",
+    "cell_width": 542,
+    "cell_height": 628,
+    "extra_padding_px": 15
+  },
+  "runtime_cell_size": {
+    "width": 128,
+    "height": 128
+  },
+  "background_cleanup": "white_key_if_needed",
+  "segmentation": "component_clusters",
+  "bleed_removed_px": {
+    "method": "per_label_mask",
+    "foreign_pixels_zeroed": {
+      "frame_00": 10,
+      "frame_01": 7,
+      "frame_02": 6,
+      "frame_03": 1,
+      "frame_04": 1,
+      "frame_05": 2
+    }
+  },
+  "files": [
+    "master_sheet_rgba.png",
+    "preview.gif",
+    "asset.json",
+    "frames/frame_00.png",
+    "frames/frame_01.png",
+    "frames/frame_02.png",
+    "frames/frame_03.png",
+    "frames/frame_04.png",
+    "frames/frame_05.png"
+  ],
+  "qc": {
+    "frame_count": "pass",
+    "identity": "pass",
+    "choreography": "pass",
+    "facing": "pass",
+    "crop": "pass",
+    "bleed": "pass",
+    "background": "pass",
+    "master": "pass"
+  },
+  "created_at": "2026-10-03T17:39:27.315616+07:00"
+}
