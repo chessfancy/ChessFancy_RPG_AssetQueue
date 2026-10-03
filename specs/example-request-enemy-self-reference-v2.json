@@ -1,0 +1,22 @@
+{
+  "id": "example-moc-linh-reference-v2",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "canonical_reference",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "muse_self_reference",
+  "character": "enemy_moc_linh",
+  "action": "create_canonical_reference",
+  "action_vi": "Tạo canonical reference cho Mộc Linh: linh thể gỗ/rễ/lá nhỏ, chibi JRPG, thân thiện với game trẻ em, thuộc biome cao nguyên Chapter 2.",
+  "asset_type": "reference_image",
+  "reference_images": [
+    "references/style/ch02/enemy_pawn_wall_style.png",
+    "references/style/ch02/enemy_knight_wild_style.png",
+    "references/style/ch02/environment.png"
+  ],
+  "character_spec_path": "references/ch02/moc_linh/identity-brief.md",
+  "style_bible": "style-bibles/chapter02/README.md",
+  "transparent_background": true,
+  "notes": "Style references guide rendering language only; do not copy their identity/costume/anatomy. Produce a clean full-body canonical candidate with generous margins. Because this is an ordinary enemy under enemy_auto, Muse may continue automatically only after identity/style QC passes; boss/guardian rules do not apply to this example.",
+  "status": "pending"
+}
