@@ -1,0 +1,55 @@
+{
+  "id": "20261003-1320-gau-rung-special-vfx-bundle",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "combat_animation",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "external_reference_first",
+  "character": "enemy_gau_rung",
+  "action": "special_vfx_bundle",
+  "action_vi": "VFX đồng bộ cho special Gấu Rừng: buildup vật lý rất nhẹ quanh chân/vai + hit pack bụi/va chạm nặng ở mục tiêu; không phép thuật, không status loop.",
+  "asset_type": "sprite_sheet",
+  "reference_images": [
+    "assets/20261003-1046-gau-rung-reference/canonical_candidate.png"
+  ],
+  "character_spec_path": "references/ch02/gau_rung/identity-brief.md",
+  "style_bible": "style-bibles/chapter02/README.md",
+  "depends_on_request": "20261003-1317-gau-rung-special",
+  "dependency_policy": "skip_until_done",
+  "deliverables": [
+    {
+      "key": "self_vfx",
+      "frames": 6,
+      "fps": 12,
+      "runtime_cell_size": {"width": 128, "height": 128},
+      "anchor": "caster_feet",
+      "visual": "Buildup hoàn toàn vật lý: bụi đất nhỏ bị ép ra quanh bàn chân/chân sau, một chút motion dust theo vai/chân trước; không glow, không rune, không aura phép."
+    },
+    {
+      "key": "hit_pack",
+      "frames": 8,
+      "fps": 12,
+      "runtime_cell_size": {"width": 192, "height": 192},
+      "anchor": "target_feet",
+      "visual": "Impact burst nặng nhưng gọn: bụi đất, vụn cỏ/đất nhỏ và một shock ring thấp sát mặt đất ở peak. Không đá bay quá lớn, không elemental magic, không boss-scale screen shake art."
+    }
+  ],
+  "timing_hints": {
+    "cast_start_frame": 1,
+    "peak_frame": 4,
+    "effect_spawn_frame": 4,
+    "recover_frame": 6,
+    "status_apply_frame": null
+  },
+  "generation_contract": {
+    "high_resolution_master": true,
+    "compact_grid_preferred": true,
+    "transparent_output": true,
+    "background_mode": "white_key_if_needed",
+    "extra_padding_px": 15,
+    "max_repair_passes": 2,
+    "segmentation": "component_clusters"
+  },
+  "notes": "IMPORTANT: first read requests/20261003-1317-gau-rung-special.json. If that dependency is not status=done, SKIP this job and leave status=pending. Once done, use its committed master_sheet_rgba.png and preview.gif as motion/timing references. Produce separate transparent self_vfx and hit_pack outputs plus previews and asset.json. This enemy's visual language is physical mass and earth/dust only: NO life drain, NO magic aura, NO status loop. Keep the hit satisfying but clearly below boss/guardian spectacle.",
+  "status": "pending"
+}
