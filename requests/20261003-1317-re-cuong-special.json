@@ -32,5 +32,5 @@
   "postprocess": {"background_mode": "white_key_if_needed", "extra_padding_px": 15, "max_repair_passes": 2, "segmentation": "component_clusters", "export_individual_frames": true, "export_preview_gif": true},
   "transparent_background": true,
   "notes": "Canonical lock: references/canonical/chapter02/enemy_re_cuong/canonical.json. IMPORTANT GAMEPLAY READ: this attack APPLIES HP-DRAIN-OVER-TIME. The animation is the infestation/latch application, NOT a one-shot siphon. Visual language should leave a small persistent root-seed/tendril cue at the target-facing edge so Hermes can later pair it with a runtime status FX/icon. Keep scale/FX restrained below Xương Cuồng/Mộc Tinh. Generate ONE high-resolution 4x2 contact sheet, then segment/de-bleed/repack. Preview GIF must match 12 fps. Hermes will build runtime cells after QC.",
-  "status": "pending"
+  "status": "done"
 }
