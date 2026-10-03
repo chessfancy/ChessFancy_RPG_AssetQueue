@@ -18,15 +18,36 @@
   ],
   "facing": "right",
   "asset_type": "sprite_sheet",
-  "grid": {"cols": 3, "rows": 1},
-  "cell_size": {"width": 128, "height": 128},
-  "generation_layout": {"cols": 3, "rows": 1},
-  "runtime_cell_size": {"width": 128, "height": 128},
-  "reference_images": ["assets/20261003-1046-gau-rung-reference/canonical_candidate.png"],
+  "grid": {
+    "cols": 3,
+    "rows": 1
+  },
+  "cell_size": {
+    "width": 128,
+    "height": 128
+  },
+  "generation_layout": {
+    "cols": 3,
+    "rows": 1
+  },
+  "runtime_cell_size": {
+    "width": 128,
+    "height": 128
+  },
+  "reference_images": [
+    "assets/20261003-1046-gau-rung-reference/canonical_candidate.png"
+  ],
   "character_spec_path": "references/ch02/gau_rung/identity-brief.md",
   "style_bible": "style-bibles/chapter02/README.md",
-  "postprocess": {"background_mode":"white_key_if_needed","extra_padding_px":15,"max_repair_passes":2,"segmentation":"component_clusters","export_individual_frames":true,"export_preview_gif":true},
+  "postprocess": {
+    "background_mode": "white_key_if_needed",
+    "extra_padding_px": 15,
+    "max_repair_passes": 2,
+    "segmentation": "component_clusters",
+    "export_individual_frames": true,
+    "export_preview_gif": true
+  },
   "transparent_background": true,
   "notes": "Short non-loop hurt reaction. No gore, no detached leaves/parts, no redesign. Preserve scale and ground line; generate at high resolution, then repack.",
-  "status": "pending"
+  "status": "done"
 }
