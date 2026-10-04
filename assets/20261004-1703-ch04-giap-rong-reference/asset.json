@@ -1,0 +1,37 @@
+{
+  "request_id": "20261004-1703-ch04-giap-rong-reference",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "muse_self_reference",
+  "canonical_reference": "canonical_reference_rgba.png",
+  "character": "enemy_giap_rong",
+  "request_blob_sha": "60ef6dcbd8823290250ceb99a02d6d83be98127de100434d6cf887ecc59f281a",
+  "request_commit_sha": "004515b14208d7deb24d1f76eaf1ea80a282125f",
+  "generation_mode": "single_reference",
+  "raw_generation": {
+    "width": 1120,
+    "height": 2240,
+    "sha256": "c0f67fd92b53f73580124d51843c3a4e671ccc44ae2f26067c68c6f37cf1a325"
+  },
+  "master": {
+    "sheet": "canonical_reference_rgba.png",
+    "width": 1120,
+    "height": 2240,
+    "extra_padding_px": 15
+  },
+  "background_cleanup": "white_key_if_needed",
+  "repair_passes_used": 0,
+  "files": [
+    "canonical_reference_rgba.png",
+    "asset.json"
+  ],
+  "qc": {
+    "identity": "pass",
+    "facing": "pass",
+    "crop": "pass",
+    "background": "pass",
+    "resolution": "pass"
+  },
+  "created_at": "2026-10-04T17:12:03.486415+07:00"
+}

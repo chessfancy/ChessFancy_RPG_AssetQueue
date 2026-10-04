@@ -1,0 +1,37 @@
+{
+  "request_id": "20261004-1703-ch04-no-gio-reference",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "muse_self_reference",
+  "canonical_reference": "canonical_reference_rgba.png",
+  "character": "enemy_no_gio",
+  "request_blob_sha": "1415e788e1737550e99b7443ded6ce45714defbe2f9a7b67c79c48832539c30a",
+  "request_commit_sha": "004515b14208d7deb24d1f76eaf1ea80a282125f",
+  "generation_mode": "single_reference",
+  "raw_generation": {
+    "width": 1920,
+    "height": 1280,
+    "sha256": "49077e8399526f88c45dc2518bc401b43422b751f75550f567770339578ba453"
+  },
+  "master": {
+    "sheet": "canonical_reference_rgba.png",
+    "width": 1920,
+    "height": 1280,
+    "extra_padding_px": 15
+  },
+  "background_cleanup": "white_key_if_needed",
+  "repair_passes_used": 0,
+  "files": [
+    "canonical_reference_rgba.png",
+    "asset.json"
+  ],
+  "qc": {
+    "identity": "pass",
+    "facing": "pass",
+    "crop": "pass",
+    "background": "pass",
+    "resolution": "pass"
+  },
+  "created_at": "2026-10-04T17:12:03.486415+07:00"
+}

@@ -1,0 +1,37 @@
+{
+  "request_id": "20261004-1703-ch04-binh-nom-reference",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "muse_self_reference",
+  "canonical_reference": "canonical_reference_rgba.png",
+  "character": "enemy_binh_nom",
+  "request_blob_sha": "f3ca15fea69fcaeddbaf32c8783ee9b1bffbee2db1aa72162043640e7ed7b50d",
+  "request_commit_sha": "004515b14208d7deb24d1f76eaf1ea80a282125f",
+  "generation_mode": "single_reference",
+  "raw_generation": {
+    "width": 1280,
+    "height": 1920,
+    "sha256": "91a9b9fa95294f5e4bd65d503ba031a2cb4b6798d118503320b88db368b5d8d0"
+  },
+  "master": {
+    "sheet": "canonical_reference_rgba.png",
+    "width": 1280,
+    "height": 1920,
+    "extra_padding_px": 15
+  },
+  "background_cleanup": "white_key_if_needed",
+  "repair_passes_used": 0,
+  "files": [
+    "canonical_reference_rgba.png",
+    "asset.json"
+  ],
+  "qc": {
+    "identity": "pass",
+    "facing": "pass",
+    "crop": "pass",
+    "background": "pass",
+    "resolution": "pass"
+  },
+  "created_at": "2026-10-04T17:12:03.486415+07:00"
+}
