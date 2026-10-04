@@ -1,0 +1,25 @@
+{
+  "id": "20261004-1703-ch04-khien-gio-reference",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "canonical_reference",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "muse_self_reference",
+  "action": "canonical_reference_candidate",
+  "asset_type": "reference_image",
+  "facing": "right",
+  "style_bible": "style-bibles/chapter04/README.md",
+  "transparent_background": true,
+  "postprocess": {
+    "background_mode": "white_key_if_needed",
+    "extra_padding_px": 15,
+    "max_repair_passes": 2,
+    "segmentation": "connected_components",
+    "export_individual_frames": false,
+    "export_preview_gif": false
+  },
+  "status": "pending",
+  "character": "enemy_khien_gio",
+  "action_vi": "Tạo canonical reference candidate cho Khiên Gió: một chiếc khiên chiến trường cũ được gió nâng và tự chắn cho đồng đội; quái bảo hộ/cover.",
+  "notes": "SELF-REFERENCE CANDIDATE ONLY. One battered large old shield as the main body, animated by wind with straps/tassels and a small floating support structure or spirit knot so it reads as an enemy rather than loose equipment. RIGHT-facing defensive lean. Do not turn it into a humanoid armored soldier; keep it visually distinct from Giáp Rỗng and Bamboo Soldier. Child-friendly, full silhouette, transparent RGBA delivery. Candidate/non-canon; no animation rows yet."
+}
