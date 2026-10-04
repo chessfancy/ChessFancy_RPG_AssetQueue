@@ -1,0 +1,25 @@
+{
+  "id": "20261004-1703-ch04-chien-xa-cu-reference",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "canonical_reference",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "muse_self_reference",
+  "action": "canonical_reference_candidate",
+  "asset_type": "reference_image",
+  "facing": "right",
+  "style_bible": "style-bibles/chapter04/README.md",
+  "transparent_background": true,
+  "postprocess": {
+    "background_mode": "white_key_if_needed",
+    "extra_padding_px": 15,
+    "max_repair_passes": 2,
+    "segmentation": "connected_components",
+    "export_individual_frames": false,
+    "export_preview_gif": false
+  },
+  "status": "pending",
+  "character": "enemy_chien_xa_cu",
+  "action_vi": "Tạo canonical reference candidate cho Chiến Xa Cũ: chiến xa gỗ cổ hư hỏng không người điều khiển, vẫn lao theo tuyến trận cũ; quái hạng nặng/charge.",
+  "notes": "SELF-REFERENCE CANDIDATE ONLY. Compact ancient fantasy wooden war cart/chariot with weathered wheels, rope and bronze/iron reinforcement, visibly damaged but still mobile. No rider, no horse, no modern vehicle cues. RIGHT-facing charge silhouette with wind-whipped cloth marker. Keep proportions suitable for JRPG battle enemy, not an enormous boss. Full object in frame with generous margin, transparent RGBA delivery. Candidate/non-canon; no animation rows yet."
+}
