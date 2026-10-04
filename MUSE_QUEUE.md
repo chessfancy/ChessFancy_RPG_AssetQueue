@@ -65,3 +65,18 @@ Hermes/game integration still owns:
 
 ## Queue policy
 `MUSE_QUEUE.md` is planning/index documentation, not a substitute for request files. Muse must never generate a planned item that has no `requests/<id>.json`. If a request is present and pending, process it; if it has dependencies, obey its dependency gate; if it is done/failed, do not duplicate it.
+
+## CH4 CANDIDATE IDENTITY WAVE — executable, non-canon
+These are deliberately over-provisioned regular-enemy identity candidates for the future Chapter 4 rewrite **CHIẾN TRƯỜNG GIÓ NỔI**. Sol/story may later use any subset. Muse should create canonical-reference candidates only; do not invent full animation jobs without new request JSON.
+
+1. `20261004-1703-ch04-co-tan-reference` — Cờ Tàn
+2. `20261004-1703-ch04-giap-rong-reference` — Giáp Rỗng
+3. `20261004-1703-ch04-dieu-chien-reference` — Diều Chiến
+4. `20261004-1703-ch04-no-gio-reference` — Nỏ Gió
+5. `20261004-1703-ch04-khien-gio-reference` — Khiên Gió
+6. `20261004-1703-ch04-chien-xa-cu-reference` — Chiến Xa Cũ
+7. `20261004-1703-ch04-binh-nom-reference` — Binh Nộm
+8. `20261004-1703-ch04-ken-lenh-reference` — Kèn Lệnh
+
+All eight request JSON files exist with `worker=muse`, `status=pending`, `approval_policy=enemy_auto`, and `reference_mode=muse_self_reference`. Their shared art direction is `style-bibles/chapter04/README.md`; the broader library including legacy candidates is `docs/worldbuilding/ch04/ENEMY_CANDIDATE_POOL.md`.
+
