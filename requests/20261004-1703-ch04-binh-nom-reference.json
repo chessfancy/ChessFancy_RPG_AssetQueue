@@ -1,0 +1,25 @@
+{
+  "id": "20261004-1703-ch04-binh-nom-reference",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "canonical_reference",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "muse_self_reference",
+  "action": "canonical_reference_candidate",
+  "asset_type": "reference_image",
+  "facing": "right",
+  "style_bible": "style-bibles/chapter04/README.md",
+  "transparent_background": true,
+  "postprocess": {
+    "background_mode": "white_key_if_needed",
+    "extra_padding_px": 15,
+    "max_repair_passes": 2,
+    "segmentation": "connected_components",
+    "export_individual_frames": false,
+    "export_preview_gif": false
+  },
+  "status": "pending",
+  "character": "enemy_binh_nom",
+  "action_vi": "Tạo canonical reference candidate cho Binh Nộm: hình nộm lính bằng rơm, vải và tre từng dùng làm nghi binh, nay vẫn lặp lại mệnh lệnh cũ; quái phục kích/đánh lừa.",
+  "notes": "SELF-REFERENCE CANDIDATE ONLY. Straw-cloth-bamboo battlefield decoy soldier, visibly constructed and non-human: tied straw limbs, cloth tunic fragments, simple wooden/painted mask or blank head, lightweight practice spear/flag stub optional. RIGHT-facing side-view silhouette. Avoid scarecrow-farm identity and avoid copying Bamboo Soldier anatomy. Child-friendly, no horror/gore, transparent RGBA delivery. Candidate/non-canon; no animation rows yet."
+}
