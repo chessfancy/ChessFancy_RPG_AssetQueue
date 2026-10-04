@@ -1,0 +1,25 @@
+{
+  "id": "20261004-1703-ch04-giap-rong-reference",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "canonical_reference",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "muse_self_reference",
+  "action": "canonical_reference_candidate",
+  "asset_type": "reference_image",
+  "facing": "right",
+  "style_bible": "style-bibles/chapter04/README.md",
+  "transparent_background": true,
+  "postprocess": {
+    "background_mode": "white_key_if_needed",
+    "extra_padding_px": 15,
+    "max_repair_passes": 2,
+    "segmentation": "connected_components",
+    "export_individual_frames": false,
+    "export_preview_gif": false
+  },
+  "status": "pending",
+  "character": "enemy_giap_rong",
+  "action_vi": "Tạo canonical reference candidate cho Giáp Rỗng: một bộ giáp chiến trường cũ không có người bên trong, bị gió và tàn khí giữ đứng; quái đỡ đòn/tank, child-friendly.",
+  "notes": "SELF-REFERENCE CANDIDATE ONLY. Empty weathered Vietnamese-fantasy lamellar/scale-like armor silhouette, visibly hollow at neck/sleeves so it is clearly not an undead corpse. A battered small shield or forearm guard is allowed; avoid duplicating Bamboo Soldier identity. RIGHT-facing battle stance, wind moving loose cloth ties. No gore, bones, skull face or horror anatomy. Full body, generous margin, transparent RGBA delivery. Candidate/non-canon; no animation rows yet."
+}
