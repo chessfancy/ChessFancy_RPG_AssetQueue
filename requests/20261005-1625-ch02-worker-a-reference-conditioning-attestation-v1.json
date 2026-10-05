@@ -1,0 +1,19 @@
+{
+  "id": "20261005-1625-ch02-worker-a-reference-conditioning-attestation-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "postprocess",
+  "character": "npc_ch02_highland_worker_a",
+  "action": "verify_reference_conditioning",
+  "action_vi": "Chỉ đối chứng producer provenance cho hai PNG Worker A đã có; không generate lại",
+  "asset_type": "reference_image",
+  "reference_mode": "external_reference_first",
+  "reference_images": [
+    "references/ch02/npc_ch02_highland_worker_a/canonical.png",
+    "assets/20261005-1049-ch02-highland-worker-a-static-overworld/canonical_reference_rgba.png",
+    "assets/20261005-1049-ch02-highland-worker-a-portrait-serious/canonical_reference_rgba.png"
+  ],
+  "transparent_background": true,
+  "notes": "PROVENANCE-ONLY POSTPROCESS AUDIT, NOT A NEW ART REQUEST. Do NOT regenerate/repaint/redesign any identity or PNG. Do NOT edit/relabell existing result bundles or their literal muse_self_reference values. Approved canonical v2 SHA256 dff8b4396547acf655520f4c87b890b6f338e6d3e94173b4992d3d9c6937ae50. The original immutable requests named external_reference_first, while both results recorded muse_self_reference. Source input bytes match approved canonical identity but current requester Git evidence does not prove provider conditioning. Inspect YOUR producer/provider generation records and provide an ADDITIVE producer-owned attestation in assets/20261005-1625-ch02-worker-a-reference-conditioning-attestation-v1/ binding each exact old output hash to actual supplied approved-v2 input hash, generation snapshot/call evidence and the saved request. Copies of existing PNGs are permissible only byte-identical; declare each listed file/hash in asset.json. Include provenance-attestation.json with honest evidence/results (free-form notes contract, not schema-enforced new field). Do not fabricate conditioning logs or change metadata just to satisfy a gate. If generation records cannot establish conditioning, mark this request failed and report no-evidence; do not generate replacements in this audit job. Current outputs remain unpromoted until attestation verified. Original evidence: {\"20261005-1049-ch02-highland-worker-a-portrait-serious\": {\"image_git_blob\": \"4669db6e195ab48741155a4a695de4603d1daed6\", \"image_sha256\": \"921e39935d99683b61281c7336761f8aecdd72bfae87a6aaafcd318844374b15\", \"producer_raw_generation_sha256_literal\": \"921e39935d99683b61281c7336761f8aecdd72bfae87a6aaafcd318844374b15\", \"producer_request_blob_sha_literal\": \"5465ffe997e61c04e8d8a15b26386c6c59da0dc23a87b94c60ea5403b7ff132a\", \"recorded_reference_mode_literal\": \"muse_self_reference\", \"result_git_blob\": \"f8184fd5b1d4f02c5a4176516b4c92fd26b86ad2\"}, \"20261005-1049-ch02-highland-worker-a-static-overworld\": {\"image_git_blob\": \"16b7022e5a6fde2e92b07b17fc74a8c5429ebcca\", \"image_sha256\": \"3524243607cdda52c5ba49b7a470456663955b54b33dd869db66612a0436e993\", \"producer_raw_generation_sha256_literal\": \"3524243607cdda52c5ba49b7a470456663955b54b33dd869db66612a0436e993\", \"producer_request_blob_sha_literal\": \"e6b56374957b3572556aa7145575b21740f0edd318aab11c315a95516f89717c\", \"recorded_reference_mode_literal\": \"muse_self_reference\", \"result_git_blob\": \"45e8a92e089bfab4c3eb07f1ca8f2a6eb3047749\"}}. Only Trạm trưởng walks; no locomotion requests, no new character, no Red Map changes.",
+  "status": "pending"
+}
