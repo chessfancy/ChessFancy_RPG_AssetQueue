@@ -18,7 +18,7 @@
   "style_bible": "style-bibles/chapter02/README.md",
   "transparent_background": true,
   "notes": "Chapter 2 Vietnamese-fantasy highland frontier. Ordinary STATIC NPC, NOT enemy/boss/guardian; no approval_policy classification. This is a SINGLE reference-conditioned image rendering of the supplied identity, NOT a new identity design. Freeze face/hair/age/clothes/palette/proportions/accessories exactly. Hero references STYLE ONLY, no costume bleed. Weathered earth/muted-green/indigo/brown cloth, subdued weary/worried/stoic tone. NO chess motifs, modern industrial kit, armor, hero weapons, broad smile, comedy, text/UI/watermark/scenery. No locomotion/walk/run/four-direction sheets. Trạm trưởng remains the ONLY CH02 walking NPC and has existing accepted art. Deliver one high-resolution RGBA master with safe margin; worker done means delivery only, not production accepted. STAGE2: ONE static 3/4 top-down JRPG overworld view, full body and feet visible, same identity, neutral restrained standing pose, generous margin and real alpha, no ground shadow halo/crop. NOT an animation sheet. Make high-resolution square master first; final runtime static image target 384x384, adult target apparent height about112 beside hero; Hermes derives measured visualScale/feet origin. No perspective redesign or portrait framing.",
-  "status": "pending",
+  "status": "done",
   "runtime_cell_size": {
     "width": 384,
     "height": 384
