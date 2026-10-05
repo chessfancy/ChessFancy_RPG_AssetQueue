@@ -1,0 +1,89 @@
+{
+  "request_id": "20261005-1810-ch02-local-wind-flag-separated-parts-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "task_type": "prop_pack",
+  "asset_type": "prop_sheet",
+  "action": "separated_mechanism_parts",
+  "character": "prop_ch02_local_wind_flag_component",
+  "canonical_reference": {
+    "path": "references/ch02/act1_separated_mechanics_v1/local-wind-flag-accepted-reference.png",
+    "sha256": "cbf23052d938653a2b0275fb34aebe93f427b1ce02e77ed372412fc5b3c1a263",
+    "width": 892,
+    "height": 1423,
+    "note": "LOCKED accepted reference; identity preserved exactly. Pixels copied verbatim, zero repaint."
+  },
+  "request_blob_sha": "ff20c80a9946e590dbbebfdf33dd7a474539748fcb5745e1947c6e248418a9f7",
+  "request_commit_sha": "82e2037c8a233d8074e6b9334e1be8b97e0acfb1",
+  "generation_mode": "reference_derived_layers_with_algorithmic_segmentation_no_provider_generation",
+  "generation_notes": "No media.generate_image calls were made. Both layers are verbatim pixel subsets of the locked reference (disjoint partition of all 423851 nonzero-alpha pixels), so identity/style/palette are preserved by construction. Segmentation: linen-light connected components + white inner-fold wedge merged, hole-filled, then inclusive ownership (everything right of the fitted pole band not inside rope-core keepout boxes), with pole-seam reassignment of 129 boundary px. No provider snapshot exists for this job.",
+  "raw_generation": null,
+  "requested_frames": 2,
+  "detected_parts": [
+    "fixed_pole",
+    "movable_blank_cloth"
+  ],
+  "matched_parts": [
+    "fixed_pole",
+    "movable_blank_cloth"
+  ],
+  "repaired_frames": [],
+  "repair_passes_used": 0,
+  "repair_notes": "No occlusion repair needed: analysis showed the cloth never overlaps the pole body (cloth mask extends at most 2.7px left of the fitted pole-right edge on 1 row, within fit residual; the white inner-fold wedge abuts the pole edge without covering it). The pole is complete in the reference; 0 px repainted. Max allowed was 2 passes; 0 used.",
+  "layers": {
+    "fixed_pole": {
+      "file": "fixed_pole_rgba.png",
+      "width": 892,
+      "height": 1423,
+      "sha256": "8ee5d3e260c3e580a13d3340aaa34d011e33cba0649d202fa794d822c68fbb72",
+      "bytes": 329675,
+      "offset_x": 0,
+      "offset_y": 0,
+      "contents": "complete tilted wooden pole, top rope wrap/tie, mid rope knot + hanging tail, stone pile, wooden base platform"
+    },
+    "movable_blank_cloth": {
+      "file": "movable_blank_cloth_rgba.png",
+      "width": 892,
+      "height": 1423,
+      "sha256": "f9ae7dcb25cbc424a52f8061b5e952ad70cc5eae7e8be663a0ca8442f859e781",
+      "bytes": 398738,
+      "offset_x": 0,
+      "offset_y": 0,
+      "contents": "separate blank off-white linen cloth: body, fold shading, dark outline, white inner-fold wedge; cut cleanly at both rope ties; no symbols, no rope"
+    },
+    "pivots": {
+      "file": "pivots.json",
+      "sha256": "08411867dba3c3ae7fa833021f2aa38b133c623c7fb5912e01dd7cb1b20f6fbc",
+      "bytes": 2709
+    }
+  },
+  "runtime_cell_size": {
+    "width": 512,
+    "height": 768
+  },
+  "background_cleanup": "not_applicable_native_rgba_no_keying: reference arrived as clean RGBA; no background generation or key-out performed, so no white-fringe decontamination pass was needed. Cloth outer fringe checked on magenta: native antialiased edges, no halo. The opaque white wedge between pole and cloth is reference content (cloth inner face), owned by the cloth layer, not fringe.",
+  "extra_padding_px": 15,
+  "padding_note": "15px working padding is inherent: shared 892x1423 plane holds the artwork with >=15px margins on all sides (fg bbox x 15-876, y 15-1407); no resampling or re-padding applied, keeping pixel-exact reconstruction.",
+  "files": [
+    "fixed_pole_rgba.png",
+    "movable_blank_cloth_rgba.png",
+    "pivots.json",
+    "asset.json"
+  ],
+  "qc": {
+    "part_count": "pass (2/2)",
+    "identity_preserved": "pass (verbatim reference pixels, zero repaint)",
+    "layer_order": "pass (fixed_pole back, movable_blank_cloth front)",
+    "shared_coordinate_plane": "pass (both 892x1423, offsets 0,0; no independent bbox fit or stretching)",
+    "reconstruction_composite": "pass (alpha-over composite of the two layers is BIT-EXACT vs the accepted reference: 0 differing pixels of 1269316)",
+    "pole_completeness": "pass (0 foreground pixels of the fitted pole band missing from fixed_pole; no ghost cloth fragments: 0 px outside legit zones)",
+    "cloth_singularity": "pass (cloth layer is a single connected component, 285679 px; 11 sub-visible halo fragments <50px reassigned to pole layer)",
+    "contamination": "pass (no cloth pixels stranded in pole layer outside pole/rope/stone/base zones; no rope pixels in cloth layer)",
+    "background": "pass (transparent RGBA, native antialiased edges, no haze/dither)",
+    "anomaly_colours": "pass (no storm/high-wind deformation, no magic; ordinary local wind read)",
+    "pivots_documented": "pass (attach_top (101,134), attach_bottom (179,530), seam axis, swing pivot, gentle-flutter range +-6 deg in pivots.json)"
+  },
+  "created_at": "2026-10-05T19:00:03+07:00"
+}

@@ -1,0 +1,55 @@
+{
+  "shared_plane": {
+    "width": 384,
+    "height": 384
+  },
+  "coordinate_origin": "top-left, y-down",
+  "layer_order": [
+    "fixed_body",
+    "movable_rotor"
+  ],
+  "layers": {
+    "fixed_body": {
+      "file": "fixed_body_rgba.png",
+      "offset": [
+        0,
+        0
+      ],
+      "size": [
+        384,
+        384
+      ],
+      "role": "static mill body including stationary hub/face; blade-occluded regions repaired"
+    },
+    "movable_rotor": {
+      "file": "movable_rotor_rgba.png",
+      "offset": [
+        0,
+        0
+      ],
+      "size": [
+        384,
+        384
+      ],
+      "role": "blades/sails + lattice frames with transparent hub opening; rotates about rotor_pivot"
+    }
+  },
+  "hub_center": {
+    "x": 209,
+    "y": 176,
+    "method": "annulus fit to hub-face outline (face r~29) + visual overlay verification on 384x384 plane",
+    "hub_opening_radius": 40,
+    "note": "knockout disc r<40 keeps full hub face + wooden ring on fixed_body; rotor shows body hub through opening"
+  },
+  "rotor_pivot": {
+    "x": 209,
+    "y": 176,
+    "note": "identical to hub_center; runtime rotates movable_rotor about this point; tower/base/hub-face stay fixed"
+  },
+  "runtime_cell_size": {
+    "width": 384,
+    "height": 384
+  },
+  "reconstruction": "compositing movable_rotor over fixed_body reproduces the upscaled accepted reference (mean abs diff 0.019 over visible pixels; residual diffs are 1-2px feather seams at separation boundaries)",
+  "contract": "notes-based; no schema enforcement claimed"
+}

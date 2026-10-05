@@ -1,0 +1,83 @@
+{
+  "contract": "notes-based free-form part/pivot contract for prop_ch02_local_wind_flag_component separated mechanism parts (stage 2). Candidate only; runtime proof (normal/slow/stop/reverse/calm) is a separate gate.",
+  "shared_plane": {
+    "width": 892,
+    "height": 1423,
+    "note": "both layers are full-plane RGBA masters; no per-layer bbox fit or stretching"
+  },
+  "layer_order_back_to_front": [
+    "fixed_pole",
+    "movable_blank_cloth"
+  ],
+  "layers": {
+    "fixed_pole": {
+      "file": "fixed_pole_rgba.png",
+      "offset_x": 0,
+      "offset_y": 0,
+      "contents": "complete tilted wooden pole, top rope wrap/tie, mid rope knot + hanging tail, stone pile, wooden base platform; pole right edge repaired where the cloth seam touched it (129 px reassigned, 0 px repainted)"
+    },
+    "movable_blank_cloth": {
+      "file": "movable_blank_cloth_rgba.png",
+      "offset_x": 0,
+      "offset_y": 0,
+      "contents": "separate blank off-white linen cloth: body + fold shading + dark outline + white inner-fold wedge (opaque white region between pole and cloth in the accepted reference, owned by the cloth as its inner face); no symbols, no rope"
+    }
+  },
+  "cloth_attachment": {
+    "attach_top": {
+      "x": 101,
+      "y": 134,
+      "desc": "cloth top corner tucked under the top rope wrap"
+    },
+    "attach_bottom": {
+      "x": 179,
+      "y": 530,
+      "desc": "cloth gathered corner at the mid rope knot"
+    },
+    "seam_axis": {
+      "from": {
+        "x": 101,
+        "y": 134
+      },
+      "to": {
+        "x": 179,
+        "y": 530
+      },
+      "desc": "straight seam axis between the two attachment points; the cloth hangs/flutters from this axis"
+    }
+  },
+  "flutter": {
+    "swing_pivot": {
+      "x": 101,
+      "y": 134,
+      "desc": "primary rotation pivot = top attachment point (cloth hangs from the top tie; bottom corner swings)"
+    },
+    "secondary_pivot": {
+      "x": 179,
+      "y": 530,
+      "desc": "bottom attachment point; small local rotation allowed"
+    },
+    "gentle_flutter_range_deg": {
+      "around_seam_axis": [
+        -6,
+        6
+      ],
+      "vertical_flap": [
+        -4,
+        4
+      ]
+    },
+    "guidance": "ordinary local wind only: slow sine sway ~0.5-1 Hz at runtime scale, amplitude within the ranges above. No storm/high-wind deformation, no whole-pole rotation, no magic/FX. Values are worker-recommended safe ranges (notes-based), not measured from animation."
+  },
+  "cloth_bbox_in_plane": {
+    "x_min": 86,
+    "x_max": 871,
+    "y_min": 104,
+    "y_max": 670
+  },
+  "runtime_cell_size": {
+    "width": 512,
+    "height": 768,
+    "note": "metadata only; Hermes performs final downsample/atlas packing"
+  }
+}
