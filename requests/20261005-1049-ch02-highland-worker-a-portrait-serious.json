@@ -1,0 +1,26 @@
+{
+  "id": "20261005-1049-ch02-highland-worker-a-portrait-serious",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "canonical_reference",
+  "reference_mode": "external_reference_first",
+  "character": "npc_ch02_highland_worker_a",
+  "action": "portrait_serious",
+  "action_vi": "Một portrait serious cùng identity",
+  "asset_type": "reference_image",
+  "reference_images": [
+    "references/ch02/npc_ch02_highland_worker_a/canonical.png",
+    "references/style/ch02-npc-rendering/hero_warrior_male.png",
+    "references/style/ch02-npc-rendering/hero_warrior_female.png",
+    "references/style/ch02-npc-rendering/hero_tanker_male.png",
+    "references/style/ch02-npc-rendering/hero_healer_female.png"
+  ],
+  "style_bible": "style-bibles/chapter02/README.md",
+  "transparent_background": true,
+  "notes": "Chapter 2 Vietnamese-fantasy highland frontier. Ordinary STATIC NPC, NOT enemy/boss/guardian; no approval_policy classification. This is a SINGLE reference-conditioned image rendering of the supplied identity, NOT a new identity design. Freeze face/hair/age/clothes/palette/proportions/accessories exactly. Hero references STYLE ONLY, no costume bleed. Weathered earth/muted-green/indigo/brown cloth, subdued weary/worried/stoic tone. NO chess motifs, modern industrial kit, armor, hero weapons, broad smile, comedy, text/UI/watermark/scenery. No locomotion/walk/run/four-direction sheets. Trạm trưởng remains the ONLY CH02 walking NPC and has existing accepted art. Deliver one high-resolution RGBA master with safe margin; worker done means delivery only, not production accepted. STAGE3: ONE dialogue portrait expression serious ONLY: concerned/focused/burdened, no comic shock or warmth/smile. Recognizably exact same person as first canonical reference. Upper body portrait framing, face readable, safe hair/head/shoulder margin. Generate high-resolution portrait master first, then Hermes runtime downsample320x480. Do not generate neutral/positive/surprised extras. Transparent alpha. LOCKED A IDENTITY: middle-aged male; tired worried face, slight stubble; tousled dark hair with subtle graying; patched brown practical long tunic, blue sash, dark-indigo trousers and brown boots; small rope loop and wooden mallet tucked at sash. Preserve exactly; NO redesign, no new accessories, no walking stage. Source corrected reference passed independent actual-image QC; SHA256 dff8b4396547acf655520f4c87b890b6f338e6d3e94173b4992d3d9c6937ae50.",
+  "status": "pending",
+  "runtime_cell_size": {
+    "width": 320,
+    "height": 480
+  }
+}

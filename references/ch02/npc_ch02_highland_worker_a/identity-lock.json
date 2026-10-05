@@ -1,0 +1,14 @@
+{
+  "character": "npc_ch02_highland_worker_a",
+  "canonical_reference": "canonical.png",
+  "canonical_sha256": "dff8b4396547acf655520f4c87b890b6f338e6d3e94173b4992d3d9c6937ae50",
+  "source_request_id": "20261005-0953-ch02-highland-worker-a-reference-correction-v2",
+  "source_queue_commit": "e6b094e0d7f3766ad67fa9305b8bb97af5f4bfc2",
+  "source_asset_path": "assets/20261005-0953-ch02-highland-worker-a-reference-correction-v2/canonical_reference_rgba.png",
+  "visual_qc": "PASS",
+  "visual_review": "deleg_b1644655/task-0; independent actual image",
+  "role": "ordinary static highland construction/route-safety worker",
+  "locomotion_authorized": false,
+  "identity_frozen": true,
+  "production_accepted": false
+}
