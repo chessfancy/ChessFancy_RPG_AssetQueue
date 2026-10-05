@@ -16,7 +16,18 @@ Do not implement or rewrite Scene 10+ from inference. Later Chapter 2 story rema
 - Narrow walkbounds/corridors must remain low-density editing zones. Do not stack multiple selectable NPC states, duplicate conditional actors, barricades, and collision-bearing props in the same bottleneck.
 - Do not preserve obsolete permit-office / permit-obtained / windmill-main-boss story behavior through compatibility hacks.
 - Do not invent missing production art. Emit/report an AssetQueue gap instead.
-- NPC short scripted movement may use the existing `approach` / walk-row runtime where appropriate.
+
+## Chapter 2 NPC movement lock
+
+Chapter 2 intentionally keeps NPC locomotion extremely limited.
+
+- **TRẠM TRƯỞNG is the only authored walking NPC in the entire chapter.**
+- His accepted walking asset already exists in the game runtime and must be reused.
+- Do not request, generate, or integrate additional NPC walk/run/4-direction locomotion assets for Chapter 2.
+- All other Chapter 2 civilian, worker, checkpoint and displaced-resident NPCs are static overworld actors.
+- Their authored departure/arrival beats must be expressed through dialogue, event/state changes, repositioning between states/scenes, or map transitions rather than bespoke walking animation.
+- A static NPC may still have a canonical reference image, one static overworld sprite, and dialogue portraits.
+- Do not convert a static NPC into a walking NPC merely because the runtime supports `walk_to`.
 
 ---
 
@@ -186,7 +197,13 @@ Gió thuận thì hôm nay thử lên thêm một đoạn.
 **THỢ TUẦN TUYẾN 2**  
 Đi xem Cối Xay Gió trước đã.
 
-If feasible, 2–3 NPC actors walk a short distance toward the exit using existing NPC walking support.
+The route team does **not** require visible walking animation.
+
+Chapter 2's only walking NPC is **TRẠM TRƯỞNG**.
+
+For Scene06, show the workers preparing to depart, deliver the locked dialogue, then use event/state progression to represent their departure. Static workers may disappear/reposition after the beat or be absent on the next state/map.
+
+Do not request NPC locomotion assets for the route team.
 
 Party is not invited as heroes; both groups simply share the same destination.
 

@@ -62,3 +62,22 @@ Boss identity. Requires `boss_manual` approval. It should feel like the major so
 - Xương Cuồng / Mộc Tinh: `boss_manual`
 
 Boss/guardian rules override automatic ordinary-enemy production rules.
+
+## NPC language
+
+Chapter 2 NPCs are grounded Vietnamese-fantasy highland civilians and workers.
+
+Emotional baseline:
+neutral / restrained / weary / worried / subdued.
+
+Avoid:
+- exaggerated friendliness or cheerful welcoming poses
+- broad happy smiles by default
+- chess-piece decorations on hair, hats or clothing
+- chess-themed armor or accessories unless explicitly story-authorized
+- heroic combat styling for ordinary workers/civilians
+
+Chapter 2 locomotion lock:
+- **TRẠM TRƯỞNG is the chapter's only walking NPC and already has accepted runtime walk art.**
+- All other Chapter 2 NPCs use static overworld art.
+- Do not generate walk/run locomotion for them.
