@@ -1,0 +1,42 @@
+{
+  "request_id": "20261005-1550-ch02-warning-bell-indicator-reference-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "muse_self_reference",
+  "task_type": "canonical_reference",
+  "asset_type": "reference_image",
+  "action": "canonical_reference",
+  "character": "prop_ch02_warning_bell_indicator_component",
+  "canonical_reference": "canonical_reference_rgba.png",
+  "request_blob_sha": "cc5e18ad45b0c9a5e3480d8800384e8fb1fccfa2b15fa5389146dca44d813f8e",
+  "request_commit_sha": "88a0a664cbe9020627de949009266be43a8a2bee",
+  "generation_mode": "single_reference",
+  "repair_passes_used": 0,
+  "raw_generation": {
+    "width": 1920,
+    "height": 1280,
+    "sha256": "573ad8274777f6575944416f7780e6463c5b74afc031fb9484fb24a1890f8c7d",
+    "snapshot_id": "ed053e33-b4da-4c05-a646-557604417f49:h2pys2"
+  },
+  "master": {
+    "sheet": "canonical_reference_rgba.png",
+    "width": 746,
+    "height": 1146,
+    "extra_padding_px": 15
+  },
+  "background_cleanup": "white_key_out_flood_fill_boundary_band_with_unpremultiply_edge_decontamination",
+  "files": [
+    "canonical_reference_rgba.png",
+    "asset.json"
+  ],
+  "qc": {
+    "identity": "pass",
+    "style_palette_match": "pass",
+    "containment": "pass",
+    "crop": "pass",
+    "background": "pass",
+    "resolution": "pass"
+  },
+  "created_at": "2026-10-05T15:59:54+07:00"
+}

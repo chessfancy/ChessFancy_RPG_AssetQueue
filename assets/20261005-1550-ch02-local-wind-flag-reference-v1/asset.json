@@ -1,0 +1,42 @@
+{
+  "request_id": "20261005-1550-ch02-local-wind-flag-reference-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "muse_self_reference",
+  "task_type": "canonical_reference",
+  "asset_type": "reference_image",
+  "action": "canonical_reference",
+  "character": "prop_ch02_local_wind_flag_component",
+  "canonical_reference": "canonical_reference_rgba.png",
+  "request_blob_sha": "6c377ec1cd71b9a1b9baed0ad7ad664715c8b6a496fc2da3838abadb9a4ff609",
+  "request_commit_sha": "88a0a664cbe9020627de949009266be43a8a2bee",
+  "generation_mode": "single_reference",
+  "repair_passes_used": 0,
+  "raw_generation": {
+    "width": 1600,
+    "height": 1600,
+    "sha256": "5f4d226e91eb66f2b1fef973752f0fd0ab4d36a8dffd6b19f2024705662dc333",
+    "snapshot_id": "95b06542-5253-4f89-b630-22c27d3a3051:nfq1yp"
+  },
+  "master": {
+    "sheet": "canonical_reference_rgba.png",
+    "width": 892,
+    "height": 1423,
+    "extra_padding_px": 15
+  },
+  "background_cleanup": "white_key_out_flood_fill_boundary_band_with_unpremultiply_edge_decontamination",
+  "files": [
+    "canonical_reference_rgba.png",
+    "asset.json"
+  ],
+  "qc": {
+    "identity": "pass",
+    "style_palette_match": "pass",
+    "containment": "pass",
+    "crop": "pass",
+    "background": "pass",
+    "resolution": "pass"
+  },
+  "created_at": "2026-10-05T15:59:54+07:00"
+}

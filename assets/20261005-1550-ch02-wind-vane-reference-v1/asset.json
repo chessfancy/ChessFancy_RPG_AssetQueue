@@ -1,0 +1,42 @@
+{
+  "request_id": "20261005-1550-ch02-wind-vane-reference-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "muse_self_reference",
+  "task_type": "canonical_reference",
+  "asset_type": "reference_image",
+  "action": "canonical_reference",
+  "character": "prop_ch02_wind_vane_component",
+  "canonical_reference": "canonical_reference_rgba.png",
+  "request_blob_sha": "6a749ad6167a76c47121f58d5f2eeeee8196f0ae0ef9fe2fd5df2acfdaea1b95",
+  "request_commit_sha": "88a0a664cbe9020627de949009266be43a8a2bee",
+  "generation_mode": "single_reference",
+  "repair_passes_used": 0,
+  "raw_generation": {
+    "width": 1120,
+    "height": 2240,
+    "sha256": "9a04b66abeeb6b56072350191e87b104c6a57be9933d001eb7e52c4704f2875e",
+    "snapshot_id": "90a9583d-6142-4499-a5e2-3d11484efc80:d29zii"
+  },
+  "master": {
+    "sheet": "canonical_reference_rgba.png",
+    "width": 1010,
+    "height": 2062,
+    "extra_padding_px": 15
+  },
+  "background_cleanup": "white_key_out_flood_fill_boundary_band_with_unpremultiply_edge_decontamination",
+  "files": [
+    "canonical_reference_rgba.png",
+    "asset.json"
+  ],
+  "qc": {
+    "identity": "pass",
+    "style_palette_match": "pass",
+    "containment": "pass",
+    "crop": "pass",
+    "background": "pass",
+    "resolution": "pass"
+  },
+  "created_at": "2026-10-05T15:59:54+07:00"
+}
