@@ -1,0 +1,35 @@
+{
+  "protocol_version": "2",
+  "worker": "muse",
+  "approval_policy": "enemy_auto",
+  "style_bible": "style-bibles/chapter02/README.md",
+  "transparent_background": true,
+  "status": "pending",
+  "id": "20261005-1810-ch02-wind-vane-separated-parts-v1",
+  "task_type": "prop_pack",
+  "reference_mode": "external_reference_first",
+  "character": "prop_ch02_wind_vane_component",
+  "action": "separated_mechanism_parts",
+  "action_vi": "Layer cố định/chuyển động độc lập, vá đúng chỗ bị che; không đổi identity",
+  "asset_type": "prop_sheet",
+  "frames": 2,
+  "frames_vi": [
+    "Layer 1: fixed_mast; align shared parent coordinate plane, no extra art",
+    "Layer 2: movable_vane_head; align shared parent coordinate plane, no extra art"
+  ],
+  "runtime_cell_size": {
+    "width": 512,
+    "height": 768
+  },
+  "reference_images": [
+    "references/ch02/act1_separated_mechanics_v1/wind-vane-accepted-reference.png"
+  ],
+  "postprocess": {
+    "background_mode": "transparent_if_available",
+    "extra_padding_px": 15,
+    "max_repair_passes": 2,
+    "export_individual_frames": true,
+    "export_preview_gif": false
+  },
+  "notes": "CANDIDATE ONLY. Locked CH02 Scene01–09; do not create Scene10+, dialogue, story, personal names or lore. Only TRẠM TRƯỞNG walks: no walk/run/4-direction art. No Red Map, accepted map/background or original art changes. Ordinary production-asset enemy_auto policy; status done is not approval. Return owner-declared actual RGBA master PNG and asset.json with exact request/result/source image SHA and actual reference conditioning metadata; record real provider call/snapshot when available, honest gaps when unavailable. Never silently relabel reference_mode or change requester fields besides status. EXISTING INSPECTED REFERENCE LOCKED; stage2 SEPARATED PARTS ONLY. Clean fixed timber mast/base/rope/brackets separate from the entire directional cross-arm/arrow/cloth-fin head. Repair only formerly occluded support pixels. Vane rotates about its actual mast-top axis while fixed mast remains stationary; preserve arrow direction/palette, no full mill/turbine. Document the pivot and plane/camera constraint; actual mountainward angle remains runtime placement, not baked scenery. Return individual same-camera/shared-scale aligned RGBA masters in exactly this logical layer order: fixed_mast, movable_vane_head. Each layer must use a coherent shared parent coordinate space (or explicit exact per-layer offsets/size in an owner-listed pivots.json) so composition reconstructs the original. No independent bboxfit/stretching or guessed rotation pivots. Repair/repaint only exposed occlusions, otherwise preserve accepted part identities. Work one part at a time at high resolution, not raw squarepack squeezing tall mast objects; a contact sheet may be an inspection/delivery aid only. No blind cutout rotations exposing holes. Owner-list and hash every individual part/master and pivots.json in asset.json; free-form part/pivot contract is notes-based, not claimed schema enforcement. No production path writes. Repaired source is candidate: independently visual/alpha/containment/reconstruction QC remains required; normal/slow/stop/reverse/calm runtime proof remains a separate gate."
+}

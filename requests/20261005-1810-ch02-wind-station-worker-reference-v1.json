@@ -1,0 +1,20 @@
+{
+  "protocol_version": "2",
+  "worker": "muse",
+  "approval_policy": "enemy_auto",
+  "style_bible": "style-bibles/chapter02/README.md",
+  "transparent_background": true,
+  "status": "pending",
+  "id": "20261005-1810-ch02-wind-station-worker-reference-v1",
+  "task_type": "canonical_reference",
+  "reference_mode": "muse_self_reference",
+  "character": "npc_ch02_wind_station_worker",
+  "action": "canonical_reference",
+  "action_vi": "Thợ Trạm Gió còn thiếu Scene07; canonical static, không locomotion",
+  "asset_type": "reference_image",
+  "reference_images": [
+    "references/ch02/npc_ch02_highland_worker_b/canonical.png",
+    "references/ch02/npc_ch02_highland_worker_a/canonical.png"
+  ],
+  "notes": "CANDIDATE ONLY. Locked CH02 Scene01–09; do not create Scene10+, dialogue, story, personal names or lore. Only TRẠM TRƯỞNG walks: no walk/run/4-direction art. No Red Map, accepted map/background or original art changes. Ordinary production-asset enemy_auto policy; status done is not approval. Return owner-declared actual RGBA master PNG and asset.json with exact request/result/source image SHA and actual reference conditioning metadata; record real provider call/snapshot when available, honest gaps when unavailable. Never silently relabel reference_mode or change requester fields besides status. NEW IDENTITY STAGE1. Existing attached workerA/B are STYLE/CAMERA/PALETTE references only, not this new person canonical. Generate exactly one high-resolution full-body static reference with feet, head and all accessories safely inset; transparent alpha, uniform containment, slightly elevated3/4 project-native painterly/chibi exploration scale. Preserve ordinary Vietnam-fantasy highland worker tone. Middle-aged ordinary female mill attendant/worker; dark-grey hair tied back in a small bun, plain pale linen shirt under worn muted navy work apron, earthy trousers, simple brown shoes, one small practical wooden-handled tool at belt, neutral matter-of-fact face. A working civilian, not a sorcerer, guardian, guard or fantasy combat character. Distinct from resident, workerA, workerB and the new route worker. No armour, staff, heroic posing, modern machine tools or magical FX. Do NOT produce a portrait or a body/action atlas in this stage. Hermes will inspect/lock accepted identity before requesting the matching320x480 serious dialogue portrait. Do not duplicate already approved A/B/elder/clerk art. Target future world-visible body112px with deterministic full-body normalization, not creative generation at112px. No other new characters."
+}
