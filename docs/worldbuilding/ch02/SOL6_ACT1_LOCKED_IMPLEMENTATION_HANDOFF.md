@@ -119,14 +119,37 @@ If the new AssetQueue bridge exists, create a validated gap/draft. Otherwise rep
 
 Right-side mountain approach contains a simple safety/construction checkpoint, not a wall of chess-piece blockers.
 
-Use 1–2 NPCs placed outside the narrow walkbound.
+Use 1–2 **static** NPCs placed outside the narrow walkbound.
 
-Core dialogue:
-- party may go up; nobody forbids it;
-- before climbing, teams check the wind at the Windmill;
-- calm weather below does not imply safe wind above;
-- sudden wind can cause falling stone, trees and damaged routes;
-- route through the residential fringe leads to the Windmill.
+Locked dialogue — use verbatim:
+
+**THỢ CHỐT TUYẾN**  
+Các cháu định lên cao à?
+
+**SLOT 3**  
+Dạ. Bọn cháu cần tìm đường qua dãy núi.
+
+**THỢ CHỐT TUYẾN**  
+Đi thì được.
+
+**THỢ CHỐT TUYẾN**  
+Nhưng đội nào lên cao cũng phải ghé Cối Xay Gió xem gió trước.
+
+**SLOT 1**  
+Ở dưới này có vẻ vẫn yên mà ạ?
+
+**THỢ CHỐT TUYẾN**  
+Ở dưới yên không có nghĩa trên cao cũng yên.
+
+**THỢ CHỐT TUYẾN**  
+Gió quật ngang sườn núi thì đá lăn, cây đổ.  
+Đường vừa sửa xong cũng có thể mất.
+
+**THỢ CHỐT TUYẾN**  
+Cứ đi qua khu dân cư phía trước.  
+Từ đó có đường lên Cối Xay.
+
+Do not expand this exchange with extra safety exposition.
 
 Remove the old stacked three-piece choke-point implementation from this story role. The old three chess pieces/resting duplicates are not canonical for this corridor.
 
@@ -174,7 +197,27 @@ Do not have the party correct or reassure this NPC; they do not know the truth y
 
 ### NPC 3 — route maintenance
 
-Explains that construction/route teams still go up to reset stakes, reinforce banks and reopen whatever can still be reopened. Some repairs last months; some must be redone almost immediately.
+Locked dialogue — use verbatim:
+
+**NPC 3**  
+Bọn tôi vẫn lên tuyến đều.
+
+**SLOT 2**  
+Đường hỏng như vậy vẫn sửa được ạ?
+
+**NPC 3**  
+Cọc mất thì đóng lại.  
+Bờ sạt thì gia cố.  
+Đường bị lấp thì mở lại.
+
+**NPC 3**  
+Có chỗ giữ được vài tháng.
+
+**NPC 3**  
+Có chỗ vừa sửa xong...  
+ít hôm sau đã phải làm lại.
+
+Do not add an explanation of the underlying cause; this NPC knows maintenance work, not the truth behind the disturbance.
 
 ## SCENE 06 — ĐỘI TUẦN TUYẾN KHỞI HÀNH
 
@@ -224,27 +267,63 @@ World-building requirements:
 
 Show the Windmill operating normally first.
 
-It serves two functions:
-1. grinds food for the Trạm;
-2. reads higher-altitude wind conditions for route teams.
+Locked dialogue — use verbatim:
 
-A worker explains these functions while showing vane/bells/indicators.
+**THỢ TRẠM GIÓ**  
+Cối Xay này không chỉ dùng để xay lương thực cho Trạm.
 
-The route team asks whether conditions are good.
+**THỢ TRẠM GIÓ**  
+Nhìn hướng cánh, cánh định gió và chuông báo...  
+bọn tôi biết gió trên cao đang đổi thế nào.
+
+**THỢ TUẦN TUYẾN 1**  
+Hôm nay lên tuyến được không?
+
+**THỢ TRẠM GIÓ**  
+Chờ nó đọc xong đã.
+
+Do not expand this into a machinery tutorial.
+
+### Scene07–08 implementation simplification lock
+
+Do **not** build a multi-component runtime simulation for the Windmill.
+
+Do **not** separately engineer runtime systems for:
+- independent blade rotation;
+- weather-vane pivoting;
+- local wind-flag physics;
+- bell/indicator oscillation;
+- synchronizing those parts over a timeline.
+
+The scene only needs to **communicate the visual event**, not expose those components as gameplay systems.
+
+Preferred implementation:
+
+1. Map 3 begins in a simple normal/stable exploration state.
+2. Play the Scene07 dialogue above.
+3. Use **one short pre-battle cinematic video** to show the Windmill transition from normal operation into the abnormal runaway state.
+4. Return from the video directly into the battle trigger.
+5. After battle, return to a simple stabilized/alive Windmill world state.
+
+Use the existing Google Flow / Veo video workflow if available. The cinematic should be generated from the accepted Map 3 / Windmill reference so the location and machine identity remain continuous.
+
+One coherent video is preferred over building reusable machinery animation code that Chapter 2 does not otherwise need.
 
 ## SCENE 08 — DỊ TƯỢNG / RUNAWAY
 
 No Pawn Wall battle. No Knight Wild battle. Remove that encounter from this sequence.
 
-Locked staging:
+The pre-battle cinematic communicates, in one visual sequence:
+- Windmill begins in normal operation;
+- nearby cloth/flag still reads as ordinary local wind;
 - Windmill slows;
-- nearby normal wind flag still indicates ordinary wind;
 - Windmill stops;
-- then rotates in the wrong direction;
-- its vane points toward the mountain;
-- warning bells/indicators become unstable;
-- mechanism loses control;
-- civilians/workers retreat from danger.
+- Windmill turns in the wrong direction;
+- its wind-reading direction pulls toward the mountain;
+- bells/indicators become unstable;
+- nearby workers/civilians retreat from danger.
+
+This is **visual storytelling inside the video**, not a requirement for separate live runtime mechanisms.
 
 Only battle on Map 3:
 
@@ -286,11 +365,13 @@ Bây giờ ta không biết.
 Do not have everyone leave immediately after the runaway battle.
 
 Required causal sequence:
-1. Windmill detects/expresses abnormal upper-level wind and runs away.
+1. The Scene07–08 cinematic has already communicated the abnormal upper-level wind and runaway.
 2. Trạm trưởng suspends ascent.
-3. Local wind calms after a short exploration/time beat.
+3. Use a **simple short free-exploration/time beat**, then a state/flag change to represent that local wind has calmed. Do not implement a dynamic wind simulation.
 4. Route team is allowed to inspect only the old known route up to the final stake.
 5. Party may follow the same route **behind** the route team.
+
+The route team remains static for Chapter 2 asset purposes. Its departure/progression is represented through event/state changes, repositioning between states, or absence in the next state. Do not create route-team walk animation just to illustrate departure.
 
 Trạm trưởng explicitly tells the party not to pass the route team.
 
@@ -309,9 +390,10 @@ End objective: proceed toward the Abandoned Belt / old route. Do not implement t
 Sol may now implement for Scene 01–09:
 - chapter/event/dialogue data;
 - map 1/2 repurpose and scene object cleanup;
-- NPC staging and short walk sequences;
+- NPC staging; only Trạm trưởng may use the already-accepted Chapter 2 walking asset;
 - removal of obsolete permit semantics inside the locked area;
 - removal of Pawn Wall/Knight Wild from Map 3 flow;
+- one short Scene07–08 pre-battle Windmill cinematic video rather than a new live machinery simulation;
 - Windmill runaway battle transition and post-battle alive/stabilized state;
 - objective/state transitions through the end of Scene 09;
 - asset-gap records for missing Map 3 and Red Map cutscene art.
