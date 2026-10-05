@@ -1,0 +1,15 @@
+{
+  "character": "npc_ch02_highland_worker_b",
+  "identity_sha256": "74b01ead76798b1655b2fc1ae61e150621650dc152761e9e49826a6bd6d0c871",
+  "canonical_path": "references/ch02/npc_ch02_highland_worker_b/canonical.png",
+  "source_request_id": "20261005-0926-ch02-highland-worker-b-reference-v1",
+  "source_queue_commit": "7b5db078a9d067e705ad3d30b1af42cb4a67f916",
+  "visual_review": {
+    "delegation": "deleg_95f9e413",
+    "verdict": "PASS",
+    "image_sha256": "02b1dd20903ed3f73747d9e823b6bc55a524dad8bbed1a046b5bc4d51bfa781a"
+  },
+  "status": "identity-frozen",
+  "scope": "Only canonical identity; not downstream/runtime accepted.",
+  "locomotion_forbidden": true
+}

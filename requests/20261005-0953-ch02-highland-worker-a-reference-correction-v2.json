@@ -1,0 +1,22 @@
+{
+  "id": "20261005-0953-ch02-highland-worker-a-reference-correction-v2",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "canonical_reference",
+  "reference_mode": "external_reference_first",
+  "character": "npc_ch02_highland_worker_a",
+  "action": "reference_correction_v2",
+  "action_vi": "Sửa hẹp cue nghề của reference A, không redesign",
+  "asset_type": "reference_image",
+  "reference_images": [
+    "references/ch02/npc_ch02_highland_worker_a/rejected_candidate_v1.png",
+    "references/style/ch02-npc-rendering/hero_warrior_male.png",
+    "references/style/ch02-npc-rendering/hero_warrior_female.png",
+    "references/style/ch02-npc-rendering/hero_tanker_male.png",
+    "references/style/ch02-npc-rendering/hero_healer_female.png"
+  ],
+  "style_bible": "style-bibles/chapter02/README.md",
+  "transparent_background": true,
+  "notes": "Chapter 2 Vietnamese-fantasy highland frontier. Ordinary STATIC NPC, NOT enemy/boss/guardian; no approval_policy classification. This is a SINGLE reference-conditioned image rendering of the supplied identity, NOT a new identity design. Freeze face/hair/age/clothes/palette/proportions/accessories exactly. Hero references STYLE ONLY, no costume bleed. Weathered earth/muted-green/indigo/brown cloth, subdued weary/worried/stoic tone. NO chess motifs, modern industrial kit, armor, hero weapons, broad smile, comedy, text/UI/watermark/scenery. No locomotion/walk/run/four-direction sheets. Trạm trưởng remains the ONLY CH02 walking NPC and has existing accepted art. Deliver one high-resolution RGBA master with safe margin; worker done means delivery only, not production accepted. ONE narrowly targeted canonical-reference correction, keeping all other v1 identity intact. Independent reviewer REJECTED only conspicuous belt rope coil/work-role readability: reduce rope coil to small unobtrusive utilitarian loop and add ONE small worn wooden maintenance mallet tucked in belt as practical construction/safety cue, not a weapon or combat pose. No additional tools or outfit redesign. Full-body canonical front/three-quarter reference, readable hands and footwear. After this correction STOP: no downstream/animation.",
+  "status": "pending"
+}

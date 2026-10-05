@@ -1,0 +1,15 @@
+{
+  "character": "npc_ch02_worried_resident",
+  "identity_sha256": "8d1fd3571073f29c3f7fe8c493b361851f238dac57f7babc66314376b05065bd",
+  "canonical_path": "references/ch02/npc_ch02_worried_resident/canonical.png",
+  "source_request_id": "20261005-0926-ch02-worried-resident-reference-v1",
+  "source_queue_commit": "7b5db078a9d067e705ad3d30b1af42cb4a67f916",
+  "visual_review": {
+    "delegation": "deleg_95f9e413",
+    "verdict": "PASS",
+    "image_sha256": "919e7964dbd1c55a83586b08ccb2ec367c65c7d98356159e47799f86208a0d89"
+  },
+  "status": "identity-frozen",
+  "scope": "Only canonical identity; not downstream/runtime accepted.",
+  "locomotion_forbidden": true
+}

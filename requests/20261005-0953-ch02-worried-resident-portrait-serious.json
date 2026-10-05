@@ -1,0 +1,26 @@
+{
+  "id": "20261005-0953-ch02-worried-resident-portrait-serious",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "canonical_reference",
+  "reference_mode": "external_reference_first",
+  "character": "npc_ch02_worried_resident",
+  "action": "portrait_serious",
+  "action_vi": "Một portrait serious cùng identity",
+  "asset_type": "reference_image",
+  "reference_images": [
+    "references/ch02/npc_ch02_worried_resident/canonical.png",
+    "references/style/ch02-npc-rendering/hero_warrior_male.png",
+    "references/style/ch02-npc-rendering/hero_warrior_female.png",
+    "references/style/ch02-npc-rendering/hero_tanker_male.png",
+    "references/style/ch02-npc-rendering/hero_healer_female.png"
+  ],
+  "style_bible": "style-bibles/chapter02/README.md",
+  "transparent_background": true,
+  "notes": "Chapter 2 Vietnamese-fantasy highland frontier. Ordinary STATIC NPC, NOT enemy/boss/guardian; no approval_policy classification. This is a SINGLE reference-conditioned image rendering of the supplied identity, NOT a new identity design. Freeze face/hair/age/clothes/palette/proportions/accessories exactly. Hero references STYLE ONLY, no costume bleed. Weathered earth/muted-green/indigo/brown cloth, subdued weary/worried/stoic tone. NO chess motifs, modern industrial kit, armor, hero weapons, broad smile, comedy, text/UI/watermark/scenery. No locomotion/walk/run/four-direction sheets. Trạm trưởng remains the ONLY CH02 walking NPC and has existing accepted art. Deliver one high-resolution RGBA master with safe margin; worker done means delivery only, not production accepted. STAGE3: ONE dialogue portrait expression serious ONLY: concerned/focused/burdened, no comic shock or warmth/smile. Recognizably exact same person as first canonical reference. Upper body portrait framing, face readable, safe hair/head/shoulder margin. Generate high-resolution portrait master first, then Hermes runtime downsample320x480. Do not generate neutral/positive/surprised extras. Transparent alpha.",
+  "status": "pending",
+  "runtime_cell_size": {
+    "width": 320,
+    "height": 480
+  }
+}
