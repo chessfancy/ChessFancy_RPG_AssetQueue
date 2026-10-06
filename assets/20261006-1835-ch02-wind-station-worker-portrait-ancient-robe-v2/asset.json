@@ -1,0 +1,60 @@
+{
+  "request_id": "20261006-1835-ch02-wind-station-worker-portrait-ancient-robe-v2",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "canonical_reference_rgba.png",
+  "action": "portrait_serious_ancient_robe_v2",
+  "character": "npc_ch02_wind_station_worker",
+  "request_blob_sha": "3deeef9de96eb5f0d244bf07c88d1b50141e960f9ac0e1f6df88c1ebdcd13261",
+  "request_commit_sha": "20430e9b1422afc5e1093288a0bb4b154e135e1f",
+  "generation_mode": "single_reference",
+  "identity_overrides_applied": [
+    "ancient one-piece long robe / ao dai lien than",
+    "pre-modern cloth collar",
+    "no modern shirt collar/apron"
+  ],
+  "repair_passes_used": 0,
+  "raw_generation": {
+    "width": 1280,
+    "height": 1920,
+    "sha256": "37a27a90a9d125009214902a22098a20d28c88525d4b5d467de6cc29a3e95382",
+    "snapshot_id": "bea45234-65aa-4525-a390-6649c21e6736:fazv5u"
+  },
+  "master": {
+    "sheet": "canonical_reference_rgba.png",
+    "width": 1280,
+    "height": 1756,
+    "extra_padding_px": 15,
+    "sha256": "46e6272e30c1ebca38756c5a0376ff744148fba2ca5205dae7d7a10c96eaf98a"
+  },
+  "runtime_cell_size": {
+    "width": 320,
+    "height": 480
+  },
+  "background_cleanup": "white_key_out_with_edge_decontamination",
+  "reference_conditioning": {
+    "reference_images": [
+      "references/corrections/ch02/npc_ch02_wind_station_worker/portrait_ancient_robe_v2/current-modern-collar-portrait.png",
+      "references/canonical/ch02/npc_ch02_wind_station_worker/canonical.png"
+    ],
+    "correction_reference_sha256": "232ac020e33d65e686c8535729c0fc8a940488fed71e80cc51dd1b693834bd1b",
+    "canonical_reference_sha256": "a7d63b56d1488bcac0ff3f4b923e840ddc9446efe7a4fbec30c19ef6010ad661"
+  },
+  "files": [
+    "canonical_reference_rgba.png",
+    "asset.json"
+  ],
+  "qc": {
+    "identity": "pass",
+    "expression": "pass",
+    "facing": "pass",
+    "crop": "pass",
+    "ancient_costume": "pass",
+    "no_modern_collar_apron": "pass",
+    "background": "pass",
+    "resolution": "pass"
+  },
+  "created_at": "2026-10-06T18:52:00+07:00"
+}
