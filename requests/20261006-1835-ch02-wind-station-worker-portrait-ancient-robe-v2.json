@@ -1,0 +1,48 @@
+{
+  "id": "20261006-1835-ch02-wind-station-worker-portrait-ancient-robe-v2",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "canonical_reference",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "external_reference_first",
+  "character": "npc_ch02_wind_station_worker",
+  "action": "portrait_serious_ancient_robe_v2",
+  "action_vi": "Làm lại portrait serious cho thợ Trạm Gió: giữ mặt/tóc/tuổi, đổi trang phục sang cổ phục ancient áo dài liền thân",
+  "asset_type": "reference_image",
+  "reference_images": [
+    "references/corrections/ch02/npc_ch02_wind_station_worker/portrait_ancient_robe_v2/current-modern-collar-portrait.png",
+    "references/canonical/ch02/npc_ch02_wind_station_worker/canonical.png",
+    "references/style/ch02-npc-rendering/hero_warrior_female.png",
+    "references/style/ch02-npc-rendering/hero_healer_female.png",
+    "references/style/ch02-npc-rendering/hero_tanker_male.png"
+  ],
+  "style_bible": "style-bibles/chapter02/README.md",
+  "transparent_background": true,
+  "runtime_cell_size": {
+    "width": 320,
+    "height": 480
+  },
+  "status": "pending",
+  "identity_overrides": {
+    "preserve": [
+      "middle-aged/older Vietnamese-fantasy female attendant identity",
+      "weathered serious face with fine age lines",
+      "dark grey hair tied back in a small bun",
+      "calm matter-of-fact serious expression",
+      "project-native painterly muted palette"
+    ],
+    "change": [
+      "replace modern collared shirt and work apron with ancient-setting continuous one-piece long robe / áo dài liền thân",
+      "use pre-modern cloth collar construction; no modern folded button-up shirt collar",
+      "robe should read as old highland civilian workwear, practical and modest, not noble court fashion"
+    ],
+    "avoid": [
+      "modern shirt collar",
+      "button-up office/factory shirt",
+      "apron straps/pockets that read modern workwear",
+      "modern seams, denim, industrial clothing, zippers, printed text, badges",
+      "armor, magic, guard/sorcerer styling, heroic weapons, chess motifs"
+    ]
+  },
+  "notes": "USER CORRECTION 2026-10-06: current portrait reads modern because the white folded shirt collar and blue apron straps look like contemporary workwear. Redo the portrait prompt/output for this same NPC with ANCIENT clothing: áo dài liền thân / one-piece long robe, pre-modern Vietnamese-fantasy highland civilian fabric, simple practical belt or sash allowed. The FIRST reference image is the current rejected portrait; use it ONLY to preserve face, age, hair bun, expression, palette and framing. Do NOT preserve its modern collared shirt, apron straps, apron pockets, sleeve construction or modern worker uniform language. The second reference is the existing canonical source identity for provenance only; its pale shirt/navy apron costume is also superseded by this correction and must not be copied. Single upper-body dialogue bust, serious expression, transparent RGBA, high-resolution master first; Hermes will normalize to 320x480 after QC. Locked CH02 Scene01-09 only; no Scene10+, dialogue, story, personal names, lore, locomotion/walk/run/4-direction art, maps, Red Map, windmill, props, Flow/video, or runtime changes. Ordinary static NPC; status done is worker delivery only, not production approval. Return exactly one owner-declared high-resolution RGBA master PNG and asset.json binding exact request/source/result SHA values and actual provider-call/snapshot evidence when available; state gaps honestly. Correction reference SHA256 232ac020e33d65e686c8535729c0fc8a940488fed71e80cc51dd1b693834bd1b; prior canonical reference SHA256 a7d63b56d1488bcac0ff3f4b923e840ddc9446efe7a4fbec30c19ef6010ad661; prior portrait visible issue: modern folded collar under apron."
+}
