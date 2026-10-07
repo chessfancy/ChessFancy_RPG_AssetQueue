@@ -1,0 +1,56 @@
+{
+  "request_id": "20261007-1540-ch02-wind-station-worker-portrait-serious-square-v2",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "canonical_reference_rgba.png",
+  "action": "portrait_serious_square_v2",
+  "character": "npc_ch02_wind_station_worker",
+  "request_blob_sha": "712b9f8280e81eb1cb0388e4e48d2db657e7470b6452d9943a97e4d0b9ff26fa",
+  "request_commit_sha": "740a05eaecfc3280bc8d66070d5dd5cf9fafe129",
+  "generation_mode": "single_reference",
+  "identity_overrides_applied": [],
+  "repair_passes_used": 0,
+  "raw_generation": {
+    "width": 1600,
+    "height": 1600,
+    "sha256": "eb5d76e674a648a856c240977723c7a762a2e909a34bd91cdefee4560d266788",
+    "snapshot_id": "96169e92-3cf3-4a29-92ba-78e1390e3ec7:omg1sh"
+  },
+  "master": {
+    "sheet": "canonical_reference_rgba.png",
+    "width": 1600,
+    "height": 1600,
+    "extra_padding_px": 0,
+    "sha256": "c119f2eb40f3c5f630cdc4f2011d20f30e795116b46dccda520cdfeb7564d14b",
+    "framing": "square 1:1 bust, top headroom 5.8%, bust touching bottom edge, centered — normalized to match accepted framing reference assets/20261005-0953-ch02-worried-resident-portrait-serious/canonical_reference_rgba.png"
+  },
+  "runtime_cell_size": {
+    "width": 320,
+    "height": 480
+  },
+  "background_cleanup": "white_key_out_with_edge_decontamination",
+  "reference_conditioning": {
+    "reference_images": [
+      "assets/20261006-1835-ch02-wind-station-worker-portrait-ancient-robe-v2/canonical_reference_rgba.png",
+      "references/canonical/ch02/npc_ch02_wind_station_worker/canonical.png"
+    ]
+  },
+  "files": [
+    "canonical_reference_rgba.png",
+    "asset.json"
+  ],
+  "qc": {
+    "identity": "pass",
+    "expression": "pass",
+    "facing": "pass",
+    "crop": "pass",
+    "background": "pass",
+    "resolution": "pass",
+    "framing_square_margins": "pass",
+    "serious_expression": "pass",
+    "ancient_robe_no_modern_collar": "pass"
+  },
+  "created_at": "2026-10-07T16:05:00+07:00"
+}
