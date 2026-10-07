@@ -1,0 +1,103 @@
+{
+ "request_id": "20261007-1734-ch02-map2-village-life-clutter-prop-pack-v1",
+ "protocol_version": "2",
+ "worker": "muse",
+ "generator": "muse",
+ "reference_mode": "external_reference_first",
+ "canonical_reference": "references/ch02/map2_village_props/tents_supplies_sheet_reference.png",
+ "request_blob_sha": "d7268fc330125be1627c0479db06e608368b1b92912abc76405c4cb705587687",
+ "request_commit_sha": "77eaae2",
+ "generation_mode": "single_contact_sheet",
+ "requested_frames": 4,
+ "detected_initial_frames": 4,
+ "repaired_frames": [],
+ "repair_passes_used": 0,
+ "generation_layout": {
+  "cols": 2,
+  "rows": 2
+ },
+ "raw_generation": {
+  "width": 1600,
+  "height": 1600,
+  "sha256": "214041bcc17b6a5d5c064e71f3b862a9784c9b33ee1982b4cc3ff5f3bb3dc892",
+  "file": "media-generation-clutter-sheet-v1-0-96bcd824-66b4-4918-b510-aa70146cc9f4.webp",
+  "snapshot_id": "b5885b0b-ef91-4f56-b8f0-70d1c3437d87:ezfsjj",
+  "note": "raw sheet uncommitted (working asset); SHA and snapshot retained"
+ },
+ "master": {
+  "sheet": "master_sheet_rgba.png",
+  "width": 1600,
+  "height": 1600,
+  "extra_padding_px": 12,
+  "sha256": "83e471760597ce2f851cc05002006bf1a19562692645f38bc16c81e3228508de"
+ },
+ "runtime_cell_size": {
+  "width": 512,
+  "height": 512
+ },
+ "background_cleanup": "white_key_if_needed",
+ "frames": [
+  {
+   "path": "frames/frame_00.png",
+   "cell": "cell1_topleft",
+   "size": [
+    785,
+    677
+   ],
+   "sha256": "5c33764fe899656e214a3efe4fad1e242e4b504f58c0b6d11432a3ed9450d0a0"
+  },
+  {
+   "path": "frames/frame_01.png",
+   "cell": "cell2_topright",
+   "size": [
+    764,
+    519
+   ],
+   "sha256": "34639bbeaae21f5c996db975943cb4d2414f6445f886df8e276ab3b9b20300ab"
+  },
+  {
+   "path": "frames/frame_02.png",
+   "cell": "cell3_bottomleft",
+   "size": [
+    785,
+    597
+   ],
+   "sha256": "4610b9137f9e00a83787f93cdf48e02cfc2b0f11d4269c4d71728a3646f2a98a"
+  },
+  {
+   "path": "frames/frame_03.png",
+   "cell": "cell4_bottomright",
+   "size": [
+    741,
+    684
+   ],
+   "sha256": "84bc175a99cf4ea0b20680f44cc081c6e6b93931f8a9a6787bdcbbe61acb3f2a"
+  }
+ ],
+ "frame_descriptions": [
+  "campfire pit + tripod",
+  "water station (2 jugs + bucket)",
+  "supply stack + lantern",
+  "laundry line between poles"
+ ],
+ "files": [
+  "master_sheet_rgba.png",
+  "frames/frame_00.png",
+  "frames/frame_01.png",
+  "frames/frame_02.png",
+  "frames/frame_03.png",
+  "asset.json"
+ ],
+ "qc": {
+  "frame_count": "pass",
+  "style_lock": "pass",
+  "prop_identity": "pass",
+  "grid": "pass (exact 2x2, one prop cluster per cell, independently sliceable)",
+  "crop": "pass",
+  "bleed": "pass",
+  "background": "pass (per-cell transparent alpha, antialiased edges kept)",
+  "text": "pass (none)",
+  "notes": "preview.gif omitted per request postprocess.export_preview_gif=false"
+ },
+ "created_at": "2026-10-07T17:47:42.004722+07:00"
+}
