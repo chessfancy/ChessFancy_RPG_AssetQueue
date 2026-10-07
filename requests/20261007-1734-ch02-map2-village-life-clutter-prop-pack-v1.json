@@ -1,0 +1,41 @@
+{
+ "protocol_version": "2",
+ "worker": "muse",
+ "approval_policy": "enemy_auto",
+ "style_bible": "style-bibles/chapter02/README.md",
+ "transparent_background": true,
+ "status": "pending",
+ "id": "20261007-1734-ch02-map2-village-life-clutter-prop-pack-v1",
+ "task_type": "prop_pack",
+ "reference_mode": "external_reference_first",
+ "character": "prop_ch02_map2_village_life_clutter",
+ "action": "map2_village_life_clutter_v1",
+ "action_vi": "4 cụm vật dụng sinh hoạt cho Map 2: bếp lửa trại, trạm nước, chồng đồ tiếp tế, dây phơi — sheet 2x2",
+ "asset_type": "prop_sheet",
+ "frames": 4,
+ "frames_vi": [
+  "Cell 1: bếp lửa trại, vòng đá, củi, giá ba chân nấu ăn",
+  "Cell 2: trạm nước, 2 vò gốm + xô gỗ trên phiến đá",
+  "Cell 3: chồng đồ tiếp tế, thùng gỗ, chăn cuộn, đèn dầu",
+  "Cell 4: dây phơi quần áo giữa 2 cọc"
+ ],
+ "runtime_cell_size": {
+  "width": 512,
+  "height": 512
+ },
+ "reference_images": [
+  "references/ch02/map2_village_props/tents_supplies_sheet_reference.png",
+  "references/ch02/map2_village_props/canvas_shelter_reference.png",
+  "references/ch02/map2_village_props/camp_station_reference.png",
+  "references/ch02/map2_village_props/map2_base_palette_reference.png",
+  "references/style/ch02/environment.png"
+ ],
+ "postprocess": {
+  "background_mode": "transparent_if_available",
+  "extra_padding_px": 12,
+  "max_repair_passes": 2,
+  "export_individual_frames": true,
+  "export_preview_gif": false
+ },
+ "notes": "CANDIDATE ONLY. Locked CH02 Scene01-09; do not create Scene10+, dialogue, story, personal names or lore. No accepted map/background or original art changes. Ordinary production-asset request; status done is not approval. Return owner-declared actual RGBA master PNG and asset.json with exact request/result/source image SHA and actual reference conditioning metadata; record real provider call/snapshot when available, honest gaps when unavailable. Never silently relabel reference_mode or change requester fields besides status. STYLE LOCK: hand-painted painterly style must match tents_supplies_sheet_reference exactly (warm brown-beige-olive palette, soft edges, subtle cast shadow, light from upper-left), consistent with map2_base_palette_reference palette. SQUARE canvas, exact 2x2 grid, four equal cells, ONE distinct prop (or prop cluster) per cell, each freestanding on invisible ground, fully transparent background, no white or magenta fringing, no text, no logos, no characters. Cells must be sliceable as independent props. Objects sized to read at 100-220 px tall in-game next to the existing canvas_shelter and camp_station props (see references). No production path writes. PROMPT: Prop sheet, 2x2 grid of four equal cells, fully transparent background, ONE separate game prop cluster per cell, hand-painted painterly style matching the tents_supplies_sheet reference exactly (warm brown-beige-olive palette, soft edges, subtle cast shadow, light from upper-left). Cell 1: campfire pit with stone ring, logs, and a small cooking tripod. Cell 2: water station - two ceramic jugs and a wooden bucket on a flat stone. Cell 3: supply stack - wooden crates, rolled bedrolls and a lantern. Cell 4: laundry line between two poles with hanging cloths. Highland refugee village mood, worn but sturdy. ACCEPTANCE: square canvas >=1536x1536; exact 2x2 grid with 4 distinct clusters; per-cell transparent alpha; style/palette matches tents sheet reference; no text/fringing; each cell independently sliceable."
+}

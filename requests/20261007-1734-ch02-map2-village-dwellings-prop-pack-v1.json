@@ -1,0 +1,41 @@
+{
+ "protocol_version": "2",
+ "worker": "muse",
+ "approval_policy": "enemy_auto",
+ "style_bible": "style-bibles/chapter02/README.md",
+ "transparent_background": true,
+ "status": "pending",
+ "id": "20261007-1734-ch02-map2-village-dwellings-prop-pack-v1",
+ "task_type": "prop_pack",
+ "reference_mode": "external_reference_first",
+ "character": "prop_ch02_map2_village_dwellings",
+ "action": "map2_village_dwellings_v1",
+ "action_vi": "4 nhà/lều mới cho Map 2 Khu dân cư cuối cùng: lều chữ A, yurt, nhà gỗ nhỏ, lều chợ — sheet 2x2",
+ "asset_type": "prop_sheet",
+ "frames": 4,
+ "frames_vi": [
+  "Cell 1: lều chữ A nhỏ, vải bạt nâu, dây chão, cửa hé mở",
+  "Cell 2: lều tròn kiểu yurt, vải be, ống khói nhỏ, dây buộc",
+  "Cell 3: nhà gỗ nhỏ, vách ván, mái nghiêng đơn giản, cửa mở",
+  "Cell 4: lều chợ sọc, thùng gỗ phía trước"
+ ],
+ "runtime_cell_size": {
+  "width": 512,
+  "height": 512
+ },
+ "reference_images": [
+  "references/ch02/map2_village_props/tents_supplies_sheet_reference.png",
+  "references/ch02/map2_village_props/canvas_shelter_reference.png",
+  "references/ch02/map2_village_props/camp_station_reference.png",
+  "references/ch02/map2_village_props/map2_base_palette_reference.png",
+  "references/style/ch02/environment.png"
+ ],
+ "postprocess": {
+  "background_mode": "transparent_if_available",
+  "extra_padding_px": 12,
+  "max_repair_passes": 2,
+  "export_individual_frames": true,
+  "export_preview_gif": false
+ },
+ "notes": "CANDIDATE ONLY. Locked CH02 Scene01-09; do not create Scene10+, dialogue, story, personal names or lore. No accepted map/background or original art changes. Ordinary production-asset request; status done is not approval. Return owner-declared actual RGBA master PNG and asset.json with exact request/result/source image SHA and actual reference conditioning metadata; record real provider call/snapshot when available, honest gaps when unavailable. Never silently relabel reference_mode or change requester fields besides status. STYLE LOCK: hand-painted painterly style must match tents_supplies_sheet_reference exactly (warm brown-beige-olive palette, soft edges, subtle cast shadow, light from upper-left), consistent with map2_base_palette_reference palette. SQUARE canvas, exact 2x2 grid, four equal cells, ONE distinct prop (or prop cluster) per cell, each freestanding on invisible ground, fully transparent background, no white or magenta fringing, no text, no logos, no characters. Cells must be sliceable as independent props. Objects sized to read at 100-220 px tall in-game next to the existing canvas_shelter and camp_station props (see references). No production path writes. PROMPT: Prop sheet, 2x2 grid of four equal cells, fully transparent background, ONE separate game prop per cell, hand-painted painterly style matching the tents_supplies_sheet reference exactly (warm brown-beige-olive palette, soft edges, subtle cast shadow under each object, light from upper-left). Cell 1: small A-frame canvas tent, brown tarpaulin, guy ropes, door flap half open. Cell 2: round yurt-style tent, beige canvas, small stovepipe, rope ties. Cell 3: small wooden shack/hut, plank walls, simple lean-to roof, open doorway. Cell 4: market stall tent with striped awning and wooden crates in front. Highland refugee village mood, worn but sturdy. ACCEPTANCE: square canvas >=1536x1536; exact 2x2 grid with 4 distinct dwellings; per-cell transparent alpha; style/palette matches tents sheet reference; no text/fringing; each cell independently sliceable."
+}
