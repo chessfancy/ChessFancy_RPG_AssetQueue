@@ -1,0 +1,28 @@
+{
+  "id": "20261011-2006-ch02-windmill-runaway-cinematic-v2",
+  "protocol_version": "2",
+  "worker": "video",
+  "reference_mode": "external_reference_first",
+  "character": "windmill_overworld_stable",
+  "action": "runaway_cinematic",
+  "action_vi": "Cối xay hoạt động bình thường, chậm lại, dừng, rồi quay ngược chiều kim đồng hồ và mất kiểm soát; giữ nguyên map và identity, kết thúc trước khi worker vào thoại/trận.",
+  "frames_vi": [
+    "Khung rộng trên Map 3; cối xay đang quay bình thường, thân máy đứng yên.",
+    "Rotor chậm dần rõ rệt.",
+    "Rotor dừng hẳn; giữ một nhịp ngắn.",
+    "Rotor bắt đầu quay ngược chiều kim đồng hồ theo góc nhìn camera.",
+    "Rotor tăng tốc và rung/giật mất kiểm soát nhưng không rời trục; thân máy và map vẫn nguyên vẹn.",
+    "Kết ở trạng thái runaway, sẵn sàng cho runtime chuyển sang worker dialogue rồi battle."
+  ],
+  "asset_type": "reference_video",
+  "fps": 24,
+  "duration_sec": 8,
+  "reference_images": [
+    "references/ch02/windmill_overworld_idle.gif",
+    "references/ch02/map3_windmill_background.png"
+  ],
+  "character_spec_path": "references/ch02/windmill_runaway_video_brief.md",
+  "transparent_background": false,
+  "notes": "ROUTE: video worker / continuous-motion pipeline (Flow/Veo); this is a VIDEO candidate, not a sprite-sheet job. Use the attached existing overworld sprite GIF as identity and normal-motion reference, and the attached current Map 3 base image as the exact location/background. Keep the two small cloth flags already painted into the map static; do not add or animate separate alarm props. Worker/dialogue is a runtime beat after the video, never generated into the clip. The windmill must survive; the gameplay encounter stabilizes/disables it, not kills it. One candidate only. Preserve raw result and provenance; no production promotion or runtime integration without separate review.\n\nDựa vào GIF `references/ch02/windmill_overworld_idle.gif` làm nguồn chuyển động và identity của đúng cối xay overworld; dùng ảnh nền Map 3 được đính kèm (`references/ch02/map3_windmill_background.png`) làm bối cảnh. Tạo một cinematic fantasy painterly 16:9, dài 6–8 giây, khung hình rộng cho thấy toàn cối xay và địa hình quen thuộc của Map 3. Giữ nguyên mặt cau có, mái xanh, thân tháp đá, khiên xanh-vàng, màu sắc, silhouette, tỉ lệ và vị trí của cối xay so với nền.\n\nNhịp cảnh: ban đầu cối xay quay bình thường; rotor chậm dần rồi dừng hẳn; sau một nhịp im lặng rotor bắt đầu quay NGƯỢC CHIỀU KIM ĐỒNG HỒ (counter-clockwise, nhìn từ camera/người xem), rồi tăng tốc và rung/giật mất kiểm soát nhưng vẫn gắn chắc vào trục. Thân tháp và khuôn mặt đứng yên, không biến dạng. Camera cinematic nhẹ nhưng ổn định, không che/crop rotor hoặc landmark; giữ background map nhận ra được và không đổi topology/art của map; giữ nguyên hai cờ vải nhỏ vốn có trong ảnh nền ở trạng thái tĩnh, không animate chúng. Kết thúc khi cối xay đang mất kiểm soát, sẵn sàng chuyển sang gameplay.\n\nKhông redesign hoặc thay nhân vật; không thêm cờ/chuông/thiết bị đo gió, nhân vật/civilian/worker, quái vật, chữ, subtitle, UI, logo, watermark, title card, lời thoại hay audio. Worker sẽ xuất hiện bằng runtime/game event SAU video và nói với người chơi; không đưa worker/dialogue vào clip. Không phá hủy hay làm cối xay đổ/ngã; đây là máy/thần vật sống cần được ổn định, không phải boss ác cần giết. Không xoay camera, không đổi hướng cối xay, không flicker/morph, không crop. Xuất một video candidate; giữ raw và provenance để QC, chưa tích hợp production.\n\nReference provenance: windmill GIF sha256=b3888fa5dd8ed47ac827b53dac7f5b8917397d3d4aafebd70ef4e8549953f9c0; source runtime spritesheet `static/game/assets/props/ch02_windmill_stable/prop.png` sha256=a6cecdbfe2822b231345d24929fa17077219baf2f4878c5c576cc5fcf0b779f2. Map reference sha256=4379c610a390b50d6fb69ad6ca3008963a4ed59f8688c1a5c1f33dc3194375b7 (source `static/game/assets/maps/map_ch02_windmill_plateau_base.png`, sha256=4379c610a390b50d6fb69ad6ca3008963a4ed59f8688c1a5c1f33dc3194375b7).",
+  "status": "pending"
+}
