@@ -31,3 +31,23 @@ mountains/clouds.
   blurred frames.
 - No blade-morph frames existed, so no individual frames were deleted; the fix
   was clip selection per the teacher's rules.
+
+## v4 FINAL (2026-10-12, frame-surgery build — teacher: "cắt ghép frames từ 5 video")
+Teacher verdict: fresh generation "không cải thiện thêm" — rebuild purely from the
+5 clips via frame-level editing. Finding: seg_wide is the ONLY fully
+rule-compliant clip (base + no sea + 4 blades, verified all 192 frames), so the
+entire v4 is built from seg_wide_clean.mp4 frames — no new generation, no morph
+risk by construction.
+
+Structure (windmill_runaway_v4_final_13s.mp4, 13.17s, 316f, 1280x720@24fps):
+- Part A (0.0-8.0s): seg_wide as-is — normal operation, cinematic pan.
+- HARD CUT at 8.0s.
+- Part B1 "jerk" (1.67s): 3-frame freeze + reversed 1x — rotor visibly REVERSES
+  direction (opposite to Part A), blades sharp and countable.
+- Part B2 "acceleration" (2.0s): reversed 2x + frame-blend motion smear.
+- Part B3 "runaway" (1.5s): reversed 4x + triple-blend + 12% push-in —
+  violent out-of-control spin, ends at full runaway.
+- No watermark (built from the cleaned seg_wide), no audio.
+
+Why this works: same clip = same location, same base, same identity, guaranteed
+4 blades — all 3 teacher rules satisfied in every frame.
