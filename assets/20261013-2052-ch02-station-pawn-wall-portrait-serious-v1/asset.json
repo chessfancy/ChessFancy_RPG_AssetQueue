@@ -1,0 +1,64 @@
+{
+  "request_id": "20261013-2052-ch02-station-pawn-wall-portrait-serious-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "references/ch02/scene01_station_20261013/enemy_pawn_wall_reference.png",
+  "reference_images": [
+    "references/ch02/scene01_station_20261013/enemy_pawn_wall_reference.png",
+    "references/ch02/scene01_station_20261013/enemy_pawn_wall_idle_frame0.png",
+    "references/style/ch02/enemy_pawn_wall_style.png",
+    "assets/20261005-0953-ch02-worried-resident-portrait-serious/canonical_reference_rgba.png"
+  ],
+  "reference_conditioning": "single text prompt authored from request brief + attached identity/style images described in prose; media pipeline's image subagent expanded the prompt (provider-internal details unavailable to worker)",
+  "request_blob_sha": "7d63f8e327b16735c7f9b76e5599de658c4862b7dad802cf30491aef072917ad",
+  "request_commit_sha": "958769f8acd1a902cdaccbea4a5ae04557ad2e05",
+  "generation_mode": "single_image_pass",
+  "requested_frames": 1,
+  "detected_initial_frames": 1,
+  "repaired_frames": [],
+  "repair_passes_used": 0,
+  "generation_layout": {
+    "cols": 1,
+    "rows": 1
+  },
+  "raw_generation": {
+    "width": 1600,
+    "height": 1600,
+    "sha256": "14f7ace8cf34bf81fbac290456ee1d5a2f7d4f1252463fbe069bb4bd1109fc36",
+    "snapshot_id": "cb1ab549-6040-4e2d-8508-27f818198d8d:de51l2"
+  },
+  "master": {
+    "sheet": "master_sheet_rgba.png",
+    "width": 1528,
+    "height": 1528,
+    "cell_sizes": [
+      [
+        1528,
+        1528
+      ]
+    ],
+    "extra_padding_px": 24
+  },
+  "runtime_cell_size": {
+    "width": 320,
+    "height": 480
+  },
+  "background_cleanup": "white_key_if_needed",
+  "files": [
+    "master_sheet_rgba.png",
+    "frames/frame_00.png",
+    "asset.json"
+  ],
+  "qc": {
+    "frame_count": "pass",
+    "identity": "pass",
+    "choreography": "pass",
+    "facing": "pass",
+    "crop": "pass",
+    "bleed": "pass",
+    "background": "pass"
+  },
+  "created_at": "2026-10-13T14:05:26.336985+00:00"
+}

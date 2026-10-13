@@ -1,0 +1,70 @@
+{
+  "request_id": "20261013-2052-ch02-station-map-board-frame-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "references/ch02/scene01_station_20261013/station_banner_frame.png",
+  "reference_images": [
+    "references/ch02/scene01_station_20261013/station_banner_frame.png",
+    "references/ch02/scene01_station_20261013/blank_signpost.png",
+    "references/style/ch02/environment.png",
+    "references/ch02/scene01_station_20261013/highland_map_historical_clean.png",
+    "references/ch02/scene01_station_20261013/highland_map_current_red.png"
+  ],
+  "reference_conditioning": "single text prompt authored from request brief + attached identity/style images described in prose; media pipeline's image subagent expanded the prompt (provider-internal details unavailable to worker)",
+  "request_blob_sha": "870e5d118fdedc29b542b66594498e720d49306a2209424bda8593a4f25324a2",
+  "request_commit_sha": "958769f8acd1a902cdaccbea4a5ae04557ad2e05",
+  "generation_mode": "single_image_pass_2x1",
+  "requested_frames": 2,
+  "detected_initial_frames": 2,
+  "repaired_frames": [],
+  "repair_passes_used": 0,
+  "generation_layout": {
+    "cols": 2,
+    "rows": 1
+  },
+  "raw_generation": {
+    "width": 2240,
+    "height": 1120,
+    "sha256": "9b0f79c2017c830bd2d852d6d8c60a70b088c1c145a7d459d1955fd7350d4812",
+    "snapshot_id": "5729a31b-76a3-41de-b2a1-f6c68ef4069d:yr4h3g"
+  },
+  "master": {
+    "sheet": "master_sheet_rgba.png",
+    "width": 2013,
+    "height": 940,
+    "cell_sizes": [
+      [
+        948,
+        940
+      ],
+      [
+        948,
+        940
+      ]
+    ],
+    "extra_padding_px": 20
+  },
+  "runtime_cell_size": {
+    "width": 768,
+    "height": 1024
+  },
+  "background_cleanup": "transparent_if_available",
+  "files": [
+    "master_sheet_rgba.png",
+    "frames/frame_00.png",
+    "frames/frame_01.png",
+    "asset.json"
+  ],
+  "qc": {
+    "frame_count": "pass",
+    "identity": "pass",
+    "choreography": "pass",
+    "facing": "pass",
+    "crop": "pass",
+    "bleed": "pass",
+    "background": "pass"
+  },
+  "created_at": "2026-10-13T14:05:22.217426+00:00"
+}

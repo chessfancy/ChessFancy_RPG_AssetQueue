@@ -1,0 +1,63 @@
+{
+  "request_id": "20261013-2052-ch02-station-chief-portrait-serious-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "references/ch02/scene01_station_20261013/station_chief_walk_frame0.png",
+  "reference_images": [
+    "references/ch02/scene01_station_20261013/station_chief_walk_frame0.png",
+    "assets/20261005-0953-ch02-worried-resident-portrait-serious/canonical_reference_rgba.png",
+    "references/style/ch02-npc-rendering/hero_tanker_male.png"
+  ],
+  "reference_conditioning": "single text prompt authored from request brief + attached identity/style images described in prose; media pipeline's image subagent expanded the prompt (provider-internal details unavailable to worker)",
+  "request_blob_sha": "086845e758bfc89c00d688135daaff732ae58bbc216a8af403c5522f73c9f888",
+  "request_commit_sha": "958769f8acd1a902cdaccbea4a5ae04557ad2e05",
+  "generation_mode": "single_image_pass",
+  "requested_frames": 1,
+  "detected_initial_frames": 1,
+  "repaired_frames": [],
+  "repair_passes_used": 0,
+  "generation_layout": {
+    "cols": 1,
+    "rows": 1
+  },
+  "raw_generation": {
+    "width": 1600,
+    "height": 1600,
+    "sha256": "95367126e1321f47adef21994009fc1b50acabfaafa79dbe223bcce647c32669",
+    "snapshot_id": "fe5b211c-4cc1-4c01-8cf0-3ae588d5ae6f:cqqqum"
+  },
+  "master": {
+    "sheet": "master_sheet_rgba.png",
+    "width": 1480,
+    "height": 1480,
+    "cell_sizes": [
+      [
+        1480,
+        1480
+      ]
+    ],
+    "extra_padding_px": 24
+  },
+  "runtime_cell_size": {
+    "width": 320,
+    "height": 480
+  },
+  "background_cleanup": "transparent_if_available",
+  "files": [
+    "master_sheet_rgba.png",
+    "frames/frame_00.png",
+    "asset.json"
+  ],
+  "qc": {
+    "frame_count": "pass",
+    "identity": "pass",
+    "choreography": "pass",
+    "facing": "pass",
+    "crop": "pass",
+    "bleed": "pass",
+    "background": "pass"
+  },
+  "created_at": "2026-10-13T14:05:20.526631+00:00"
+}
