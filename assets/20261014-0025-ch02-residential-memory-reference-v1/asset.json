@@ -1,0 +1,63 @@
+{
+  "request_id": "20261014-0025-ch02-residential-memory-reference-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "muse_self_reference",
+  "canonical_reference": "assets/20261014-0025-ch02-residential-memory-reference-v1/master_sheet_rgba.png",
+  "reference_images": [
+    "references/style/ch02-npc-rendering/hero_warrior_male.png",
+    "references/ch02/npc_ch02_worried_resident/canonical.png",
+    "references/canonical/ch02/npc_ch02_route_team_worker_2/canonical.png"
+  ],
+  "reference_conditioning": "single text prompt authored from request brief + attached identity/style images described in prose; media pipeline's image subagent expanded the prompt (provider-internal details unavailable to worker). Style refs used for STYLE, CAMERA, PALETTE and scale only; no face, costume or pose copied.",
+  "request_blob_sha": "262edc78d954b5c71588686bb4421993a269fe234cb92533a3f7988ce0d6515d",
+  "request_commit_sha": "f140f67818bea4201bda5b9796afdd4741dbc53c",
+  "generation_mode": "single_image_pass",
+  "requested_frames": 1,
+  "detected_initial_frames": 1,
+  "repaired_frames": [],
+  "repair_passes_used": 0,
+  "generation_layout": {
+    "cols": 1,
+    "rows": 1
+  },
+  "raw_generation": {
+    "width": 1120,
+    "height": 2240,
+    "sha256": "06af356391e378c11847ebb51e03f1f5c0038a5a2df69c7a1c3e929f252917b4",
+    "snapshot_id": "096d647d-56a3-4a1e-afb7-6ef3569b7b82:7h6n5l"
+  },
+  "master": {
+    "sheet": "master_sheet_rgba.png",
+    "width": 2103,
+    "height": 2103,
+    "sha256": "f2337705c805603f4f94553b20faa5b4b25b4d63119fcbdd8f203590a11a9338",
+    "cell_sizes": [
+      [
+        2103,
+        2103
+      ]
+    ],
+    "extra_padding_px": 24
+  },
+  "frames_sha256": {
+    "frames/frame_00.png": "f2337705c805603f4f94553b20faa5b4b25b4d63119fcbdd8f203590a11a9338"
+  },
+  "background_cleanup": "white_key_if_needed",
+  "files": [
+    "master_sheet_rgba.png",
+    "frames/frame_00.png",
+    "asset.json"
+  ],
+  "qc": {
+    "frame_count": "pass",
+    "identity": "pass",
+    "choreography": "pass",
+    "facing": "pass",
+    "crop": "pass",
+    "bleed": "pass",
+    "background": "pass"
+  },
+  "created_at": "2026-10-13T17:37:02.043919+00:00"
+}
