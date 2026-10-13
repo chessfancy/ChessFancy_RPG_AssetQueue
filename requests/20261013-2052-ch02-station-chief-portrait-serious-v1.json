@@ -1,0 +1,37 @@
+{
+  "id": "20261013-2052-ch02-station-chief-portrait-serious-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "canonical_reference",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "external_reference_first",
+  "character": "npc_ch02_station_chief",
+  "action": "portrait_serious_square_v1",
+  "action_vi": "Portrait serious của Trạm trưởng đang có. Khóa đúng người trong walk sheet. Canvas vuông.",
+  "asset_type": "reference_image",
+  "frames": 1,
+  "frames_vi": [
+    "Bust từ đỉnh đầu đến thắt lưng, mặt nghiêm, nhìn hơi lệch, không cười."
+  ],
+  "facing": "front",
+  "style_bible": "style-bibles/chapter02/README.md",
+  "reference_images": [
+    "references/ch02/scene01_station_20261013/station_chief_walk_frame0.png",
+    "assets/20261005-0953-ch02-worried-resident-portrait-serious/canonical_reference_rgba.png",
+    "references/style/ch02-npc-rendering/hero_tanker_male.png"
+  ],
+  "runtime_cell_size": {
+    "width": 320,
+    "height": 480
+  },
+  "transparent_background": true,
+  "postprocess": {
+    "background_mode": "transparent_if_available",
+    "extra_padding_px": 24,
+    "max_repair_passes": 2,
+    "export_individual_frames": true,
+    "export_preview_gif": false
+  },
+  "notes": "CANDIDATE ONLY. Locked CH02 Scene01-09; do not create Scene10+, dialogue, story, personal names or lore. No accepted map/background or original art changes. Ordinary production asset; status done is not approval. Return owner-declared actual RGBA master PNG and asset.json with exact request/result/source image SHA and actual reference conditioning metadata; record real provider call/snapshot when available, honest gaps when unavailable. Never silently relabel reference_mode or change requester fields besides status. Only Trạm trưởng has an accepted walk sheet; do not generate walk/run/4-direction art in this batch. SINGLE reference-conditioned portrait of the EXISTING Trạm trưởng. The FIRST attached image is the identity lock from his accepted walk sheet frame 0: elderly man, white hair, white beard and mustache, stern face, green outer robe with gold patterned trim, brown inner robe, green sash, purple-and-gold tassel ornament, no hat, empty hands. Freeze that face, age, beard, robe and palette. Do not invent a younger man or a new costume. Hero image is STYLE ONLY. SECOND image is the accepted square portrait framing reference: match its crop, headroom, side margin and bust length. SQUARE 1:1 canvas. Upper-body bust only, top of head to waist, roughly 6-10 percent transparent margin on all four sides, nothing touching an edge, no legs, no feet, no ground shadow. Expression serious only. No text, watermark, scenery, or chess motifs. Deliver one high-resolution square RGBA master. Hermes downsamples to the 320x480 runtime cell after QC. Do not generate a new body or walk sheet.",
+  "status": "pending"
+}

@@ -1,0 +1,43 @@
+{
+  "id": "20261013-2052-ch02-station-map-board-frame-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "prop_pack",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "external_reference_first",
+  "character": "prop_ch02_station_map_board",
+  "action": "two_post_blank_faces_v1",
+  "action_vi": "Bảng gỗ to, hai trụ, hai mặt trống. Không vẽ lại bản đồ. Hermes sẽ dán bản đồ đã duyệt.",
+  "asset_type": "prop_sheet",
+  "frames": 2,
+  "frames_vi": [
+    "Mặt trước: hai trụ gỗ cắm đất, bảng chữ nhật lớn nằm ngang, khung gỗ dày, mặt bảng là giấy trống màu be, không có nét vẽ bản đồ.",
+    "Mặt sau: cùng bảng nhìn từ phía ngược, thấy cạnh bảng và hai trụ, mặt giấy trống màu be hơi sẫm, không có nét vẽ bản đồ."
+  ],
+  "generation_layout": {
+    "cols": 2,
+    "rows": 1
+  },
+  "runtime_cell_size": {
+    "width": 768,
+    "height": 1024
+  },
+  "style_bible": "style-bibles/chapter02/README.md",
+  "reference_images": [
+    "references/ch02/scene01_station_20261013/station_banner_frame.png",
+    "references/ch02/scene01_station_20261013/blank_signpost.png",
+    "references/style/ch02/environment.png",
+    "references/ch02/scene01_station_20261013/highland_map_historical_clean.png",
+    "references/ch02/scene01_station_20261013/highland_map_current_red.png"
+  ],
+  "transparent_background": true,
+  "postprocess": {
+    "background_mode": "transparent_if_available",
+    "extra_padding_px": 20,
+    "max_repair_passes": 2,
+    "export_individual_frames": true,
+    "export_preview_gif": false
+  },
+  "notes": "CANDIDATE ONLY. Locked CH02 Scene01-09; do not create Scene10+, dialogue, story, personal names or lore. No accepted map/background or original art changes. Ordinary production asset; status done is not approval. Return owner-declared actual RGBA master PNG and asset.json with exact request/result/source image SHA and actual reference conditioning metadata; record real provider call/snapshot when available, honest gaps when unavailable. Never silently relabel reference_mode or change requester fields besides status. Only Trạm trưởng has an accepted walk sheet; do not generate walk/run/4-direction art in this batch. PROP ONLY. One high-resolution 2x1 sheet, two equal cells, each cell one freestanding signboard. Weathered timber, rope lashings, two round posts planted in a small dirt mound, large horizontal board between the posts. The blank face must be a clean 16:9 parchment rectangle so Hermes can composite the attached approved maps without redrawing them. The last two attached images are the APPROVED map art (clean historical, then current red). They are aspect and content references only. Do NOT redraw, trace, simplify, or paint those maps onto the board. No labels, no letters, no stamps, no characters, no UI, no watermark. Palette matches the chapter highland wood/earth references. Each cell independently sliceable, full posts and board inset from cell edges, transparent background, no baked ground plate beyond a small contact shadow. Front and back must read as the same object. Generate a high-resolution master first; do not creatively draw at 768px.",
+  "status": "pending"
+}

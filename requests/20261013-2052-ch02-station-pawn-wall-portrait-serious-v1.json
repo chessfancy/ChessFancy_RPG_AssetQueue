@@ -1,0 +1,38 @@
+{
+  "id": "20261013-2052-ch02-station-pawn-wall-portrait-serious-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "canonical_reference",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "external_reference_first",
+  "character": "enemy_pawn_wall",
+  "action": "portrait_serious_square_v1",
+  "action_vi": "Portrait serious của pawn wall có sẵn, dùng làm Thợ tuần tuyến 2 ở Map 1. Không vẽ người mới.",
+  "asset_type": "reference_image",
+  "frames": 1,
+  "frames_vi": [
+    "Bust thợ nề pawn wall, mũ nâu hoa lys, cầm bay, nghiêm, không đổi identity."
+  ],
+  "facing": "front",
+  "style_bible": "style-bibles/chapter02/README.md",
+  "reference_images": [
+    "references/ch02/scene01_station_20261013/enemy_pawn_wall_reference.png",
+    "references/ch02/scene01_station_20261013/enemy_pawn_wall_idle_frame0.png",
+    "references/style/ch02/enemy_pawn_wall_style.png",
+    "assets/20261005-0953-ch02-worried-resident-portrait-serious/canonical_reference_rgba.png"
+  ],
+  "runtime_cell_size": {
+    "width": 320,
+    "height": 480
+  },
+  "transparent_background": true,
+  "postprocess": {
+    "background_mode": "white_key_if_needed",
+    "extra_padding_px": 24,
+    "max_repair_passes": 2,
+    "export_individual_frames": true,
+    "export_preview_gif": false
+  },
+  "notes": "CANDIDATE ONLY. Locked CH02 Scene01-09; do not create Scene10+, dialogue, story, personal names or lore. No accepted map/background or original art changes. Ordinary production asset; status done is not approval. Return owner-declared actual RGBA master PNG and asset.json with exact request/result/source image SHA and actual reference conditioning metadata; record real provider call/snapshot when available, honest gaps when unavailable. Never silently relabel reference_mode or change requester fields besides status. Only Trạm trưởng has an accepted walk sheet; do not generate walk/run/4-direction art in this batch. PORTRAIT ONLY of the existing enemy_pawn_wall. Do not design a new worker and do not replace the overworld/battle body. FIRST image is the high-resolution identity: mason pawn, brown helmet with fleur-de-lis, trowel, bricks, patterned work clothes, red-and-white trim. SECOND image is the accepted 128px idle frame of that same sprite; if the high-res reference and the idle frame disagree, follow the idle frame's costume and the high-res image only for paint detail. Freeze helmet, trowel, bricks, face and palette. THIRD path is an existing style plate of the same character. FOURTH image is square portrait framing only. SQUARE 1:1 canvas, bust from top of helmet to waist, 6-10 percent margin, nothing touching edges, serious expression, no smile, no scenery, no text. The game will show this portrait when Map 1 route worker 2 speaks. Hermes downsamples to 320x480 after QC.",
+  "status": "pending"
+}
