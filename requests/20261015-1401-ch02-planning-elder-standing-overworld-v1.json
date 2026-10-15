@@ -53,5 +53,5 @@
   },
   "transparent_background": true,
   "notes": "Identity lock: Trạm trưởng / npc_ch02_planning_elder already has accepted walk sheet. Preserve exact elder face, hair, light-blue scholar robe, proportions from walk frame0 + portrait. This pack is STILL standing per compass direction so dialogue can face a worker without moonwalking. NOT walk/run locomotion and NOT a moving cycle. Deliver 8 STILL standing facing poses only (pattern like game son_tinh/overworld: n,ne,e,se,s,sw,w,nw). One high-res 4x2 contact sheet, strict isolated cells, wide gutters, no crop/bleed. Same identity/scale/baseline across all 8. Transparent RGBA. Runtime target cell ~192x192 after Hermes downsample; do not creatively generate at 192. No combat pose, no portrait crop, no text/UI. status done = delivery only, not production approval. CH02 Scene01-09 locked; no Scene10+.",
-  "status": "pending"
+  "status": "done"
 }

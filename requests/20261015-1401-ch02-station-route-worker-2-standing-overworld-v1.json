@@ -55,5 +55,5 @@
   },
   "transparent_background": true,
   "notes": "NEW Map1 Thợ tuần tuyến 2 identity for standing pack. STYLE refs only from highland/route workers — do NOT copy worker_1 face or route_team_worker_2 olive headwrap/folded map. Distinct second road worker: slightly older or different hair (short messy dark), warmer rust-brown tunic, darker trousers, tool pouch at hip, no headwrap, calm practical face. Same exploration scale as worker_1. All 8 frames same identity. NOT walk/run locomotion and NOT a moving cycle. Deliver 8 STILL standing facing poses only (pattern like game son_tinh/overworld: n,ne,e,se,s,sw,w,nw). One high-res 4x2 contact sheet, strict isolated cells, wide gutters, no crop/bleed. Same identity/scale/baseline across all 8. Transparent RGBA. Runtime target cell ~192x192 after Hermes downsample; do not creatively generate at 192. No combat pose, no portrait crop, no text/UI. status done = delivery only, not production approval. CH02 Scene01-09 locked; no Scene10+.",
-  "status": "pending"
+  "status": "done"
 }

@@ -53,5 +53,5 @@
   },
   "transparent_background": true,
   "notes": "Identity lock: npc_ch02_station_route_worker_1 from delivered canonical reference master. Adult male highland road worker, short black hair no headwrap, light stubble, indigo-brown short tunic, grey trousers, rope coil, short wooden stake. Freeze face/clothes/palette. NOT npc_ch02_route_team_worker_2 (olive headwrap). NOT walk/run locomotion and NOT a moving cycle. Deliver 8 STILL standing facing poses only (pattern like game son_tinh/overworld: n,ne,e,se,s,sw,w,nw). One high-res 4x2 contact sheet, strict isolated cells, wide gutters, no crop/bleed. Same identity/scale/baseline across all 8. Transparent RGBA. Runtime target cell ~192x192 after Hermes downsample; do not creatively generate at 192. No combat pose, no portrait crop, no text/UI. status done = delivery only, not production approval. CH02 Scene01-09 locked; no Scene10+.",
-  "status": "pending"
+  "status": "done"
 }

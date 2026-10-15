@@ -1,0 +1,123 @@
+{
+  "request_id": "20261015-1401-ch02-station-route-worker-2-standing-overworld-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "muse_self_reference",
+  "canonical_reference": "",
+  "request_blob_sha": "7bdd53adcdd5afde31b17c87ca2c86e7e9f506ea",
+  "request_commit_sha": "587ee91605d952a15745c2c622005dbe040f5791",
+  "generation_mode": "single_contact_sheet",
+  "requested_frames": 8,
+  "detected_initial_frames": 8,
+  "repaired_frames": [],
+  "repair_passes_used": 0,
+  "generation_layout": {
+    "cols": 4,
+    "rows": 2
+  },
+  "raw_generation": {
+    "width": 2240,
+    "height": 1120,
+    "sha256": "060718aca48db8d84faac0c76798e1ca4912da3074db92091a8ce235821a63ff",
+    "snapshot_id": "93728503-a62d-4283-a14b-31b68b1d617d:gm2gkx",
+    "attempts": 4,
+    "attempts_note": "Attempts r1-r3 rejected at generation contract level: r1 irregular 6+4 layout with mismatched scales; r2-r3 correct 2x4 grid but figures cropped at panel edges and identity drift (hammer/rope/age). r4 (no image refs, small-figure/margin emphasis) satisfied the grid + containment contract and was used."
+  },
+  "master": {
+    "sheet": "master_sheet_rgba.png",
+    "cell_width": 227,
+    "cell_height": 520,
+    "sheet_width": 908,
+    "sheet_height": 1040,
+    "extra_padding_px": 24,
+    "sha256": "3cc76e207f3f496276d307592f5280f2d734e3d45a8390dde88cc3ab02b67c07"
+  },
+  "runtime_cell_size": {
+    "width": 192,
+    "height": 192
+  },
+  "background_cleanup": "white_key_if_needed",
+  "files": [
+    {
+      "path": "master_sheet_rgba.png",
+      "sha256": "3cc76e207f3f496276d307592f5280f2d734e3d45a8390dde88cc3ab02b67c07",
+      "bytes": 567724
+    },
+    {
+      "path": "preview.gif",
+      "sha256": "d08a042e78ff640094a4b2fcaa1e1ac6798cbbdf4b15345e133ed0c9f17cfa80",
+      "bytes": 132381
+    },
+    {
+      "path": "raw-sheet.png",
+      "sha256": "060718aca48db8d84faac0c76798e1ca4912da3074db92091a8ce235821a63ff",
+      "bytes": 555708
+    },
+    {
+      "path": "frames/frame_00.png",
+      "direction": "n",
+      "sha256": "700bc8a9bbf6a65a538bb3aa3b2f4d75ae154e2ae4c00725e452c5d64ab26466",
+      "bytes": 75444
+    },
+    {
+      "path": "frames/frame_01.png",
+      "direction": "ne",
+      "sha256": "5733d448f8c3eb2d78a0e76ddb8a2f62c0abbe5c5ddc89f4e4dc04f61a4c87fe",
+      "bytes": 68525
+    },
+    {
+      "path": "frames/frame_02.png",
+      "direction": "e",
+      "sha256": "b2760962e3fa327c252f6488ad0568f147e7fd74a08ff5480e51eb9bd2131a2a",
+      "bytes": 57505
+    },
+    {
+      "path": "frames/frame_03.png",
+      "direction": "se",
+      "sha256": "2c8efbbfd29031f0dd1e907b65f69d339c4f5b701e492344c45bb09ee9919392",
+      "bytes": 83306
+    },
+    {
+      "path": "frames/frame_04.png",
+      "direction": "s",
+      "sha256": "4a2b3a3407311bc6ae3fdd5cc0dc99200c4e94f6a087629c0d8f548e7c607157",
+      "bytes": 90487
+    },
+    {
+      "path": "frames/frame_05.png",
+      "direction": "sw",
+      "sha256": "6391e7da56655123b632e041934540069bb4d4b3ae3a6c24bb66ddbec42738d2",
+      "bytes": 72867
+    },
+    {
+      "path": "frames/frame_06.png",
+      "direction": "w",
+      "sha256": "a28351bb8686083a71da659ed66719e62a144b25b6a1384fba887e4d3f64c423",
+      "bytes": 58208
+    },
+    {
+      "path": "frames/frame_07.png",
+      "direction": "nw",
+      "sha256": "f4832a8125cc9bfec0bb01b416d7304ff7cfad1d9811e4174bbc6ab00b7ecabe",
+      "bytes": 70083
+    }
+  ],
+  "qc": {
+    "frames_valid": "8/8",
+    "frame_order": "n,ne,e,se,s,sw,w,nw",
+    "body_scale_cv": 0.00559,
+    "anchor_y_std": 0.00025,
+    "min_output_margin_px": 23,
+    "output_edge_contact": false,
+    "identity_consistent": true,
+    "distinct_from_worker_1": true,
+    "facing_readable": true,
+    "no_body_weapon_crop": true,
+    "no_neighbor_bleed": true,
+    "background_cleanup_usable": true,
+    "highres_master": true,
+    "notes": "Canonical reference is self-created (muse_self_reference): no canonical identity image existed; identity locked in generation prompt as: clean-shaven adult male road worker, short messy dark hair, no headwrap, rust-brown short tunic, dark trousers, small leather tool pouch at hip, no weapon/map. Style-only references were NOT copied for identity. Style is clean cel-shaded rather than painterly \u2014 matches cartoon-anime JRPG 2D range."
+  },
+  "created_at": "2026-10-15T07:15:00Z"
+}

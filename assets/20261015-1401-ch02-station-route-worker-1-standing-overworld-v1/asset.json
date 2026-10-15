@@ -1,0 +1,109 @@
+{
+  "request_id": "20261015-1401-ch02-station-route-worker-1-standing-overworld-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "/home/hatch/workspace/hermes/ChessFancy_RPG_AssetQueue/assets/20261013-2052-ch02-station-route-worker-1-reference-v1/master_sheet_rgba.png",
+  "request_blob_sha": "93adb94e01744ed32e4055e3b1abc8d502f1a380",
+  "request_commit_sha": "587ee91605d952a15745c2c622005dbe040f5791",
+  "generation_mode": "single_contact_sheet",
+  "requested_frames": 8,
+  "detected_initial_frames": 8,
+  "repaired_frames": [
+    {
+      "index": 7,
+      "direction": "nw",
+      "issue": "facing rendered as full rear view instead of back three-quarter",
+      "fix": "single-cell repaint, back three-quarter with head turned left, stake in anatomical right hand"
+    }
+  ],
+  "repair_passes_used": 1,
+  "generation_layout": {
+    "cols": 4,
+    "rows": 2
+  },
+  "raw_generation": {
+    "width": 2240,
+    "height": 1120,
+    "sha256": "ea184fa6ff5af4db30d8425ba96a604702109fee2de8cce849f40219b8010c80",
+    "snapshot_id": "cec3f181-ab26-494f-b346-1f70c63952aa:vyb96u",
+    "repair_snapshot_id": "fee036c1-7e4c-42d2-ae0d-c2b88866b520:63cxxv",
+    "note": "sha256 is of the spliced working sheet (7 original cells + 1 repaired NW cell, NW resized to 560x560)"
+  },
+  "master": {
+    "sheet": "master_sheet_rgba.png",
+    "cell_width": 585,
+    "cell_height": 592,
+    "extra_padding_px": 24
+  },
+  "runtime_cell_size": {
+    "width": 192,
+    "height": 192
+  },
+  "background_cleanup": "white_key_if_needed",
+  "files": [
+    "master_sheet_rgba.png",
+    "frames/frame_00.png",
+    "frames/frame_01.png",
+    "frames/frame_02.png",
+    "frames/frame_03.png",
+    "frames/frame_04.png",
+    "frames/frame_05.png",
+    "frames/frame_06.png",
+    "frames/frame_07.png",
+    "preview.gif",
+    "asset.json"
+  ],
+  "file_sha256": {
+    "master_sheet_rgba.png": "b6c841bce5135b2830843a15fecd2070780b70df760fb1070eaebdb2e59c62db",
+    "frames/frame_00.png": "405694a858c63fe6a17924c5302caf4ec684994f087bb5177831df45f6bccfa8",
+    "frames/frame_01.png": "0233a419c0feec86c5787534e73cd710d74294f41a11326e7a1eb5ee3b277ee7",
+    "frames/frame_02.png": "35cd502f92367e3eae5b9d4291320f1b7e834726f861bf86042adc7a0777ac9a",
+    "frames/frame_03.png": "67396e4cc7c07ee5a8e6fe23266610a9bfa461e925bb4628e8ae635fb1f37d01",
+    "frames/frame_04.png": "8a0d288396bd494b9df316b33eddefad2b9b848c32b3bc120347d42126e7f2a3",
+    "frames/frame_05.png": "1c69606b3359ff45c26b3940e95273c9929c9c532c55b3bf764f4b29215fd4d9",
+    "frames/frame_06.png": "25aba7019ae0399b1853b61c9870ee930ad3736ec868564b1127f796a0b69b6c",
+    "frames/frame_07.png": "4c45ce01f801b5c40a648f0577c492c99aef482f463e8fa9d6865598b996b6ca",
+    "preview.gif": "996b1de9518a3e488a2529d7166f50a1b15cc31302208b3741f7976e939a80f0"
+  },
+  "qc": {
+    "frame_count": "pass",
+    "identity": "pass",
+    "choreography": "pass",
+    "facing": "pass",
+    "crop": "pass",
+    "bleed": "pass",
+    "background": "pass",
+    "metrics": {
+      "valid_frames": "8/8",
+      "no_output_edge_contact": true,
+      "body_scale_cv": 0.00744,
+      "body_scale_cv_threshold": 0.08,
+      "anchor_y_std_raw_normalized": 0.00179,
+      "anchor_y_std_threshold": 0.05,
+      "raw_foot_ys_px": [
+        549,
+        549,
+        549,
+        549,
+        551,
+        551,
+        551,
+        551
+      ],
+      "raw_body_heights_px": [
+        542,
+        542,
+        542,
+        542,
+        544,
+        544,
+        544,
+        531
+      ]
+    },
+    "stake_hand_rule": "stake held in anatomical right hand in all 8 directions (verified visually)"
+  },
+  "created_at": "2026-10-15T07:13:06.346457+00:00"
+}

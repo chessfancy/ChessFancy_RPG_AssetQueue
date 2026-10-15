@@ -1,0 +1,34 @@
+{
+  "job": "20261015-1401-ch02-planning-elder-standing-overworld-v1",
+  "order": [
+    "n",
+    "ne",
+    "e",
+    "se",
+    "s",
+    "sw",
+    "w",
+    "nw"
+  ],
+  "raw_sha256": "78d69e714b7100fe4698e26519691abb431bc28543f600cd0932f083e29284d1",
+  "raw_size": [
+    2240,
+    1120
+  ],
+  "frame_size": [
+    410,
+    589
+  ],
+  "pad": 24,
+  "qc": {
+    "frames_valid": "8/8",
+    "output_edge_contact": 0,
+    "body_scale_cv": 0.00377,
+    "anchor_y_std": 0.0,
+    "rescaled_frames": [],
+    "raw_dims": [
+      2240,
+      1120
+    ]
+  }
+}
