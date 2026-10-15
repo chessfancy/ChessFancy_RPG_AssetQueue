@@ -1,0 +1,161 @@
+{
+  "request_id": "20261015-1505-ch02-station-route-worker-1-standing-overworld-v2",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse media.generate_image (single-pass 4x2 contact sheet)",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "references/ch02/standing_lock_prod_20261015/worker1_prod_npc.png",
+  "reference_images": [
+    "references/ch02/standing_lock_prod_20261015/worker1_prod_npc.png",
+    "references/ch02/standing_lock_prod_20261015/worker1_portrait_serious.png",
+    "references/ch02/standing_lock_prod_20261015/worker1_canonical_candidate.png"
+  ],
+  "request_blob_sha": "de3f0c4063ab1d0853e7b2d1605f75d90313f4c97446a28b3e150480049e2e5e",
+  "request_commit_sha": "e702bec3d7aef7ab318f8ac946c24fc2a22c6595",
+  "generation_mode": "single_pass_contact_sheet",
+  "requested_frames": 8,
+  "detected_initial_frames": 8,
+  "repaired_frames": 0,
+  "repair_passes_used": 0,
+  "generation_layout": {
+    "cols": 4,
+    "rows": 2
+  },
+  "raw_generation": {
+    "width": 2240,
+    "height": 1120,
+    "sha256": "fe403af5f4b1e3bd528b6aa4b6e3aefa1997add72d21b3ec1b0d452a64f00c99",
+    "snapshot_id": "87f5fe61-cb84-4877-9d5a-74e15e0fc00b:cfmfoz",
+    "kept_out_of_git": true
+  },
+  "master": {
+    "width": 2496,
+    "height": 1218,
+    "sha256": "06dbd978761bd3f55f18c42cbd3898a050cc99449345889b8c745b84846964ec",
+    "layout": "4x2 transparent RGBA"
+  },
+  "runtime_cell_size": {
+    "width": 192,
+    "height": 192
+  },
+  "background_cleanup": {
+    "method": "magenta_key_soft_alpha",
+    "alpha_threshold": 16,
+    "padding_px": 48,
+    "edge": "feathered, spill-suppressed"
+  },
+  "normalization": {
+    "shared_scale": true,
+    "scale_cv": 0.0059,
+    "feet_baseline_anchored": true,
+    "no_stretch": true
+  },
+  "direction_order": [
+    "N",
+    "NE",
+    "E",
+    "SE",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "files": [
+    {
+      "path": "assets/20261015-1505-ch02-station-route-worker-1-standing-overworld-v2/master_sheet_rgba.png",
+      "sha256": "06dbd978761bd3f55f18c42cbd3898a050cc99449345889b8c745b84846964ec",
+      "size": [
+        2496,
+        1218
+      ]
+    },
+    {
+      "path": "assets/20261015-1505-ch02-station-route-worker-1-standing-overworld-v2/preview.gif",
+      "sha256": "0801fdfae9a317f963d183d36824ef2d8ec5ae1dd09ae47648ff589aab705891"
+    },
+    {
+      "path": "assets/20261015-1505-ch02-station-route-worker-1-standing-overworld-v2/frames/frame_00.png",
+      "sha256": "fb923120de3fef248a7385c566b2b91b13299244aabbf702ca9566975c867dc1",
+      "size": [
+        624,
+        609
+      ],
+      "direction": "N"
+    },
+    {
+      "path": "assets/20261015-1505-ch02-station-route-worker-1-standing-overworld-v2/frames/frame_01.png",
+      "sha256": "f417c2e4bd2239f192221aacf8f9912056beb626b35c7384aaf18b089cd2bd4c",
+      "size": [
+        624,
+        609
+      ],
+      "direction": "NE"
+    },
+    {
+      "path": "assets/20261015-1505-ch02-station-route-worker-1-standing-overworld-v2/frames/frame_02.png",
+      "sha256": "4572fa854cf7315ec037e01cd1197f26e4a5aa27774120a538c493130202125a",
+      "size": [
+        624,
+        609
+      ],
+      "direction": "E"
+    },
+    {
+      "path": "assets/20261015-1505-ch02-station-route-worker-1-standing-overworld-v2/frames/frame_03.png",
+      "sha256": "6ece94d346b40e6325b22bf0b620c60af37d0a2bb547a7147ac4e79b9e5ee308",
+      "size": [
+        624,
+        609
+      ],
+      "direction": "SE"
+    },
+    {
+      "path": "assets/20261015-1505-ch02-station-route-worker-1-standing-overworld-v2/frames/frame_04.png",
+      "sha256": "3ab29a78a21dd850d21156b3b75939897d12a98319c7f65b940503ef906ee6ef",
+      "size": [
+        624,
+        609
+      ],
+      "direction": "S"
+    },
+    {
+      "path": "assets/20261015-1505-ch02-station-route-worker-1-standing-overworld-v2/frames/frame_05.png",
+      "sha256": "4b5d1cebccdd0bcb3ba6a7798e283eb53909e413d1461f10541db70a59a77cbd",
+      "size": [
+        624,
+        609
+      ],
+      "direction": "SW"
+    },
+    {
+      "path": "assets/20261015-1505-ch02-station-route-worker-1-standing-overworld-v2/frames/frame_06.png",
+      "sha256": "5e517a97ad22c5ea9ebc01f8aeab98b1745ac79fc5d7beb6c2dc7cfb5411f425",
+      "size": [
+        624,
+        609
+      ],
+      "direction": "W"
+    },
+    {
+      "path": "assets/20261015-1505-ch02-station-route-worker-1-standing-overworld-v2/frames/frame_07.png",
+      "sha256": "0647031a3d08c61e1853bd1e11491ae83b6e70b46d92a2798457ea4903d7a711",
+      "size": [
+        624,
+        609
+      ],
+      "direction": "NW"
+    }
+  ],
+  "qc": {
+    "frame_count": "pass 8/8 detected, 0 repaired",
+    "identity": "pass - messy black hair + stubble, patched shirt, rope coil + wooden pole, boots/soles fully visible all 8",
+    "choreography": "pass - neutral standing, 8 still facings N NE E SE / S SW W NW",
+    "facing_camera": "pass - consistent 3/4 top-down, mirror pairs verified (W/E profiles, SW/SE 3/4, NW/NE back-3/4)",
+    "no_crop": "pass - full body + props inside cell, feet/soles fully visible, bottom padding >=12% source cells",
+    "no_bleed": "pass - connected-component cleanup, no neighbor contamination",
+    "background": "pass - transparent RGBA, usable for atlas",
+    "master_resolution": "pass - master 2496x1218, source raw 2240x1120, substantially above runtime 192"
+  },
+  "status": "done",
+  "created_at": "2026-10-15T14:48:01.943326+07:00"
+}

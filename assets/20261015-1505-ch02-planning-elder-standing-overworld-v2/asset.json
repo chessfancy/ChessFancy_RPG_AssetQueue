@@ -1,0 +1,163 @@
+{
+  "request_id": "20261015-1505-ch02-planning-elder-standing-overworld-v2",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse media.generate_image (single-pass 4x2 contact sheet)",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "references/ch02/standing_lock_prod_20261015/elder_walk_frame0.png",
+  "reference_images": [
+    "references/ch02/standing_lock_prod_20261015/elder_walk_frame0.png",
+    "references/ch02/standing_lock_prod_20261015/elder_walk_dir1_c0.png",
+    "references/ch02/standing_lock_prod_20261015/elder_walk_dir2_c0.png",
+    "references/ch02/standing_lock_prod_20261015/elder_walk_dir3_c0.png",
+    "references/ch02/standing_lock_prod_20261015/elder_portrait_serious.png"
+  ],
+  "request_blob_sha": "f45d7832a66466870bc9fb4866226492e653fe10e3abbd2de969c271258d1d31",
+  "request_commit_sha": "e702bec3d7aef7ab318f8ac946c24fc2a22c6595",
+  "generation_mode": "single_pass_contact_sheet",
+  "requested_frames": 8,
+  "detected_initial_frames": 8,
+  "repaired_frames": 0,
+  "repair_passes_used": 0,
+  "generation_layout": {
+    "cols": 4,
+    "rows": 2
+  },
+  "raw_generation": {
+    "width": 2240,
+    "height": 1120,
+    "sha256": "f1cc25a5774781d34575ddd41c895016ae7e3dd6db591c1745300cb9087fcf33",
+    "snapshot_id": "3c83f515-38df-4972-a11f-2de12269188f:txzj6c",
+    "kept_out_of_git": true
+  },
+  "master": {
+    "width": 2520,
+    "height": 1292,
+    "sha256": "16237ac8acc632afbb595f0f3650e05b8f3bb2afb19ed71742a8dfc6827cf89e",
+    "layout": "4x2 transparent RGBA"
+  },
+  "runtime_cell_size": {
+    "width": 192,
+    "height": 192
+  },
+  "background_cleanup": {
+    "method": "magenta_key_soft_alpha",
+    "alpha_threshold": 16,
+    "padding_px": 48,
+    "edge": "feathered, spill-suppressed"
+  },
+  "normalization": {
+    "shared_scale": true,
+    "scale_cv": 0.0104,
+    "feet_baseline_anchored": true,
+    "no_stretch": true
+  },
+  "direction_order": [
+    "N",
+    "NE",
+    "E",
+    "SE",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "files": [
+    {
+      "path": "assets/20261015-1505-ch02-planning-elder-standing-overworld-v2/master_sheet_rgba.png",
+      "sha256": "16237ac8acc632afbb595f0f3650e05b8f3bb2afb19ed71742a8dfc6827cf89e",
+      "size": [
+        2520,
+        1292
+      ]
+    },
+    {
+      "path": "assets/20261015-1505-ch02-planning-elder-standing-overworld-v2/preview.gif",
+      "sha256": "dbaf7443c6d32723538b88bad54fee58874e07f42ae8b05164cc4a6e0f01181a"
+    },
+    {
+      "path": "assets/20261015-1505-ch02-planning-elder-standing-overworld-v2/frames/frame_00.png",
+      "sha256": "840882a1c96e2665c351401c38a06427938948bfc02f7a0314a2f1ab4a2b5612",
+      "size": [
+        630,
+        646
+      ],
+      "direction": "N"
+    },
+    {
+      "path": "assets/20261015-1505-ch02-planning-elder-standing-overworld-v2/frames/frame_01.png",
+      "sha256": "ff0555378d5600e7a5454af41fd7af0e083e55805f13d898589fe97c3cd91e4d",
+      "size": [
+        630,
+        646
+      ],
+      "direction": "NE"
+    },
+    {
+      "path": "assets/20261015-1505-ch02-planning-elder-standing-overworld-v2/frames/frame_02.png",
+      "sha256": "8d0cca240804e5bd6c4377c699d6dbfde9746a22a1ca9262f4a73815fb74b888",
+      "size": [
+        630,
+        646
+      ],
+      "direction": "E"
+    },
+    {
+      "path": "assets/20261015-1505-ch02-planning-elder-standing-overworld-v2/frames/frame_03.png",
+      "sha256": "13bb9f1ae54692bff25bc58d2a97309cce2d905cb04447b69bc9d4c98aa85fbc",
+      "size": [
+        630,
+        646
+      ],
+      "direction": "SE"
+    },
+    {
+      "path": "assets/20261015-1505-ch02-planning-elder-standing-overworld-v2/frames/frame_04.png",
+      "sha256": "43696991aa000a753c6ed9ef5bf9391df501d021b582a507a9ffc1d129f4f629",
+      "size": [
+        630,
+        646
+      ],
+      "direction": "S"
+    },
+    {
+      "path": "assets/20261015-1505-ch02-planning-elder-standing-overworld-v2/frames/frame_05.png",
+      "sha256": "d61002fbf15ac8b855d941ce48d0ca2fe9537f3caac36470e7e5fcbeddacd1f2",
+      "size": [
+        630,
+        646
+      ],
+      "direction": "SW"
+    },
+    {
+      "path": "assets/20261015-1505-ch02-planning-elder-standing-overworld-v2/frames/frame_06.png",
+      "sha256": "f8d80c25ac8ff5a0f20234644e97afcb8e9b78819f7f99984f5e9669e16e3780",
+      "size": [
+        630,
+        646
+      ],
+      "direction": "W"
+    },
+    {
+      "path": "assets/20261015-1505-ch02-planning-elder-standing-overworld-v2/frames/frame_07.png",
+      "sha256": "decf08d03f500bd9a1bfb780a878e7298547e07e176a449ac1a511eff1fcbc90",
+      "size": [
+        630,
+        646
+      ],
+      "direction": "NW"
+    }
+  ],
+  "qc": {
+    "frame_count": "pass 8/8 detected, 0 repaired",
+    "identity": "pass - short grey hair swept back (no bun), parchment map + pointer in all 8, sandals/feet fully visible, robe/gold-trim identity matches production refs",
+    "choreography": "pass - neutral standing, 8 still facings N NE E SE / S SW W NW",
+    "facing_camera": "pass - consistent 3/4 top-down, mirror pairs verified (W/E profiles, SW/SE 3/4, NW/NE back-3/4)",
+    "no_crop": "pass - full body + props inside cell, feet/soles fully visible, bottom padding >=12% source cells",
+    "no_bleed": "pass - connected-component cleanup, no neighbor contamination",
+    "background": "pass - transparent RGBA, usable for atlas",
+    "master_resolution": "pass - master 2520x1292, source raw 2240x1120, substantially above runtime 192"
+  },
+  "status": "done",
+  "created_at": "2026-10-15T14:48:01.927064+07:00"
+}

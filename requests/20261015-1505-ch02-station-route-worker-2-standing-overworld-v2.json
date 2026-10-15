@@ -55,5 +55,5 @@
   },
   "transparent_background": true,
   "notes": "IDENTITY LOCK: npc_ch02_station_route_worker_2 is the Map1 THỢ TUẦN TUYẾN 2 = pawn-wall mason CHIBI identity already in production. Primary: worker2_prod_npc_PLACEHOLDER.png (full body chibi: orange/brown helmet with fleur-de-lis + pompon, apron, trowel, may have wheelbarrow — standing pack may drop barrow keep trowel). Face/costume lock: worker2_portrait_serious.png (same chibi mason). Support: enemy_pawn_wall_reference + idle frame0 (same lineage; prior portrait request reused pawn wall as worker 2). V1 FAILED: delivered a realistic adult human — WRONG style. Must stay chibi/mason pawn-wall look, NOT a second realistic route worker. NOT worker_1 face. Full feet every frame. NOT walk cycle / NOT mid-stride. 8 STILL standing facings only (n,ne,e,se,s,sw,w,nw) like son_tinh overworld. One 4x2 contact sheet, isolated cells, wide gutters, no bleed. Same identity/scale/baseline all 8. Transparent RGBA. CRITICAL FEET: both feet fully inside every cell with generous bottom padding — ankles and shoe soles fully visible; reject crop at shin. Runtime target ~192 after downsample; generate larger. No text/UI. status done = delivery only. CH02 Scene01-09 locked. REJECT v1 20261015-1401 standing packs — identity/feet/style failed QC.",
-  "status": "pending"
+  "status": "done"
 }

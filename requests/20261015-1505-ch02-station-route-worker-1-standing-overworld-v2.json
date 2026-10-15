@@ -54,5 +54,5 @@
   },
   "transparent_background": true,
   "notes": "IDENTITY LOCK from production static/game assets for npc_ch02_station_route_worker_1 (THỢ TUẦN TUYẾN 1). Primary body lock: worker1_prod_npc.png (full body, staff/pole, both shoes visible). Face lock: worker1_portrait_serious.png (short messy black hair, stubble, patched dark shirt). Optional support: worker1_canonical_candidate.png — if prop differs (rope vs staff), prefer prod npc prop. V1 FAILED: feet cropped at ankles. Every frame must show complete shoes/soles with empty padding under feet. Do not redesign face or wardrobe. Same exploration scale all 8. NOT walk cycle / NOT mid-stride. 8 STILL standing facings only (n,ne,e,se,s,sw,w,nw) like son_tinh overworld. One 4x2 contact sheet, isolated cells, wide gutters, no bleed. Same identity/scale/baseline all 8. Transparent RGBA. CRITICAL FEET: both feet fully inside every cell with generous bottom padding — ankles and shoe soles fully visible; reject crop at shin. Runtime target ~192 after downsample; generate larger. No text/UI. status done = delivery only. CH02 Scene01-09 locked. REJECT v1 20261015-1401 standing packs — identity/feet/style failed QC.",
-  "status": "pending"
+  "status": "done"
 }
