@@ -1,0 +1,57 @@
+{
+  "id": "20261015-1401-ch02-station-route-worker-1-standing-overworld-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "locomotion",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "external_reference_first",
+  "character": "npc_ch02_station_route_worker_1",
+  "action": "standing_overworld",
+  "action_vi": "Bộ đứng yên 8 hướng overworld cho Thợ tuần tuyến 1 (NPC_standing_overworld).",
+  "frames_vi": [
+    "Đứng yên overworld, hướng Bắc (N / up), toàn thân, chân chạm baseline, không bước chân.",
+    "Đứng yên overworld, hướng Đông-Bắc (NE), toàn thân, cùng baseline/scale.",
+    "Đứng yên overworld, hướng Đông (E / right), toàn thân, cùng baseline/scale.",
+    "Đứng yên overworld, hướng Đông-Nam (SE), toàn thân, cùng baseline/scale.",
+    "Đứng yên overworld, hướng Nam (S / down), toàn thân, cùng baseline/scale — camera-facing default.",
+    "Đứng yên overworld, hướng Tây-Nam (SW), toàn thân, cùng baseline/scale.",
+    "Đứng yên overworld, hướng Tây (W / left), toàn thân, cùng baseline/scale.",
+    "Đứng yên overworld, hướng Tây-Bắc (NW), toàn thân, cùng baseline/scale."
+  ],
+  "facing": "front",
+  "asset_type": "sprite_sheet",
+  "frames": 8,
+  "fps": 1,
+  "grid": {
+    "cols": 8,
+    "rows": 1
+  },
+  "cell_size": {
+    "width": 192,
+    "height": 192
+  },
+  "generation_layout": {
+    "cols": 4,
+    "rows": 2
+  },
+  "runtime_cell_size": {
+    "width": 192,
+    "height": 192
+  },
+  "reference_images": [
+    "assets/20261013-2052-ch02-station-route-worker-1-reference-v1/master_sheet_rgba.png",
+    "assets/20261013-2052-ch02-station-route-worker-1-reference-v1/frames/frame_00.png"
+  ],
+  "style_bible": "style-bibles/chapter02/README.md",
+  "postprocess": {
+    "background_mode": "white_key_if_needed",
+    "extra_padding_px": 24,
+    "max_repair_passes": 2,
+    "segmentation": "connected_components",
+    "export_individual_frames": true,
+    "export_preview_gif": true
+  },
+  "transparent_background": true,
+  "notes": "Identity lock: npc_ch02_station_route_worker_1 from delivered canonical reference master. Adult male highland road worker, short black hair no headwrap, light stubble, indigo-brown short tunic, grey trousers, rope coil, short wooden stake. Freeze face/clothes/palette. NOT npc_ch02_route_team_worker_2 (olive headwrap). NOT walk/run locomotion and NOT a moving cycle. Deliver 8 STILL standing facing poses only (pattern like game son_tinh/overworld: n,ne,e,se,s,sw,w,nw). One high-res 4x2 contact sheet, strict isolated cells, wide gutters, no crop/bleed. Same identity/scale/baseline across all 8. Transparent RGBA. Runtime target cell ~192x192 after Hermes downsample; do not creatively generate at 192. No combat pose, no portrait crop, no text/UI. status done = delivery only, not production approval. CH02 Scene01-09 locked; no Scene10+.",
+  "status": "pending"
+}
