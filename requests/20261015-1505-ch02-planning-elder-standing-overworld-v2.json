@@ -1,0 +1,60 @@
+{
+  "id": "20261015-1505-ch02-planning-elder-standing-overworld-v2",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "locomotion",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "external_reference_first",
+  "character": "npc_ch02_planning_elder",
+  "action": "standing_overworld",
+  "action_vi": "V2 standing 8 hướng Trạm trưởng — KHÓA production walk+portrait (tóc ngắn, CẤM búi).",
+  "frames_vi": [
+    "Đứng yên overworld hướng Bắc (N/up), toàn thân, HAI CHÂN + đế giày/dép nhìn rõ, margin đáy >=12% cell, không crop mắt cá.",
+    "Đứng yên overworld hướng Đông-Bắc (NE), toàn thân, chân đủ, cùng baseline/scale/identity.",
+    "Đứng yên overworld hướng Đông (E/right), toàn thân, chân đủ, cùng baseline/scale/identity.",
+    "Đứng yên overworld hướng Đông-Nam (SE), toàn thân, chân đủ, cùng baseline/scale/identity.",
+    "Đứng yên overworld hướng Nam (S/down) camera-facing, toàn thân, chân đủ, cùng baseline/scale/identity.",
+    "Đứng yên overworld hướng Tây-Nam (SW), toàn thân, chân đủ, cùng baseline/scale/identity.",
+    "Đứng yên overworld hướng Tây (W/left), toàn thân, chân đủ, cùng baseline/scale/identity.",
+    "Đứng yên overworld hướng Tây-Bắc (NW), toàn thân, chân đủ, cùng baseline/scale/identity."
+  ],
+  "facing": "front",
+  "asset_type": "sprite_sheet",
+  "frames": 8,
+  "fps": 1,
+  "grid": {
+    "cols": 8,
+    "rows": 1
+  },
+  "cell_size": {
+    "width": 192,
+    "height": 192
+  },
+  "generation_layout": {
+    "cols": 4,
+    "rows": 2
+  },
+  "runtime_cell_size": {
+    "width": 192,
+    "height": 192
+  },
+  "reference_images": [
+    "references/ch02/standing_lock_prod_20261015/elder_walk_frame0.png",
+    "references/ch02/standing_lock_prod_20261015/elder_walk_dir1_c0.png",
+    "references/ch02/standing_lock_prod_20261015/elder_walk_dir2_c0.png",
+    "references/ch02/standing_lock_prod_20261015/elder_walk_dir3_c0.png",
+    "references/ch02/standing_lock_prod_20261015/elder_portrait_serious.png"
+  ],
+  "style_bible": "style-bibles/chapter02/README.md",
+  "postprocess": {
+    "background_mode": "white_key_if_needed",
+    "extra_padding_px": 48,
+    "max_repair_passes": 2,
+    "segmentation": "connected_components",
+    "export_individual_frames": true,
+    "export_preview_gif": true
+  },
+  "transparent_background": true,
+  "notes": "IDENTITY LOCK from LIVE production game assets only (not prior Muse standing v1). Character npc_ch02_planning_elder / station_chief. Production prompt (verbatim lock): Create one reusable isolated NPC sprite for the Chapter 2 Planning Station exploration map: village planning elder Cụ Bản Tiện, a distinguished elderly Vietnamese scholar in green and earth-toned mountain planning robe, holding an unrolled parchment map and a wooden pointer stick, thoughtful and wise expression, short grey beard and hair, relaxed neutral standing pose. Match the visible accepted player-style sprite language and clean hand-painted 2D JRPG game asset, mostly front-facing 3/4 top-down full-body view, feet on a clear shared ground line, centered, isolated on pure solid flat magenta background #FF00FF. No glow, text, labels, UI, watermark, extra people, or detached props. Keep the full body inside a generous margin. HAIR HARD RULE: short grey/white hair swept back — NO topknot, NO rear bun, NO hair knot. V1 failed by adding a bun. Face/beard/green-gold scholar robe/sandals must match elder_walk_frame0 + elder_portrait_serious exactly. Standing still poses only; may hold parchment/pointer if already in walk identity, else empty hands OK if walk shows empty. NOT walk cycle / NOT mid-stride. 8 STILL standing facings only (n,ne,e,se,s,sw,w,nw) like son_tinh overworld. One 4x2 contact sheet, isolated cells, wide gutters, no bleed. Same identity/scale/baseline all 8. Transparent RGBA. CRITICAL FEET: both feet fully inside every cell with generous bottom padding — ankles and shoe soles fully visible; reject crop at shin. Runtime target ~192 after downsample; generate larger. No text/UI. status done = delivery only. CH02 Scene01-09 locked. REJECT v1 20261015-1401 standing packs — identity/feet/style failed QC.",
+  "status": "pending"
+}
