@@ -1,0 +1,50 @@
+{
+  "slug": "npc_ch02_planning_elder",
+  "raw": [
+    2240,
+    1120
+  ],
+  "cell": [
+    560,
+    560
+  ],
+  "figure_heights": [
+    530,
+    532,
+    535,
+    533,
+    535,
+    536,
+    534,
+    532
+  ],
+  "shared_target_h": 536,
+  "scale_cv": 0.0035,
+  "frame": [
+    464,
+    632
+  ],
+  "padding": 48,
+  "directions": [
+    "N",
+    "NE",
+    "E",
+    "SE",
+    "S",
+    "SW",
+    "W",
+    "NW"
+  ],
+  "frames": [
+    "assets/20261015-1535-ch02-planning-elder-standing-overworld-v3/frames/frame_00.png",
+    "assets/20261015-1535-ch02-planning-elder-standing-overworld-v3/frames/frame_01.png",
+    "assets/20261015-1535-ch02-planning-elder-standing-overworld-v3/frames/frame_02.png",
+    "assets/20261015-1535-ch02-planning-elder-standing-overworld-v3/frames/frame_03.png",
+    "assets/20261015-1535-ch02-planning-elder-standing-overworld-v3/frames/frame_04.png",
+    "assets/20261015-1535-ch02-planning-elder-standing-overworld-v3/frames/frame_05.png",
+    "assets/20261015-1535-ch02-planning-elder-standing-overworld-v3/frames/frame_06.png",
+    "assets/20261015-1535-ch02-planning-elder-standing-overworld-v3/frames/frame_07.png"
+  ],
+  "master": "assets/20261015-1535-ch02-planning-elder-standing-overworld-v3/master_sheet_rgba.png",
+  "gif": "assets/20261015-1535-ch02-planning-elder-standing-overworld-v3/preview.gif"
+}
