@@ -1,0 +1,30 @@
+{
+  "request_id": "20261016-1706-ch02-map6-xuong-cuong-root-video-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "asset_type": "reference_video",
+  "character": "enemy_re_cuong",
+  "action": "mountain_root_reveal_cinematic",
+  "generator": "Google Flow / Veo 3.1 - Lite (text-to-video, ingredient images)",
+  "google_account": "tieubaoyeudau2@gmail.com",
+  "flow_project": "https://flow.google.com/project/13eced7d-79b7-4288-aab5-47065bc84576",
+  "video": {
+    "file": "xuong_cuong_root_8s_raw.mp4",
+    "sha256": "608d6170b192f42f692ed6f955225b3d457f499989891991ad39b66b11edef30",
+    "duration_sec": 8,
+    "resolution": "1280x720",
+    "fps": 24,
+    "size_bytes": 5292554
+  },
+  "generation": {
+    "attempts": 1,
+    "credits_spent": 10,
+    "ingredients": [
+      "map6_mountains_full.png",
+      "map6_port2_root_closeup.png"
+    ]
+  },
+  "qc": "Misty mountain plate matches ref; giant gnarled root pierces rock cleft, warps cliff; far shot -> push-in -> hold. No people/text/UI/watermark/gore. Rendered 100% first attempt.",
+  "status_note": "VIDEO candidate only — not sprite sheet, not production. No runtime integration without separate Hermes intake.",
+  "created_at": "2026-10-16T18:37:54.824148+07:00"
+}

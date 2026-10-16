@@ -1,0 +1,31 @@
+{
+  "request_id": "20261016-1543-ch02-map4-bear-family-depart-video-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "asset_type": "reference_video",
+  "character": "enemy_gau_rung",
+  "action": "family_depart_cinematic",
+  "generator": "Google Flow / Veo 3.1 - Lite (text-to-video, ingredient images)",
+  "google_account": "tieubaoyeudau2@gmail.com",
+  "flow_project": "https://flow.google.com/project/15186784-d0dc-4def-8a9b-cdeb9e41224b",
+  "video": {
+    "file": "bear_family_depart_8s_raw.mp4",
+    "sha256": "6a0659b686ea955dca3c97ca37a490925dc61a78ce6c225edf16a37c04f74519",
+    "duration_sec": 8,
+    "resolution": "1280x720",
+    "fps": 24,
+    "size_bytes": 6309679
+  },
+  "generation": {
+    "attempts": 2,
+    "credits_spent": 10,
+    "ingredients": [
+      "gau_rung_canonical.png",
+      "map4_vanh_dai_full.png",
+      "map4_bear_spawn_closeup.png"
+    ]
+  },
+  "qc": "Mother bear matches canonical (moss/leaf fur); stays ALIVE whole time; 2 cubs emerge from shed; mother looks back; family exits together. No people/text/watermark. Attempt 1 flagged \"unusual activity\" (no render); attempt 2 rendered 100%.",
+  "status_note": "VIDEO candidate only — not sprite sheet, not production. No runtime integration without separate Hermes intake.",
+  "created_at": "2026-10-16T18:37:54.779655+07:00"
+}

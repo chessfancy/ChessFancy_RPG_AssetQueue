@@ -23,6 +23,6 @@
   ],
   "character_spec_path": "references/ch02/bear_family_depart_video/brief.md",
   "transparent_background": false,
-  "status": "pending",
+  "status": "done",
   "notes": "ROUTE: Muse Flow video / continuous-motion cinematic. VIDEO candidate only — not sprite sheet, not production.\nScene: CH02 Map4 Vành Đai Bỏ Hoang, AFTER sidebattle win vs Gấu Rừng. Meaning: mother was defending cubs; she leaves alive.\nRefs in order: (1) map4 full plate for place identity, (2) closeup warehouse/spawn pocket, (3)+(4) enemy_gau_rung canonical mother identity.\nSHA256 map4_full=50a8475bc59de4eecc93807b7c95cb790b791590c0bcd0204767186313f628e1; closeup=ba614bf2cf4283b3acb4d656b1d2e079b99a5543b2189deb55b3cf0412512da5; gau_ref_copy=f10ad5211627478862098e2e8193982c034214215264dc89f6eed8f7bf2f7e3e.\nKeep abandoned highland belt look: ruined houses, broken fences, overgrown terraces, dry ditches. Focus near old warehouse shed on the route.\nMother bear MUST match canonical enemy_gau_rung silhouette/fur/face exactly. Two cubs = same species, smaller, no armor/weapons.\nCamera: painterly fantasy 16:9, stable cinematic, readable full bodies. No hero party, no UI/text/subtitles/watermark/logo.\nNO death/KO/blood/gore. Mother never collapses. End after family exits downslope trail.\nOne 8s candidate. Preserve raw+provenance. No runtime integration without separate Hermes intake."
 }
