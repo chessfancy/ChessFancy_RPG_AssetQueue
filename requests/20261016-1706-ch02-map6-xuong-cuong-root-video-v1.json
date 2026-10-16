@@ -1,0 +1,26 @@
+{
+  "id": "20261016-1706-ch02-map6-xuong-cuong-root-video-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "reference_mode": "external_reference_first",
+  "character": "enemy_re_cuong",
+  "action": "mountain_root_reveal_cinematic",
+  "action_vi": "Map6 port2: đoạn rễ khổng lồ Xương Cuồng xuyên khe núi, làm vách đá biến dạng — nhìn từ xa rồi đẩy gần.",
+  "frames_vi": [
+    "0.0–2.0s: Toàn cảnh sườn núi đá mù sương quanh port2, tĩnh lặng.",
+    "2.0–4.5s: Camera đẩy gần khe núi — lộ rễ cây khổng lồ xuyên qua vách đá như núi mọc sai chỗ.",
+    "4.5–6.5s: Rễ siết/kéo nhẹ, vách núi bị biến dạng rõ hơn, mảnh đá rơi ít.",
+    "6.5–8.0s: Giữ closeup rễ + vách biến dạng rồi freeze (không hero/UI)."
+  ],
+  "asset_type": "reference_video",
+  "fps": 24,
+  "duration_sec": 8,
+  "reference_images": [
+    "references/ch02/xuong_cuong_root_video/map6_mountains_full.png",
+    "references/ch02/xuong_cuong_root_video/map6_port2_root_closeup.png"
+  ],
+  "character_spec_path": "references/ch02/xuong_cuong_root_video/brief.md",
+  "transparent_background": false,
+  "status": "pending",
+  "notes": "ROUTE: Muse Flow video / continuous-motion cinematic. VIDEO candidate only.\nScene: CH02 Map6 mountains AFTER Sơn Tinh opens path; player walks to entry port2.\nRefs SHA256 full=a160ec5bc8e84d34c47bf05c78a214e657ac0e18571da5f38c408a3ccdf17ac6; closeup=a20a4385e87890d6989f4b3a05517311b464f09fbd4fce57c2119885f82fd4da.\nSubject: giant Xương Cuồng root through mountain cleft warping cliffs. No party/UI/text/logo/watermark.\nNo gore. Geological + botanical pressure only. 8s 16:9 painterly fantasy matching map6 plate.\nOne candidate. Preserve raw+provenance. No runtime integration without Hermes intake."
+}
