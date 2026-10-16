@@ -1,0 +1,28 @@
+{
+  "id": "20261016-1543-ch02-map4-bear-family-depart-video-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "reference_mode": "external_reference_first",
+  "character": "enemy_gau_rung",
+  "action": "family_depart_cinematic",
+  "action_vi": "Sau battle Map4: gấu mẹ còn sống lùi lại, hai gấu con ra từ nhà kho, mẹ dẫn con xuống triền núi rồi khuất — không chết.",
+  "frames_vi": [
+    "0.0–1.5s: Gấu mẹ lùi vài bước, thở gấp, giữ thế phòng thủ trước nhóm trẻ; còn sống, không gục.",
+    "1.5–3.0s: Từ bóng tối nhà kho cũ phía sau, hai gấu con rụt rè thò đầu bước ra.",
+    "3.0–4.5s: Gấu mẹ quay nhìn hai con — rõ ràng nó chỉ bảo vệ con non.",
+    "4.5–8.0s: Gấu mẹ nhẹ nhàng thúc hai con theo đường mòn xuống triền thấp hơn rồi cả nhà khuất dạng."
+  ],
+  "asset_type": "reference_video",
+  "fps": 24,
+  "duration_sec": 8,
+  "reference_images": [
+    "references/ch02/bear_family_depart_video/map4_vanh_dai_full.png",
+    "references/ch02/bear_family_depart_video/map4_bear_spawn_closeup.png",
+    "references/ch02/bear_family_depart_video/gau_rung_canonical.png",
+    "assets/20261003-1046-gau-rung-reference/canonical_candidate.png"
+  ],
+  "character_spec_path": "references/ch02/bear_family_depart_video/brief.md",
+  "transparent_background": false,
+  "status": "pending",
+  "notes": "ROUTE: Muse Flow video / continuous-motion cinematic. VIDEO candidate only — not sprite sheet, not production.\nScene: CH02 Map4 Vành Đai Bỏ Hoang, AFTER sidebattle win vs Gấu Rừng. Meaning: mother was defending cubs; she leaves alive.\nRefs in order: (1) map4 full plate for place identity, (2) closeup warehouse/spawn pocket, (3)+(4) enemy_gau_rung canonical mother identity.\nSHA256 map4_full=50a8475bc59de4eecc93807b7c95cb790b791590c0bcd0204767186313f628e1; closeup=ba614bf2cf4283b3acb4d656b1d2e079b99a5543b2189deb55b3cf0412512da5; gau_ref_copy=f10ad5211627478862098e2e8193982c034214215264dc89f6eed8f7bf2f7e3e.\nKeep abandoned highland belt look: ruined houses, broken fences, overgrown terraces, dry ditches. Focus near old warehouse shed on the route.\nMother bear MUST match canonical enemy_gau_rung silhouette/fur/face exactly. Two cubs = same species, smaller, no armor/weapons.\nCamera: painterly fantasy 16:9, stable cinematic, readable full bodies. No hero party, no UI/text/subtitles/watermark/logo.\nNO death/KO/blood/gore. Mother never collapses. End after family exits downslope trail.\nOne 8s candidate. Preserve raw+provenance. No runtime integration without separate Hermes intake."
+}
