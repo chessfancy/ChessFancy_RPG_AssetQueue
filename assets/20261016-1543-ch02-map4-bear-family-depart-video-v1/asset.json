@@ -27,5 +27,32 @@
   },
   "qc": "Mother bear matches canonical (moss/leaf fur); stays ALIVE whole time; 2 cubs emerge from shed; mother looks back; family exits together. No people/text/watermark. Attempt 1 flagged \"unusual activity\" (no render); attempt 2 rendered 100%.",
   "status_note": "VIDEO candidate only — not sprite sheet, not production. No runtime integration without separate Hermes intake.",
+  "v2_teacher_regen": {
+    "note": "Teacher regenerated on own device (Flow automation blocked 'unusual activity' for agent browser). Start frame v4 composite (correct bear scale vs shed) + hard identity/size-lock prompt. Result: bear stays chibi, no scale drift, stable camera, 2 cubs emerge, family exits together. Raw: bear_family_depart_teacher_v3_raw.mp4 (5.93s, 1920x1080, 24fps).",
+    "final": {
+      "file": "bear_family_depart_final_fade.mp4",
+      "sha256": "d6400283665f663a3c1ce0539bd0c2c3a68a45e63855a9faa07d4e749b077fda",
+      "duration_sec": 5.93,
+      "resolution": "1920x1080",
+      "fps": 24,
+      "size_bytes": 9317178,
+      "processing": "fade in 0.8s from black at head + fade out 0.8s to black at tail (ffmpeg, libx264 crf18)",
+      "qc": "PASS — fade-in dark at 0.2s, full picture mid, near-black at 5.8s",
+      "watermark_removal": {
+        "tool": "GeminiWatermarkTool-Video",
+        "detected": "Gemini diamond at (1704,864) 72x72, bottom-right",
+        "frames_cleaned": "130/142 (12 skipped)",
+        "output": {
+          "file": "bear_family_depart_final_clean.mp4",
+          "sha256": "84a9f2f599b8e424c593ed00e2cf71a520ae2486b0dd7e9fc2efc732b39fe4d4",
+          "duration_sec": 5.93,
+          "resolution": "1920x1080",
+          "fps": 24,
+          "size_bytes": 6997019
+        },
+        "qc": "PASS — watermark region shows clean rocks/water, no diamond remnant"
+      }
+    }
+  },
   "created_at": "2026-10-16T18:37:54.779655+07:00"
 }
