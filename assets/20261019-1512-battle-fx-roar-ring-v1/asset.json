@@ -1,0 +1,107 @@
+{
+  "request_id": "20261019-1512-battle-fx-roar-ring-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "assets/20261003-1320-moc-linh-special-vfx-bundle/hit_pack/master_sheet_rgba.png",
+  "reference_images_used": [
+    "assets/20261003-1320-gau-rung-special-vfx-bundle/hit_pack/master_sheet_rgba.png",
+    "assets/20261003-1320-gau-rung-special-vfx-bundle/self_vfx/master_sheet_rgba.png"
+  ],
+  "request_blob_sha": "d5f0449209f0e9bfcd6ec1353de73a789ec6c771",
+  "request_commit_sha": "53a9ccb",
+  "generation_mode": "single_contact_sheet",
+  "requested_frames": 8,
+  "detected_initial_frames": 8,
+  "repaired_frames": [],
+  "repair_passes_used": 0,
+  "generation_layout": {
+    "cols": 8,
+    "rows": 1
+  },
+  "raw_generation": {
+    "width": 3200,
+    "height": 800,
+    "sha256": "f39b685ccdabac3eea0b258bbf7623f55ca56499cf8398b804311634622f0988",
+    "snapshot_id": "cc1d5407-3a07-461c-82e3-a90f2ccbc7d3:9bwf8g"
+  },
+  "master": {
+    "sheet": "master_sheet_rgba.png",
+    "width": 2912,
+    "height": 736,
+    "cell_width": 364,
+    "cell_height": 736,
+    "extra_padding_px": 8
+  },
+  "runtime_cell_size": {
+    "width": 128,
+    "height": 128
+  },
+  "fps": 10,
+  "anchor": "target_center",
+  "runtime_key": "fx_roar_ring",
+  "background_cleanup": "white_key",
+  "post_process_notes": "Olive-green hue of generated rings rotated toward amber (~48 deg) in post to match ivory-amber spec; interiors cropped inside cell borders; centers aligned across frames; no rescale.",
+  "files": [
+    {
+      "path": "master_sheet_rgba.png",
+      "sha256": "bac9a820ec59f7b1b015fbfbe150238e8e580b29f8fe548b94caa3e72b12602e",
+      "bytes": 1230255
+    },
+    {
+      "path": "preview.gif",
+      "sha256": "20aea7e3e29f9b20d29635d960f95a0272fc5514003f78d1e4a7f55070ebc598",
+      "bytes": 39534
+    },
+    {
+      "path": "frames/frame_00.png",
+      "sha256": "2eca4e50d8ebcbf45bc532efa987eddea287d86eb4041d8bcc662ec42ff2aa3c",
+      "bytes": 112042
+    },
+    {
+      "path": "frames/frame_01.png",
+      "sha256": "1ffa41c8a69df439ada02b9f01e0536f4594e2d003e49b1c7e7911975e3fc42e",
+      "bytes": 189618
+    },
+    {
+      "path": "frames/frame_02.png",
+      "sha256": "ca48e9ae2bd2dbb9a8169f96653b2565f3463447e91e8fc07f0c14abcdc48ba8",
+      "bytes": 238083
+    },
+    {
+      "path": "frames/frame_03.png",
+      "sha256": "c3d6eedb2fe80d82326d49842dc5be749ef552ca08c48ebacb733c485b1dd680",
+      "bytes": 245818
+    },
+    {
+      "path": "frames/frame_04.png",
+      "sha256": "294f1aa9dc705b89aacbe723ca72737a15cb6954105a90d896675e2f8b6be0f9",
+      "bytes": 164552
+    },
+    {
+      "path": "frames/frame_05.png",
+      "sha256": "a5d7242f4e295ef48617ab09d3c30feb8c9e97fdf817e6adeabb98843cadf643",
+      "bytes": 127366
+    },
+    {
+      "path": "frames/frame_06.png",
+      "sha256": "d8f27537f38a105db064ebc56ddc048baac81bfef4fc09a9680a977c3729e2ee",
+      "bytes": 66409
+    },
+    {
+      "path": "frames/frame_07.png",
+      "sha256": "c368274083f38a5157ddf946948bb80801162d6be91300f1c8a769cebd220596",
+      "bytes": 53651
+    }
+  ],
+  "qc": {
+    "frame_count": "8/8 ok",
+    "palette": "ivory-amber, warm glow, no elemental colors",
+    "choreography": "small pulse -> concentric expand -> base dust -> fade outward, readable",
+    "crop": "no body/weapon crop, no border lines, no neighbor bleed",
+    "background": "clean white key-out RGBA, antialiased edges",
+    "master": "high-res 2912x736 exists"
+  },
+  "created_at": "2026-10-19T15:25:05.846446+07:00"
+}
