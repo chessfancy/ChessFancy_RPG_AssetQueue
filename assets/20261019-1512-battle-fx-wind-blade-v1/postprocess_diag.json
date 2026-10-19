@@ -1,0 +1,204 @@
+{
+  "cells": [
+    {
+      "x0": 38,
+      "y0": 175,
+      "x1": 385,
+      "y1": 647
+    },
+    {
+      "x0": 429,
+      "y0": 175,
+      "x1": 776,
+      "y1": 647
+    },
+    {
+      "x0": 820,
+      "y0": 175,
+      "x1": 1157,
+      "y1": 647
+    },
+    {
+      "x0": 1198,
+      "y0": 175,
+      "x1": 1541,
+      "y1": 647
+    },
+    {
+      "x0": 1584,
+      "y0": 175,
+      "x1": 1937,
+      "y1": 647
+    },
+    {
+      "x0": 1980,
+      "y0": 175,
+      "x1": 2338,
+      "y1": 647
+    },
+    {
+      "x0": 2381,
+      "y0": 175,
+      "x1": 2749,
+      "y1": 647
+    },
+    {
+      "x0": 2790,
+      "y0": 175,
+      "x1": 3164,
+      "y1": 647
+    }
+  ],
+  "poses": [
+    {
+      "bbox": [
+        0,
+        0,
+        346,
+        471
+      ],
+      "comps": 4,
+      "touch": {
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": true
+      },
+      "w": 347,
+      "h": 472,
+      "cover": 0.1309957016558394
+    },
+    {
+      "bbox": [
+        0,
+        0,
+        346,
+        471
+      ],
+      "comps": 9,
+      "touch": {
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": true
+      },
+      "w": 347,
+      "h": 472,
+      "cover": 0.2988509256093391
+    },
+    {
+      "bbox": [
+        0,
+        0,
+        336,
+        471
+      ],
+      "comps": 9,
+      "touch": {
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": true
+      },
+      "w": 337,
+      "h": 472,
+      "cover": 0.4534464115073178
+    },
+    {
+      "bbox": [
+        0,
+        0,
+        342,
+        471
+      ],
+      "comps": 7,
+      "touch": {
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": true
+      },
+      "w": 343,
+      "h": 472,
+      "cover": 0.7428657903839502
+    },
+    {
+      "bbox": [
+        0,
+        0,
+        352,
+        471
+      ],
+      "comps": 8,
+      "touch": {
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": true
+      },
+      "w": 353,
+      "h": 472,
+      "cover": 0.4877562779084842
+    },
+    {
+      "bbox": [
+        0,
+        0,
+        357,
+        471
+      ],
+      "comps": 7,
+      "touch": {
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": true
+      },
+      "w": 358,
+      "h": 472,
+      "cover": 0.46175788277625224
+    },
+    {
+      "bbox": [
+        0,
+        0,
+        367,
+        471
+      ],
+      "comps": 13,
+      "touch": {
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": true
+      },
+      "w": 368,
+      "h": 472,
+      "cover": 0.3185508014001474
+    },
+    {
+      "bbox": [
+        0,
+        0,
+        373,
+        471
+      ],
+      "comps": 17,
+      "touch": {
+        "left": true,
+        "right": true,
+        "top": true,
+        "bottom": true
+      },
+      "w": 374,
+      "h": 472,
+      "cover": 0.24080599111755643
+    }
+  ],
+  "canvas": 488,
+  "raw_sha256": "c9ce8ced93a243e7bf2a169224dad813e93cd6fb5dee11a4503f0c14d2510cc6",
+  "raw_size": [
+    3200,
+    800
+  ]
+}
