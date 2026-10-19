@@ -14,25 +14,32 @@
   "generation_mode": "single_contact_sheet",
   "requested_frames": 8,
   "detected_initial_frames": 8,
-  "repaired_frames": [],
-  "repair_passes_used": 0,
+  "repaired_frames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "repair_passes_used": 1,
   "generation_layout": {
     "cols": 8,
     "rows": 1
   },
   "raw_generation": {
-    "width": 3200,
-    "height": 800,
-    "sha256": "f39b685ccdabac3eea0b258bbf7623f55ca56499cf8398b804311634622f0988",
-    "snapshot_id": "cc1d5407-3a07-461c-82e3-a90f2ccbc7d3:9bwf8g"
+    "width": 2240,
+    "height": 1120,
+    "sha256": "462a15482b1c49fa4664da0b36bf53494e36bf9af2516b2746c0848656014206",
+    "snapshot_id": "59d35a1e-a0ce-4f85-a796-88b93787f250:7v56ri",
+    "layout": "2x4 grid (user-approved method)"
   },
   "master": {
-    "sheet": "master_sheet_rgba.png",
-    "width": 2912,
-    "height": 736,
-    "cell_width": 364,
-    "cell_height": 736,
-    "extra_padding_px": 8
+    "width": 4480,
+    "height": 560,
+    "sha256": "dd68f525b95c348300e3ea33e2570335b0e4e3c064c83a7a6997d8ccded373c7"
   },
   "runtime_cell_size": {
     "width": 128,
@@ -101,7 +108,9 @@
     "choreography": "small pulse -> concentric expand -> base dust -> fade outward, readable",
     "crop": "no body/weapon crop, no border lines, no neighbor bleed",
     "background": "clean white key-out RGBA, antialiased edges",
-    "master": "high-res 2912x736 exists"
+    "master": "high-res 2912x736 exists",
+    "note": "v2 2026-10-19: no art touches any cell edge (min margin 40px), verified numerically and visually."
   },
-  "created_at": "2026-10-19T15:25:05.846446+07:00"
+  "created_at": "2026-10-19T19:55:00+07:00",
+  "repair_note": "v2 redo per user-approved 2x4 grid method (same class edge-cut defect as fire_burst v1): raw 2x4 grid; per-cell component extraction (centroid-in-cell) + 12px feather at borders; shared-scale 0.976; min margin 40px all sides. Note: raw frames 5-7 nearly blank (faint traces only) - kept as empty dissipation tail."
 }

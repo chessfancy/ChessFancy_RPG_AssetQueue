@@ -10,23 +10,32 @@
   "generation_mode": "single_contact_sheet",
   "requested_frames": 8,
   "detected_initial_frames": 8,
-  "repaired_frames": [],
-  "repair_passes_used": 0,
+  "repaired_frames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "repair_passes_used": 1,
   "generation_layout": {
     "cols": 8,
     "rows": 1
   },
   "raw_generation": {
-    "width": 4480,
-    "height": 560,
-    "sha256": "158c8f6ad56a7a7bde464f1885def90fd687c8051faf6daed0bde0cac3e30dd2",
-    "snapshot_id": "680998cf-8360-4746-9dfb-a900951b0cb9:nxaepx"
+    "width": 2240,
+    "height": 1120,
+    "sha256": "9e57f80e0790e2ffd15d024e92881145776aab36b7c035a579330f7734bb317e",
+    "snapshot_id": "fc3198cc-e2a6-4c72-babd-a7281d8d9ae4:ku41gz",
+    "layout": "2x4 grid (user-approved method)"
   },
   "master": {
-    "sheet": "master_sheet_rgba.png",
-    "cell_width": 552,
-    "cell_height": 504,
-    "extra_padding_px": 8
+    "width": 4480,
+    "height": 560,
+    "sha256": "d2d57057692f492e41fbdee465ef3671457455bb90d7bdbfe43f060b640e81b4"
   },
   "runtime_cell_size": {
     "width": 128,
@@ -52,7 +61,9 @@
     "choreography": "approach(0) -> contact(1) -> burst(2-3) -> ring+shards(4) -> ripples(5-6) -> fade wisp(7) — readable",
     "crop": "no true FX crop; border lines fully excluded by separator detection",
     "bleed": "no neighboring-pose bleed (separate cells, isolated components per cell)",
-    "background": "pure flat white keyed to RGBA alpha; no muddy fog rectangles"
+    "background": "pure flat white keyed to RGBA alpha; no muddy fog rectangles",
+    "note": "v2 2026-10-19: no art touches any cell edge (min margin 40px), verified numerically and visually."
   },
-  "created_at": "2026-10-19T08:27:12.745381+00:00"
+  "created_at": "2026-10-19T19:55:00+07:00",
+  "repair_note": "v2 redo per user-approved 2x4 grid method (same class edge-cut defect as fire_burst v1): raw 2x4 grid; per-cell component extraction (centroid-in-cell) + 12px feather at borders; shared-scale 0.878; min margin 40px all sides."
 }
