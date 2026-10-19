@@ -1,1 +1,77 @@
-{"action":"blow_heavy","anchor":"target_center","background_cleanup":"white_key","canonical_reference":"assets/20261003-1320-moc-linh-special-vfx-bundle/hit_pack/master_sheet_rgba.png","character":"battle_fx","created_at":"2026-10-19T15:25:16+07:00","detected_initial_frames":8,"files":["master_sheet_rgba.png","preview.gif","frames/frame_00.png","frames/frame_01.png","frames/frame_02.png","frames/frame_03.png","frames/frame_04.png","frames/frame_05.png","frames/frame_06.png","frames/frame_07.png"],"fps":12,"generation_layout":{"cols":8,"rows":1},"generation_mode":"single_contact_sheet","generator":"muse","key":"play","keying_method":"luminance key preserving original RGB: alpha=255-min(r,g,b), RGB unchanged, alpha<10 floor; keeps drawn cel earth tones exact (un-premultiply hue-lift oversaturated the dust into neon orange on first pass). Per-cell keying inside brown grid borders; grid lines never leak into alpha.","master":{"cell_height":394,"cell_width":347,"extra_padding_px":8,"sheet":"master_sheet_rgba.png","sheet_height":394,"sheet_width":2776},"normalization":"tight bbox + 8px padding per frame; NO per-frame rescale (scale variation is the FX animation itself: spark -> burst -> expanding ring -> debris -> fade); common anchor = cell center (target_center); no stretch; uniform 347x394 canvas, content centered.","protocol_version":"2","qc":{"background":"pass - white_key, true zero-alpha background, noise floor alpha<10 removed, antialiased edges preserved","bleed":"pass - per-cell keying inside detected border insets; no grid-line leakage; zero alpha on all final frame edges","choreography":"pass - f1 dust spark -> f2 core impact burst -> f3-f4 low shock ring expands -> f5-f6 debris petals fly outward -> f7-f8 settle/fade to near-empty","crop":"pass - no true pose crop; f4-f6 debris reaches raw cell borders (full-bleed design) and is trimmed only at the 5px grid-border inset; final frames have zero edge-alpha contact","frame_count":"pass - 8/8 pose groups detected in logical left-to-right order","identity":"pass - warm earth tones (sand/ochre/tan/sienna) cel dust; no magic glow, no runes, no fire, no text, no photorealism; matches moc-linh bundle soft-cel FX style","master":"pass - 2776x394 RGBA single-row master, high-resolution (347x394 cells for 128x128 runtime)","timing":"pass - preview.gif 8 frames @ 12fps (80ms/frame, GIF 10ms granularity)"},"raw_generation":{"height":800,"note":"kept uncommitted in /tmp only; master/frames are committed","sha256":"76ade0fecf52de612a4862dc0d682f12d69eac7af4abbb27118b4e115851ef79","snapshot_id":"b9feb690-bfbe-4cf3-893d-a0fd9c93bf28:f9zrfw","width":3200},"reference_mode":"external_reference_first","repair_passes_used":0,"repaired_frames":[],"request_blob_sha":"11ee7361675e6b32720cf8b83683a9c49259b188","request_commit_sha":"53a9ccb","request_id":"20261019-1512-battle-fx-blow-heavy-v1","requested_frames":8,"runtime_cell_size":{"height":128,"width":128},"worker":"muse"}
+{
+  "action": "blow_heavy",
+  "anchor": "target_center",
+  "background_cleanup": "white_key",
+  "canonical_reference": "assets/20261003-1320-moc-linh-special-vfx-bundle/hit_pack/master_sheet_rgba.png",
+  "character": "battle_fx",
+  "created_at": "2026-10-19T19:35:00+07:00",
+  "detected_initial_frames": 8,
+  "files": [
+    "master_sheet_rgba.png",
+    "preview.gif",
+    "frames/frame_00.png",
+    "frames/frame_01.png",
+    "frames/frame_02.png",
+    "frames/frame_03.png",
+    "frames/frame_04.png",
+    "frames/frame_05.png",
+    "frames/frame_06.png",
+    "frames/frame_07.png"
+  ],
+  "fps": 12,
+  "generation_layout": {
+    "cols": 8,
+    "rows": 1
+  },
+  "generation_mode": "single_contact_sheet",
+  "generator": "muse",
+  "key": "play",
+  "keying_method": "luminance key preserving original RGB: alpha=255-min(r,g,b), RGB unchanged, alpha<10 floor; keeps drawn cel earth tones exact (un-premultiply hue-lift oversaturated the dust into neon orange on first pass). Per-cell keying inside brown grid borders; grid lines never leak into alpha.",
+  "master": {
+    "width": 4480,
+    "height": 560,
+    "sha256": "ccf3d6a25dc15dd6e722079da9f0fa2a6946a03fb2c5bb2875783ba7e86aba61"
+  },
+  "normalization": "tight bbox + 8px padding per frame; NO per-frame rescale (scale variation is the FX animation itself: spark -> burst -> expanding ring -> debris -> fade); common anchor = cell center (target_center); no stretch; uniform 347x394 canvas, content centered.",
+  "protocol_version": "2",
+  "qc": {
+    "background": "pass - white_key, true zero-alpha background, noise floor alpha<10 removed, antialiased edges preserved",
+    "bleed": "pass - per-cell keying inside detected border insets; no grid-line leakage; zero alpha on all final frame edges",
+    "choreography": "pass - f1 dust spark -> f2 core impact burst -> f3-f4 low shock ring expands -> f5-f6 debris petals fly outward -> f7-f8 settle/fade to near-empty",
+    "crop": "pass - no true pose crop; f4-f6 debris reaches raw cell borders (full-bleed design) and is trimmed only at the 5px grid-border inset; final frames have zero edge-alpha contact",
+    "frame_count": "pass - 8/8 pose groups detected in logical left-to-right order",
+    "identity": "pass - warm earth tones (sand/ochre/tan/sienna) cel dust; no magic glow, no runes, no fire, no text, no photorealism; matches moc-linh bundle soft-cel FX style",
+    "master": "pass - 2776x394 RGBA single-row master, high-resolution (347x394 cells for 128x128 runtime)",
+    "timing": "pass - preview.gif 8 frames @ 12fps (80ms/frame, GIF 10ms granularity)",
+    "note": "v2 2026-10-19: no art touches any cell edge (min margin 40px), debris chunks intact, verified numerically and visually."
+  },
+  "raw_generation": {
+    "width": 2240,
+    "height": 1120,
+    "sha256": "d87671dff841d3207e61ef6419acb9c504b3e3ea997c91d93068194e15a4196c",
+    "snapshot_id": "bd3fe6d0-fd4f-4d8d-bbe2-2cc33637cefb:xsmj03",
+    "layout": "2x4 grid (user-approved method)"
+  },
+  "reference_mode": "external_reference_first",
+  "repair_passes_used": 1,
+  "repaired_frames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "request_blob_sha": "11ee7361675e6b32720cf8b83683a9c49259b188",
+  "request_commit_sha": "53a9ccb",
+  "request_id": "20261019-1512-battle-fx-blow-heavy-v1",
+  "requested_frames": 8,
+  "runtime_cell_size": {
+    "height": 128,
+    "width": 128
+  },
+  "worker": "muse",
+  "repair_note": "v2 redo per user feedback (edge-cropped debris in v1): raw generated as 2x4 grid per user-approved method; per-cell component extraction (centroid-in-cell) + 12px feather at borders; shared-scale 0.879; min margin 40px all sides; 8 frames kept per user decision."
+}
