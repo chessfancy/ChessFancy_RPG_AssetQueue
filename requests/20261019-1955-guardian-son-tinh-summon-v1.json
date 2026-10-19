@@ -1,0 +1,56 @@
+{
+  "id": "20261019-1955-guardian-son-tinh-summon-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "combat_animation",
+  "approval_policy": "guardian_manual",
+  "reference_mode": "external_reference_first",
+  "character": "guardian_son_tinh",
+  "action": "summon",
+  "action_vi": "Triệu hồi Sơn Tinh — 8 frame entrance/manifestation từ sương núi → khóa FRONT pose reference sheet user.",
+  "frames_vi": [
+    "F1 mist + low mountain ridge rise; three crown feathers materialize first and lock; no full body yet; transparent cell; body centered safe 65%.",
+    "F2 teal-gold mountain diadem forms + green back ribbon; long black hair falls into place; face still veiled in mist; staff silhouette begins.",
+    "F3 tall stone-peak staff plants into ground; gray-green stone chips orbit spearhead; gold bird medallion flash; torso begins to solidify bare chest.",
+    "F4 athletic bare torso fully forms (warm tan, no beard); teal gold-trim bracers appear; belt with gold bird buckle materializes; still mist at legs.",
+    "F5 dark-green pointed skirt panels unfurl from belt downward; cream inner layers follow; tassels settle; shin guards + gold ankle rings; bare feet land.",
+    "F6 figure steps forward out of fog into upright front stance; staff in RIGHT hand; feathers and ribbon one secondary motion beat; stones settle.",
+    "F7 settle: soft residual gold/teal mountain glow + small floating rock chips fade; silhouette matches FRONT turnaround; full body inside safe area.",
+    "F8 FINAL LOCKED FRONT pose matching user reference sheet exactly: 3 feathers fixed fan, staff right hand, bare chest, green/cream skirt, bare feet, calm severe face — idle-ready end frame."
+  ],
+  "facing": "front",
+  "asset_type": "sprite_sheet",
+  "frames": 8,
+  "fps": 12,
+  "grid": {
+    "cols": 8,
+    "rows": 1
+  },
+  "cell_size": {
+    "width": 256,
+    "height": 256
+  },
+  "generation_layout": {
+    "cols": 4,
+    "rows": 2
+  },
+  "runtime_cell_size": {
+    "width": 256,
+    "height": 256
+  },
+  "reference_images": [
+    "references/ch02/guardian_son_tinh/canonical_reference_sheet.png"
+  ],
+  "style_bible": "style-bibles/chapter02/README.md",
+  "postprocess": {
+    "background_mode": "transparent_if_available",
+    "extra_padding_px": 24,
+    "max_repair_passes": 2,
+    "segmentation": "connected_components",
+    "export_individual_frames": true,
+    "export_preview_gif": true
+  },
+  "transparent_background": true,
+  "notes": "GUARDIAN SUMMON body sequence for Sơn Tinh (Mountain God), CH02 unlock. IDENTITY LOCK = user-provided references/ch02/guardian_son_tinh/canonical_reference_sheet.png (turnaround + details). Preserve EXACTLY: 3 feathers fixed on teal-gold stepped mountain crown; long straight black center-parted hair; green ribbon down spine from crown; bare athletic torso warm tan NO beard; teal forearm+shin guards gold borders; rope-leather belt gold spread-wing bird buckle + tassels; layered skirt dark green outer pointed mountain hems + cream inner; tall dark wrapped wood staff with faceted gray-green stone peak head + gold bands; bare feet gold ankle rings. GENERATE as compact 2×4 contact sheet (rows=2 cols=4), LEFT→RIGHT then TOP→BOTTOM = F1..F8. Each cell: full subject centered, consistent camera distance/scale, feet baseline stable once body appears, generous margin ≥12% all sides, NOTHING crosses cell edges (feathers, staff tip, skirt points, rock chips). Between cells: wide gutters; no bleed. Background: true transparent RGBA preferred. If alpha unavailable use flat solid key only — NEVER checker. Style: semi-realistic mythic fantasy matching reference (clean contours, painterly skin, crisp gold). NOT pure FX sheet — character body is primary; earth mist/stone chips are secondary attached/support only. No text, no UI, no extra feathers, no weapon swap, no crouch end pose. Post: connected-component split per cell, feather soft glow bridges (no hard crop into body), pack 1×8 runtime strip 256px. Parallel Hermes Codex+Grok candidates for A/B only; Muse remains production artist. status pending.",
+  "status": "pending"
+}
