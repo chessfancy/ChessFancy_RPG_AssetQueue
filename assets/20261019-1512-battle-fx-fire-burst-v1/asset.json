@@ -10,8 +10,17 @@
   "generation_mode": "single_contact_sheet",
   "requested_frames": 8,
   "detected_initial_frames": 8,
-  "repaired_frames": [],
-  "repair_passes_used": 0,
+  "repaired_frames": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7
+  ],
+  "repair_passes_used": 1,
   "generation_layout": {
     "cols": 8,
     "rows": 1
@@ -19,14 +28,13 @@
   "raw_generation": {
     "width": 3200,
     "height": 800,
-    "sha256": "0c7d22ba529ac8b1b2884240951d6e432d83d3024beab95e4d40b15b3f6d680e",
-    "snapshot_id": "d3896731-2b3c-4e86-aea5-87a334589d9b:5nkvh8"
+    "sha256": "a51ddf8be90601818c798ee3df6c369dd8b5880854de16dd00e09ed6b9c16595",
+    "snapshot_id": "63db5aee-41c5-4c72-a221-915a292d60ca:vbe99d"
   },
   "master": {
-    "sheet": "master_sheet_rgba.png",
-    "cell_width": 406,
-    "cell_height": 493,
-    "extra_padding_px": 8
+    "width": 2720,
+    "height": 732,
+    "sha256": "22cc85e6f5382ae01c94c21f9704355a4cd29099d7d9c3e93ac0b6661183087e"
   },
   "runtime_cell_size": {
     "width": 128,
@@ -52,7 +60,9 @@
     "choreography": "spark(00) -> core(01) -> petals(02) -> peak(03-04) -> sparks-out(05) -> fade(06-07)",
     "crop": true,
     "bleed": true,
-    "background": true
+    "background": true,
+    "note": "v2 redo per user feedback 2026-10-19: no art touches any cell edge (min margin 22px), verified numerically and visually."
   },
-  "created_at": "2026-10-19T15:28:22.702198+07:00"
+  "created_at": "2026-10-19T16:05:00+07:00",
+  "repair_note": "Regenerated raw 1x8 sheet (v2); art oversized vs cells, so applied shared-scale 0.873 fit + centered repack with >=22px transparent margins all sides; white key-out + black frame-line removal; boundary QC pass clean."
 }
