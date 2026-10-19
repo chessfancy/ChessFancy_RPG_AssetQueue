@@ -1,0 +1,56 @@
+{
+  "id": "20261019-2010-guardian-son-tinh-exit-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "combat_animation",
+  "approval_policy": "guardian_manual",
+  "reference_mode": "external_reference_first",
+  "character": "guardian_son_tinh",
+  "action": "exit",
+  "action_vi": "Sơn Tinh đi mất / tan biến sau skill — reverse manifestation về sương núi.",
+  "frames_vi": [
+    "F1 full FRONT idle after skill — solid body, staff right hand, residual soft glow.",
+    "F2 nod/turn slight — green ribbon and feathers one motion beat; rock chips begin to lift inward.",
+    "F3 body starts dissolving from feet upward into mountain mist; still readable silhouette.",
+    "F4 torso becomes translucent ghost; skirt/legs mostly mist; staff still visible.",
+    "F5 staff and crown linger as last solid pieces; bare chest ghost fades.",
+    "F6 only crown+3 feathers + staff silhouette in thick mist; body gone.",
+    "F7 feathers scatter upward into fog; staff tip stone chips implode to a point of light.",
+    "F8 empty cell: low mist + faint mountain ridge residue only — guardian gone (no body)."
+  ],
+  "facing": "front",
+  "asset_type": "sprite_sheet",
+  "frames": 8,
+  "fps": 12,
+  "grid": {
+    "cols": 8,
+    "rows": 1
+  },
+  "cell_size": {
+    "width": 256,
+    "height": 256
+  },
+  "generation_layout": {
+    "cols": 4,
+    "rows": 2
+  },
+  "runtime_cell_size": {
+    "width": 256,
+    "height": 256
+  },
+  "reference_images": [
+    "references/ch02/guardian_son_tinh/canonical_reference_sheet.png"
+  ],
+  "style_bible": "style-bibles/chapter02/README.md",
+  "postprocess": {
+    "background_mode": "transparent_if_available",
+    "extra_padding_px": 24,
+    "max_repair_passes": 2,
+    "segmentation": "connected_components",
+    "export_individual_frames": true,
+    "export_preview_gif": true
+  },
+  "transparent_background": true,
+  "notes": "IDENTITY LOCK = references/ch02/guardian_son_tinh/canonical_reference_sheet.png. Preserve EXACTLY: 3 feathers fixed teal-gold mountain crown; long straight black center-parted hair; green ribbon down spine; bare athletic warm-tan torso NO beard; teal gold-trim bracers+shin guards; rope-leather belt gold spread-wing bird buckle + tassels; dark green pointed skirt + cream inner; tall dark wood staff faceted gray-green stone peak + gold bands; bare feet gold ankle rings. Facing FRONT. Generate compact 2x4 contact sheet (rows=2 cols=4), L→R then top→bottom = F1..F8. Centered, consistent scale, feet baseline stable, margin≥12%, nothing crosses cell edges. True transparent RGBA preferred. No text/UI. Post: CC split + feather bridges, pack 1x8 @256. Parallel Hermes Codex/Grok A/B only; Muse production. EXIT/despawn body sequence after skill. Reverse of summon: solid → translucent → props linger → empty mist. NOT skill cast. NOT new entrance. Keep identity until fade; final frame may be mist-only. Child-safe mythic JRPG. status pending.",
+  "status": "pending"
+}
