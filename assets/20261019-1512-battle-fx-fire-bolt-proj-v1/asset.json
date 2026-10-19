@@ -1,0 +1,105 @@
+{
+  "request_id": "20261019-1512-battle-fx-fire-bolt-proj-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "canonical_reference": "assets/20261003-1320-moc-linh-special-vfx-bundle/hit_pack/master_sheet_rgba.png",
+  "request_blob_sha": "1c599644ad65c0a5258065f7086f50c0530d5ad6",
+  "request_commit_sha": "53a9ccb",
+  "generation_mode": "single_contact_sheet",
+  "requested_frames": 6,
+  "detected_initial_frames": 6,
+  "repaired_frames": [],
+  "repair_passes_used": 1,
+  "repair_note": "First contact-sheet pass was discarded: FX trails physically crossed the drawn grid frame lines (neighbor bleed). Regenerated the full sheet once with frameless layout; all 6 frames extracted clean from the repair pass.",
+  "generation_layout": {
+    "cols": 6,
+    "rows": 1
+  },
+  "raw_generation": {
+    "width": 2736,
+    "height": 912,
+    "sha256": "a7f39afdc1493995023dd5d43b1ad59837c6ec1f94457d9d9e5031b51e2e89b0",
+    "snapshot_id": "99507397-498a-442a-95af-b203ff943588:bl2g49"
+  },
+  "master": {
+    "sheet": "master_sheet_rgba.png",
+    "width": 2854,
+    "height": 512,
+    "cell_widths": [
+      459,
+      431,
+      538,
+      373,
+      410,
+      643
+    ],
+    "cell_height": 512,
+    "extra_padding_px": 8
+  },
+  "runtime_cell_size": {
+    "width": 128,
+    "height": 128
+  },
+  "runtime": {
+    "key": "play",
+    "fps": 18,
+    "anchor": "projectile"
+  },
+  "background_cleanup": "white_key",
+  "files": [
+    {
+      "path": "master_sheet_rgba.png",
+      "bytes": 1317610,
+      "sha256": "b01c50280638c9fc634a7b7e93658d31951abac74e01c1261db80bcff463f4fc"
+    },
+    {
+      "path": "frames/frame_00.png",
+      "bytes": 68586,
+      "sha256": "d1f6dc7476e71e876dc1d38f54754b5ee622f87531b8ff47378b99d45c0a9be3"
+    },
+    {
+      "path": "frames/frame_01.png",
+      "bytes": 64192,
+      "sha256": "965f4900addf24a07675697df7c472427d456b26c02abcaea1573a12a117ce0c"
+    },
+    {
+      "path": "frames/frame_02.png",
+      "bytes": 72891,
+      "sha256": "a088216769047acd092658c0815f8a1626a39d6b96df5d3dce58b55877a1a4e0"
+    },
+    {
+      "path": "frames/frame_03.png",
+      "bytes": 47533,
+      "sha256": "4638168bcc8b5c5d172890924e0d1e7c1cfbc2483f6f1f374da8dbf575825208"
+    },
+    {
+      "path": "frames/frame_04.png",
+      "bytes": 60188,
+      "sha256": "7f8f564a897557feae90b0ec6b43dc40033ab7a0addf8182ad333d7148c63d96"
+    },
+    {
+      "path": "frames/frame_05.png",
+      "bytes": 61064,
+      "sha256": "30c4a71c21c626136eb51eb4b8696d32d4c5975ea579aee6f9449bf0b8178366"
+    },
+    {
+      "path": "preview.gif",
+      "bytes": 25527,
+      "sha256": "4a22a757f1131b39a3c73994e2797c8227232e04949418166534444fef819295"
+    },
+    {
+      "path": "asset.json"
+    }
+  ],
+  "qc": {
+    "frame_count": "pass (6/6)",
+    "identity": "pass - compact fire mote, warm JRPG cel, luminous additive-friendly cores in the moc-linh vfx style (fire palette), child-safe",
+    "choreography": "pass - spinning mote with varying trail sweep, consistent orb size, trail sparks only, no explosion, no smoke",
+    "crop": "pass - no true body/effect crop; 8px safe padding",
+    "bleed": "pass - no neighbor bleed; seed-based Voronoi clustering per orb",
+    "background": "pass - transparent RGBA master and frames, white key-out with antialiased edges"
+  },
+  "created_at": "2026-10-19T15:29:02.036890+07:00"
+}

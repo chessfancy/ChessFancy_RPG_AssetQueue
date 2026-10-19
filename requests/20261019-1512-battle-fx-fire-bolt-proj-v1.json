@@ -53,5 +53,5 @@
     "max_repair_passes": 2
   },
   "notes": "GENERIC BATTLE FX LIBRARY (not character body). Runtime key target fx_fire_bolt_proj. Contract: one horizontal row, 128x128 cells, transparent alpha, additive-friendly luminous cores, warm JRPG cel, child-safe, NO text, NO commercial-game clone, NO photorealism. Also see parallel Hermes/Codex candidates under game staging fx_gap_20261019 for style competition; Muse remains authoritative production artist. Projectile bay Hỏa Cầu — orb lửa nhỏ travel actor→target.",
-  "status": "pending"
+  "status": "done"
 }
