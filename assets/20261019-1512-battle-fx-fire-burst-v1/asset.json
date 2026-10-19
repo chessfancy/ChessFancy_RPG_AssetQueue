@@ -20,21 +20,22 @@
     6,
     7
   ],
-  "repair_passes_used": 1,
+  "repair_passes_used": 2,
   "generation_layout": {
     "cols": 8,
     "rows": 1
   },
   "raw_generation": {
-    "width": 3200,
-    "height": 800,
-    "sha256": "a51ddf8be90601818c798ee3df6c369dd8b5880854de16dd00e09ed6b9c16595",
-    "snapshot_id": "63db5aee-41c5-4c72-a221-915a292d60ca:vbe99d"
+    "width": 2240,
+    "height": 1120,
+    "sha256": "7a2bcc95246b9ec0d0fe2d2214ce65aa92173dd467388cd7de1a3715a6b66c6e",
+    "snapshot_id": "07eefdda-193a-4402-9c39-a87e47230032:6aqhxg",
+    "layout": "2x4 grid (user-directed)"
   },
   "master": {
-    "width": 2720,
-    "height": 732,
-    "sha256": "22cc85e6f5382ae01c94c21f9704355a4cd29099d7d9c3e93ac0b6661183087e"
+    "width": 4480,
+    "height": 560,
+    "sha256": "73060ec4912881f6696817008d8398fbe955fed8ed159c944c625f28303cb2c5"
   },
   "runtime_cell_size": {
     "width": 128,
@@ -61,8 +62,8 @@
     "crop": true,
     "bleed": true,
     "background": true,
-    "note": "v2 redo per user feedback 2026-10-19: no art touches any cell edge (min margin 22px), verified numerically and visually."
+    "note": "v3 2026-10-19: no art touches any cell edge (min margin 41px), no flat cut edges, verified numerically and visually."
   },
-  "created_at": "2026-10-19T16:05:00+07:00",
-  "repair_note": "Regenerated raw 1x8 sheet (v2); art oversized vs cells, so applied shared-scale 0.873 fit + centered repack with >=22px transparent margins all sides; white key-out + black frame-line removal; boundary QC pass clean."
+  "created_at": "2026-10-19T16:15:00+07:00",
+  "repair_note": "v3 redo per user feedback: raw generated as 2x4 grid (8 square cells) per user direction; per-cell largest-component extraction with 12px feather at cell borders (removes faint inter-cell glow bridges); shared-scale 0.879 fit into 480px box, centered in 560px cells; min transparent margin 41px all sides; boundary QC clean numerically + visually."
 }
