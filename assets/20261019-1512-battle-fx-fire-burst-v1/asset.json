@@ -35,7 +35,7 @@
   "master": {
     "width": 4480,
     "height": 560,
-    "sha256": "73060ec4912881f6696817008d8398fbe955fed8ed159c944c625f28303cb2c5"
+    "sha256": "844fa459388f909027df18055616b15da074fd09aeffac3a071e0bcc26c80f67"
   },
   "runtime_cell_size": {
     "width": 128,
@@ -64,6 +64,6 @@
     "background": true,
     "note": "v3 2026-10-19: no art touches any cell edge (min margin 41px), no flat cut edges, verified numerically and visually."
   },
-  "created_at": "2026-10-19T16:15:00+07:00",
-  "repair_note": "v3 redo per user feedback: raw generated as 2x4 grid (8 square cells) per user direction; per-cell largest-component extraction with 12px feather at cell borders (removes faint inter-cell glow bridges); shared-scale 0.879 fit into 480px box, centered in 560px cells; min transparent margin 41px all sides; boundary QC clean numerically + visually."
+  "created_at": "2026-10-19T16:25:00+07:00",
+  "repair_note": "v3 redo per user feedback: raw generated as 2x4 grid (8 square cells) per user direction; per-cell largest-component extraction with 12px feather at cell borders (removes faint inter-cell glow bridges); shared-scale 0.879 fit into 480px box, centered in 560px cells; min transparent margin 41px all sides; boundary QC clean numerically + visually. v4: cyan rim reduced per user feedback (hue shift cyan->warm amber on rim pixels, deterministic post-process, composition unchanged)."
 }
