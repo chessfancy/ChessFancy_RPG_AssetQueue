@@ -1,0 +1,59 @@
+{
+  "id": "20261019-1512-battle-fx-fire-burst-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "combat_animation",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "external_reference_first",
+  "character": "battle_fx",
+  "action": "fire_burst",
+  "action_vi": "FX hit lửa chuyên dụng cho fire_burst / Hỏa Cầu impact (không dùng magic_hit generic).",
+  "frames_vi": [
+    "Frame beat 1/8: One-row 8×128 sheet. Warm orange-gold fire bloom with soft cyan rim, luminous additive core, clean alpha silhouettes, no photoreal smoke walls, no text. Progress: spark → core → peak petals → sparks out → fade.",
+    "Frame beat 2/8: One-row 8×128 sheet. Warm orange-gold fire bloom with soft cyan rim, luminous additive core, clean alpha silhouettes, no photoreal smoke walls, no text. Progress: spark → core → peak petals → sparks out → fade.",
+    "Frame beat 3/8: One-row 8×128 sheet. Warm orange-gold fire bloom with soft cyan rim, luminous additive core, clean alpha silhouettes, no photoreal smoke walls, no text. Progress: spark → core → peak petals → sparks out → fade.",
+    "Frame beat 4/8: One-row 8×128 sheet. Warm orange-gold fire bloom with soft cyan rim, luminous additive core, clean alpha silhouettes, no photoreal smoke walls, no text. Progress: spark → core → peak petals → sparks out → fade.",
+    "Frame beat 5/8: One-row 8×128 sheet. Warm orange-gold fire bloom with soft cyan rim, luminous additive core, clean alpha silhouettes, no photoreal smoke walls, no text. Progress: spark → core → peak petals → sparks out → fade.",
+    "Frame beat 6/8: One-row 8×128 sheet. Warm orange-gold fire bloom with soft cyan rim, luminous additive core, clean alpha silhouettes, no photoreal smoke walls, no text. Progress: spark → core → peak petals → sparks out → fade.",
+    "Frame beat 7/8: One-row 8×128 sheet. Warm orange-gold fire bloom with soft cyan rim, luminous additive core, clean alpha silhouettes, no photoreal smoke walls, no text. Progress: spark → core → peak petals → sparks out → fade.",
+    "Frame beat 8/8: One-row 8×128 sheet. Warm orange-gold fire bloom with soft cyan rim, luminous additive core, clean alpha silhouettes, no photoreal smoke walls, no text. Progress: spark → core → peak petals → sparks out → fade."
+  ],
+  "asset_type": "sprite_sheet",
+  "frames": 8,
+  "fps": 14,
+  "grid": {
+    "cols": 8,
+    "rows": 1
+  },
+  "cell_size": {
+    "width": 128,
+    "height": 128
+  },
+  "reference_images": [
+    "assets/20261003-1320-moc-linh-special-vfx-bundle/hit_pack/master_sheet_rgba.png"
+  ],
+  "style_bible": "style-bibles/chapter02/README.md",
+  "deliverables": [
+    {
+      "key": "play",
+      "frames": 8,
+      "fps": 14,
+      "runtime_cell_size": {
+        "width": 128,
+        "height": 128
+      },
+      "anchor": "target_center",
+      "visual": "One-row 8×128 sheet. Warm orange-gold fire bloom with soft cyan rim, luminous additive core, clean alpha silhouettes, no photoreal smoke walls, no text. Progress: spark → core → peak petals → sparks out → fade."
+    }
+  ],
+  "generation_contract": {
+    "high_resolution_master": true,
+    "compact_grid_preferred": true,
+    "transparent_output": true,
+    "background_mode": "white_key_if_needed",
+    "extra_padding_px": 8,
+    "max_repair_passes": 2
+  },
+  "notes": "GENERIC BATTLE FX LIBRARY (not character body). Runtime key target fx_fire_burst. Contract: one horizontal row, 128x128 cells, transparent alpha, additive-friendly luminous cores, warm JRPG cel, child-safe, NO text, NO commercial-game clone, NO photorealism. Also see parallel Hermes/Codex candidates under game staging fx_gap_20261019 for style competition; Muse remains authoritative production artist. FX hit lửa chuyên dụng cho fire_burst / Hỏa Cầu impact (không dùng magic_hit generic).",
+  "status": "pending"
+}

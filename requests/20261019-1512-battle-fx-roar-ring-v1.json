@@ -1,0 +1,60 @@
+{
+  "id": "20261019-1512-battle-fx-roar-ring-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "task_type": "combat_animation",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "external_reference_first",
+  "character": "battle_fx",
+  "action": "roar_ring",
+  "action_vi": "FX gầm/taunt — vòng sóng ivory-amber expand.",
+  "frames_vi": [
+    "Frame beat 1/8: One-row 8×128. Soft ivory-amber concentric sound rings + light base dust; no elemental magic colors; clean alpha rings not filled slabs.",
+    "Frame beat 2/8: One-row 8×128. Soft ivory-amber concentric sound rings + light base dust; no elemental magic colors; clean alpha rings not filled slabs.",
+    "Frame beat 3/8: One-row 8×128. Soft ivory-amber concentric sound rings + light base dust; no elemental magic colors; clean alpha rings not filled slabs.",
+    "Frame beat 4/8: One-row 8×128. Soft ivory-amber concentric sound rings + light base dust; no elemental magic colors; clean alpha rings not filled slabs.",
+    "Frame beat 5/8: One-row 8×128. Soft ivory-amber concentric sound rings + light base dust; no elemental magic colors; clean alpha rings not filled slabs.",
+    "Frame beat 6/8: One-row 8×128. Soft ivory-amber concentric sound rings + light base dust; no elemental magic colors; clean alpha rings not filled slabs.",
+    "Frame beat 7/8: One-row 8×128. Soft ivory-amber concentric sound rings + light base dust; no elemental magic colors; clean alpha rings not filled slabs.",
+    "Frame beat 8/8: One-row 8×128. Soft ivory-amber concentric sound rings + light base dust; no elemental magic colors; clean alpha rings not filled slabs."
+  ],
+  "asset_type": "sprite_sheet",
+  "frames": 8,
+  "fps": 10,
+  "grid": {
+    "cols": 8,
+    "rows": 1
+  },
+  "cell_size": {
+    "width": 128,
+    "height": 128
+  },
+  "reference_images": [
+    "assets/20261003-1320-gau-rung-special-vfx-bundle/hit_pack/master_sheet_rgba.png",
+    "assets/20261003-1320-gau-rung-special-vfx-bundle/self_vfx/master_sheet_rgba.png"
+  ],
+  "style_bible": "style-bibles/chapter02/README.md",
+  "deliverables": [
+    {
+      "key": "play",
+      "frames": 8,
+      "fps": 10,
+      "runtime_cell_size": {
+        "width": 128,
+        "height": 128
+      },
+      "anchor": "target_center",
+      "visual": "One-row 8×128. Soft ivory-amber concentric sound rings + light base dust; no elemental magic colors; clean alpha rings not filled slabs."
+    }
+  ],
+  "generation_contract": {
+    "high_resolution_master": true,
+    "compact_grid_preferred": true,
+    "transparent_output": true,
+    "background_mode": "white_key_if_needed",
+    "extra_padding_px": 8,
+    "max_repair_passes": 2
+  },
+  "notes": "GENERIC BATTLE FX LIBRARY (not character body). Runtime key target fx_roar_ring. Contract: one horizontal row, 128x128 cells, transparent alpha, additive-friendly luminous cores, warm JRPG cel, child-safe, NO text, NO commercial-game clone, NO photorealism. Also see parallel Hermes/Codex candidates under game staging fx_gap_20261019 for style competition; Muse remains authoritative production artist. FX gầm/taunt — vòng sóng ivory-amber expand.",
+  "status": "pending"
+}
