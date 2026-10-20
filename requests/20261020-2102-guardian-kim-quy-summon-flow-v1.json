@@ -1,0 +1,39 @@
+{
+  "id": "20261020-2102-guardian-kim-quy-summon-flow-v1",
+  "protocol_version": 2,
+  "worker": "muse",
+  "task_type": "combat_animation",
+  "approval_policy": "guardian_manual",
+  "reference_mode": "external_reference_first",
+  "character": "guardian_kim_quy",
+  "action": "summon_body_flow",
+  "action_vi": "Kim Quy Hộ Trận — video Flow body summon (entrance→skill hold→idle breath→exit flecks); nền magenta; camera góc rộng full-body; không zoom/close-up; khóa identity anime-cartoon.",
+  "asset_type": "reference_video",
+  "fps": 24,
+  "duration_sec": 8,
+  "frames_vi": [
+    "0.0–1.2s WIDE: flat magenta #FF00FF; golden motes gather; silhouette of giant sacred turtle forms — full body scale, ≥12% margin, no crop.",
+    "1.2–2.5s WIDE: silhouette solidifies into bronze-gold Kim Quy (ivory shell, temple crest, calm eyes) — identical to identity_lock; shared ground baseline.",
+    "2.5–4.0s WIDE: skill wind-up — head slightly lowers, warm light runs shell seams; still full limbs+shell+crest visible; no zoom.",
+    "4.0–5.5s WIDE: power/protective hold stance; shell gently radiant; micro breath only; character lock unchanged.",
+    "5.5–6.8s WIDE: soft idle breath loopable (shell glint pulse); no new pose, no close-up.",
+    "6.8–8.0s WIDE: exit — body dissolves into warm gold flecks; last readable full silhouette then flecks on magenta; no other characters."
+  ],
+  "reference_images": [
+    "references/ch01/guardian_kim_quy/identity_lock_codex_magenta.png",
+    "references/ch01/guardian_kim_quy/production_overworld.png",
+    "references/ch01/guardian_kim_quy/production_battle_sheet.png",
+    "references/ch01/guardian_kim_quy/identity_battle_full_extract.png",
+    "references/ch01/guardian_kim_quy/portrait_neutral.png",
+    "references/ch01/guardian_kim_quy/motion_idea_body20.png",
+    "references/ch01/guardian_kim_quy/ANTI_crop_raw_cell_f11.png",
+    "references/ch01/guardian_kim_quy/ANTI_crop_raw_cell_f15.png",
+    "references/ch01/guardian_kim_quy/ANTI_crop_raw_cell_f19.png"
+  ],
+  "character_spec_path": "references/ch01/guardian_kim_quy/BRIEF_kim_quy_flow_summon.md",
+  "style_bible": "style-bibles/global/README.md",
+  "transparent_background": false,
+  "facing": "three_quarter_right",
+  "status": "pending",
+  "notes": "ROUTE: Muse Flow video / continuous-motion. VIDEO candidate only — not sprite sheet production yet.\n\nUSER LOCKS (must obey):\n- BG = flat solid magenta #FF00FF only\n- Camera = WIDE full-body always; see ALL details (shell, limbs, crest, tail)\n- NO zoom-in, NO close-up, NO edge crop, NO orbit that clips\n- NO character redesign — lock to identity_lock_codex_magenta + production stills + portrait_neutral\n- Style = anime–cartoon ChessFancy (match refs), not photoreal/3D\n- Safe margin ≥12% all sides every frame\n- No party, no battle map, no UI/text/watermark/logo\n- No new chessboard barrier VFX (party FX already in game)\n\nRefs order:\n(1) identity_lock_codex_magenta HARD lock body\n(2) production_overworld\n(3) production_battle_sheet\n(4) identity_battle_full_extract\n(5) portrait_neutral face lock\n(6) motion_idea_body20 beat order ONLY (framing too tight — go WIDER)\n(7)(8)(9) ANTI_crop_raw_cell_f11/f15/f19 = FAIL examples of clipped shell/legs\n\nBeat target for later still pull: ~20 body + 8 idle + 4 exit. 8s @24fps ok.\n\nSpatial intent (runtime later, NOT in video): guardian sits BEHIND party; this clip is body-only on magenta for clean keying.\n"
+}
