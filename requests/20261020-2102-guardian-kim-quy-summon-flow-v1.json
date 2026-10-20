@@ -1,6 +1,6 @@
 {
   "id": "20261020-2102-guardian-kim-quy-summon-flow-v1",
-  "protocol_version": 2,
+  "protocol_version": "2",
   "worker": "muse",
   "task_type": "combat_animation",
   "approval_policy": "guardian_manual",
