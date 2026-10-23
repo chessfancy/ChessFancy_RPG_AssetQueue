@@ -2,7 +2,7 @@
   "id": "20261023-2322-bg-ch02-duong-re-battle-v1",
   "protocol_version": "2",
   "worker": "muse",
-  "status": "pending",
+  "status": "done",
   "task_type": "canonical_reference",
   "approval_policy": "enemy_auto",
   "reference_mode": "external_reference_first",

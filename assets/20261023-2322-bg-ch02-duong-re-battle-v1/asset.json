@@ -1,0 +1,50 @@
+{
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "generation_mode": "single_image",
+  "requested_frames": 1,
+  "detected_initial_frames": 1,
+  "repaired_frames": [],
+  "repair_passes_used": 0,
+  "generation_layout": {
+    "cols": 1,
+    "rows": 1
+  },
+  "background_cleanup": "none_opaque_full_bleed",
+  "request_id": "20261023-2322-bg-ch02-duong-re-battle-v1",
+  "character": "bg_ch02_duong_re_battle",
+  "canonical_reference": "bg_ch02_duong_re_battle.png",
+  "character_spec_path": "references/ch02/battle_bg_map7_map8_20261023/brief_map8.md",
+  "request_blob_sha": "44a4c9663b25cecb139322b30e8bb408f11e322a9ed6f4dc5cbe9275fd680e00",
+  "request_commit_sha": "18e29ae4b3dcb145fc2feb1e5eed5d5c92c9df59",
+  "raw_generation": {
+    "width": 2048,
+    "height": 1152,
+    "sha256": "88b7ebeaf9efd310df7f28c95d5c1adb7f05148d3dc73feb59fc528cc53e0d2c",
+    "snapshot_id": "5cc53811-a7cd-4324-9e15-84f752e32ed4:m4lpi9"
+  },
+  "master": {
+    "sheet": "bg_ch02_duong_re_battle.png",
+    "width": 1280,
+    "height": 720,
+    "extra_padding_px": 0,
+    "sha256": "bf006ef410c3cf52116cdc7742601a4d27af5536f93ea300ad74333ba7f77152"
+  },
+  "files": [
+    "bg_ch02_duong_re_battle.png",
+    "asset.json"
+  ],
+  "qc": {
+    "frame_count": "pass",
+    "camera_side_view": "pass",
+    "ground_continuous": "pass",
+    "no_void_under_feet": "pass",
+    "no_people_text_ui": "pass",
+    "background_opaque": "pass",
+    "resolution": "pass"
+  },
+  "qc_notes": "Side-view eye-level stone/dirt ground spanning the full width in the lower frame; misty ravine + root cliffs + sea of clouds sit behind the ground as distant depth only, never under left/right feet zones; no rope bridge, no people/text/UI. Ground band reads as a perspective clearing in the lower ~quarter rather than a literal 40% band; feet zones remain solid. Candidate only, not production promotion.",
+  "created_at": "2026-10-23T23:36:48+07:00"
+}
