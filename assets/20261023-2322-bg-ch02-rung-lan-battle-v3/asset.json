@@ -1,0 +1,31 @@
+{
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "generation_mode": "single_image_chat_regen",
+  "request_id": "20261023-2322-bg-ch02-rung-lan-battle-v1",
+  "version_note": "v3 chat regen, user-approved 2026-10-23; supersedes v1 for runtime. v1 folder untouched.",
+  "character": "bg_ch02_rung_lan_battle",
+  "canonical_reference": "bg_ch02_rung_lan_battle_v3.png",
+  "master": {
+    "sheet": "bg_ch02_rung_lan_battle_v3.png",
+    "width": 1280,
+    "height": 720,
+    "sha256": "7f6268db8a2f43facefe78846356d5a0f9b453a95270b5b278b90e34863769ef"
+  },
+  "files": [
+    "bg_ch02_rung_lan_battle_v3.png",
+    "asset.json"
+  ],
+  "qc": {
+    "camera_low_angle": "pass-approx",
+    "ground_continuous": "pass",
+    "no_void_under_feet": "pass",
+    "no_people_text_ui": "pass",
+    "background_opaque": "pass",
+    "resolution": "pass"
+  },
+  "qc_notes": "Style matches map7 reference (golden foliage, red roots, teal mist). Ground band wider than v1 (~quarter) at ~55-60% of frame, not a literal 2/3; low-angle feel mild. User approved this version 2026-10-23 despite that caveat. 2048x1152 master kept local in your_files/battle_bg_ch02/rung_lan_v2/.",
+  "created_at": "2026-10-23T23:47:00+07:00"
+}
