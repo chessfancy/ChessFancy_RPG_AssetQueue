@@ -1,0 +1,40 @@
+{
+  "id": "20261023-2322-bg-ch02-duong-re-battle-v1",
+  "protocol_version": "2",
+  "worker": "muse",
+  "status": "pending",
+  "task_type": "canonical_reference",
+  "approval_policy": "enemy_auto",
+  "reference_mode": "external_reference_first",
+  "character": "bg_ch02_duong_re_battle",
+  "action": "side_view_wide_ground_v1",
+  "action_vi": "Nền battle map8 Đường Rẽ 1280x720: hai bờ đất rộng, vực chỉ sâu phía sau, không float sprite.",
+  "asset_type": "reference_image",
+  "frames": 1,
+  "frames_vi": [
+    "Một nền battle 1280x720 góc side-view, ground rộng phần dưới để chân party/enemy đứng chắc, không vực trống dưới chân."
+  ],
+  "facing": "front",
+  "style_bible": "style-bibles/chapter02/README.md",
+  "character_spec_path": "references/ch02/battle_bg_map7_map8_20261023/brief_map8.md",
+  "reference_images": [
+    "references/ch02/battle_bg_map7_map8_20261023/layout_battle_side_wide_ground.png",
+    "references/style/ch02/environment.png",
+    "references/ch02/battle_bg_map7_map8_20261023/muse_brief_map8_duong_re_battle.png",
+    "references/ch02/battle_bg_map7_map8_20261023/map8_ground_wide.png",
+    "references/ch02/battle_bg_map7_map8_20261023/map8_left_path.png",
+    "references/ch02/battle_bg_map7_map8_20261023/map8_right_path.png",
+    "references/ch02/battle_bg_map7_map8_20261023/map8_floor_tex.png",
+    "references/ch02/battle_bg_map7_map8_20261023/map8_canopy_mid.png",
+    "references/ch02/battle_bg_map7_map8_20261023/map8_duong_re_base_full.png"
+  ],
+  "transparent_background": false,
+  "postprocess": {
+    "background_mode": "solid_key_if_needed",
+    "extra_padding_px": 0,
+    "max_repair_passes": 2,
+    "export_individual_frames": false,
+    "export_preview_gif": false
+  },
+  "notes": "CANDIDATE ONLY. Battle STAGE BACKGROUND must stay OPAQUE full-bleed 1280x720 — do not cut out / key the scenery. Deliver one opaque PNG master + asset.json. Camera MUST be side-view eye-level path; map close-crops are STYLE/palette reference only — do NOT paste the top-down map as the BG. WIDE continuous solid ground in lower ~40%; no void under party/enemy feet. No people/UI/text/sprites/rope. status=done is not production promotion. Target runtime key bg_ch02_duong_re_battle. Prior bug: chasm under formation."
+}
