@@ -1,0 +1,32 @@
+{
+  "protocol_version": "2",
+  "worker": "muse",
+  "generator": "muse",
+  "reference_mode": "external_reference_first",
+  "generation_mode": "single_image_chat_regen",
+  "request_id": "20261023-2322-bg-ch02-duong-re-battle-v1",
+  "version_note": "v2 chat regen, user-approved 2026-10-23 ('dat roi'); supersedes v1 for runtime. v1 folder untouched.",
+  "character": "bg_ch02_duong_re_battle",
+  "canonical_reference": "bg_ch02_duong_re_battle_v2.png",
+  "master": {
+    "sheet": "bg_ch02_duong_re_battle_v2.png",
+    "width": 1280,
+    "height": 720,
+    "sha256": "21cb82109b43cdb8fe58348cb7409f1c0ad55a7ab51db8a3eba6d2c82eca5074"
+  },
+  "files": [
+    "bg_ch02_duong_re_battle_v2.png",
+    "asset.json"
+  ],
+  "qc": {
+    "composition_ground_2_3": "pass",
+    "backdrop_mist_rocks": "pass",
+    "ground_continuous": "pass",
+    "no_void_under_feet": "pass",
+    "no_people_text_ui": "pass",
+    "background_opaque": "pass",
+    "resolution": "pass"
+  },
+  "qc_notes": "Composition per user spec: stone cliff-top ground ~2/3 bottom, top 1/3 misty clouds + rock masses behind chasm, matching map8 style. User approved 2026-10-23. 2048x1152 master kept local in your_files/battle_bg_ch02/duong_re_v2/.",
+  "created_at": "2026-10-23T23:55:00+07:00"
+}
